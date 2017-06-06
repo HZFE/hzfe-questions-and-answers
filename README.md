@@ -1,10 +1,11 @@
 ## hzfe小奶库
 
 **computerNetworking**
-- [x] 计算机网络
-- [x] 他本来想问我tcp
-- [x] 三次握奶
-- [x] 滑动窗口做流控的
+- [x] [计算机网络](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/computerNetworking/answers.md#不专业的计算机网络概念)
+- [x] [他本来想问我tcp](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/computerNetworking/answers.md#传输层有个厉害协议叫tcp惹)
+- [x] [三次握奶](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/computerNetworking/answers.md#传输层有个厉害协议叫tcp惹)
+- [x] [滑动窗口做流控的](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/computerNetworking/answers.md#传输层有个厉害协议叫tcp惹)
+- [x] [相关知识推荐书籍](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/computerNetworking/answers.md#推荐书籍)
 
 
 **stillNeedToTianKeng**
