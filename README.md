@@ -9,6 +9,15 @@
 
 
 **stillNeedToTianKeng**
+- [ ] 问了new的时候做了什么处理
+- [ ] http请求的流程
+- [ ] 然后react和vue的差别
+- [ ] 然后webpack的优势
+- [ ] webpack和rollup做比较
+- [ ] 原生Ajax流程
+- [ ] ng会么
+- [ ] 然后问我技术选型，这么多框架
+
 - [ ] 组件通信问题
 - [ ] react和vue的区别
 - [ ] 怎么按顺序执行异步
