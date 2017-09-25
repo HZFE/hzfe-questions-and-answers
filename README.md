@@ -16,6 +16,9 @@
 - [x] [滑动窗口做流控的](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/computerNetworking/answers.md#传输层有个厉害协议叫tcp惹)
 - [x] [相关知识推荐书籍](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/computerNetworking/answers.md#推荐书籍)
 
+**wowVue**
+- [x] [computed怎么实现的](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/wowVue/computed.md)
+
 **assign goodgay**
 - [ ] 邮箱正则
 - [ ] 数组去重
@@ -82,7 +85,7 @@
 - [ ] ssr原理
 - [ ] 如何实现vmodel
 - [ ] 双向绑定怎么实现的
-- [ ] computed怎么实现的
+
 - [ ] 外的双向绑定实现原理
 - [ ] 用原生和vue有什么不一样的地方
 - [ ] 组件中对数据的操作和vuex有什么不一样的
