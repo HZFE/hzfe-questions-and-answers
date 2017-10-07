@@ -11,6 +11,7 @@
 ## hzfe小奶库
 
 **objectOriented**
+- [ ] [new的过程做了啥](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/objectOriented/new.md)
 - [x] [call apply](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/objectOriented/call_apply.md)
 
 **computerNetworking**
@@ -37,7 +38,6 @@
 - [ ] 函数节流
 - [ ] 观察者模式
 - [ ] 闭包底层原理
-- [ ] new的过程不知道
 - [ ] 作用域链怎么构建的
 - [ ] null为什么是Object
 - [ ] 函数有哪几种执行方式
@@ -49,7 +49,6 @@
 - [ ] 什么是迭代器？
 - [ ] 你对symbol有什么了解
 - [ ] 为什么有些数据是可迭代数据？除了实现了iterator接口 还有什么别的原因嘛
-- [ ] 问了new的时候做了什么处理
 - [ ] ng会么
 - [ ] 然后问我技术选型，这么多框架
 - [ ] 怎么按顺序执行异步
