@@ -10,6 +10,9 @@
 
 ## hzfe小奶库
 
+**objectOriented**
+- [x] [call apply](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/objectOriented/call_apply.md)
+
 **computerNetworking**
 - [x] [计算机网络](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/computerNetworking/answers.md#不专业的计算机网络概念)
 - [x] [他本来想问我tcp](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/computerNetworking/answers.md#传输层有个厉害协议叫tcp惹)
@@ -33,7 +36,6 @@
 - [ ] 原型链
 - [ ] 函数节流
 - [ ] 观察者模式
-- [ ] call apply
 - [ ] 闭包底层原理
 - [ ] new的过程不知道
 - [ ] 作用域链怎么构建的
