@@ -1,4 +1,5 @@
 ## hzfe母牛
+
 [百科全树的](https://code.geeku.net/#/)
 [甜甜傻盖盖](https://blog.xyxiao.cn/#/)
 [鱼妹男朋友](https://blog.wanan.me/)
@@ -16,9 +17,20 @@
 - [x] [滑动窗口做流控的](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/computerNetworking/answers.md#传输层有个厉害协议叫tcp惹)
 - [x] [相关知识推荐书籍](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/computerNetworking/answers.md#推荐书籍)
 
+**objectOriented**
+- [ ] 问了new的时候做了什么处理
+- [ ] 继承
+- [ ] 原型链
+- [ ] 作用域链怎么构建的
+- [ ] null为什么是Object
+- [ ] 构造函数return字符串的话是返回什么为什么
+- [ ] this
+
+
+
+
 
 **stillNeedToTianKeng**
-- [ ] 问了new的时候做了什么处理
 - [ ] http请求的流程
 - [ ] 然后react和vue的差别
 - [ ] 然后webpack的优势
@@ -40,21 +52,16 @@
 - [ ] cookie怎么跟服务器通信的
 - [ ] 跨域
 
-- [ ] 继承
-- [ ] this
-- [ ] 原型链
+
 - [ ] 函数节流
 - [ ] 观察者模式
 - [ ] call apply
 - [ ] 闭包底层原理
-- [ ] new的过程不知道
-- [ ] 作用域链怎么构建的
-- [ ] null为什么是Object
+
 - [ ] 函数有哪几种执行方式
 - [ ] 函数有一个[[scope]]属性你知道吗
 - [ ] 箭头函数的this？什么是词法作用域
 - [ ] 严格模式下全局调用函数this指向什么
-- [ ] 构造函数return字符串的话是返回什么为什么
 
 - [ ] promise
 - [ ] generator
