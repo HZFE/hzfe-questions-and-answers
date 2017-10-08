@@ -27,8 +27,11 @@
 
 ## hzfe小奶库
 
+**types**
+- [ ] null为什么是Object
+
 **objectOriented**
-- [ ] [new的过程做了啥](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/objectOriented/new.md)
+- [x] [你知道new做了啥](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/objectOriented/new.md)
 - [x] [call apply](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/objectOriented/call_apply.md)
 
 **computerNetworking**
@@ -56,7 +59,6 @@
 - [ ] 观察者模式
 - [ ] 闭包底层原理
 - [ ] 作用域链怎么构建的
-- [ ] null为什么是Object
 - [ ] 函数有哪几种执行方式
 - [ ] 箭头函数的this？什么是词法作用域
 - [ ] 严格模式下全局调用函数this指向什么
