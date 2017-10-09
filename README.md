@@ -28,7 +28,7 @@
 ## hzfe小奶库
 
 **types**
-- [ ] null为什么是Object
+- [x] [为什么null是Object](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/types/null.md)
 
 **objectOriented**
 - [x] [你知道new做了啥](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/objectOriented/new.md)
@@ -40,6 +40,9 @@
 - [x] [三次握奶](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/computerNetworking/answers.md#传输层有个厉害协议叫tcp惹)
 - [x] [滑动窗口做流控的](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/computerNetworking/answers.md#传输层有个厉害协议叫tcp惹)
 - [x] [相关知识推荐书籍](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/computerNetworking/answers.md#推荐书籍)
+
+**PerformanceImprovement**
+- [ ] 函数节流
 
 **wowVue**
 - [x] [computed怎么实现的](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/wowVue/computed.md)
@@ -55,7 +58,6 @@
 - [ ] 继承
 - [ ] this
 - [ ] 原型链
-- [ ] 函数节流
 - [ ] 观察者模式
 - [ ] 闭包底层原理
 - [ ] 作用域链怎么构建的
