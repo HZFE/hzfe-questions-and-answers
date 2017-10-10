@@ -27,6 +27,10 @@
 
 ## hzfe小奶库
 
+**css**
+- [x] [问了重绘回流](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/cssRender/cssRender.md)
+- [x] [垂直居中的一百零八种方式xx](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/cssLayout/cssLayout.md)
+
 **types**
 - [x] [为什么null是Object](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/types/null.md)
 
@@ -101,8 +105,6 @@
 
 **assign amao**
 - [ ] css bfc
-- [ ] 问了重绘回流
-- [ ] 垂直居中的一百零八种方式xx
 
 **assign goodhome**
 - [ ] 跨域
