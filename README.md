@@ -30,6 +30,7 @@
 **css**
 - [x] [问了重绘回流](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/css/reflow_repain.md)
 - [x] [垂直居中的一百零八种方式xx](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/css/verticalAlign.md)
+- [x] [css bfc](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/css/cssBFC.md)
 
 **types**
 - [x] [为什么null是Object](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/types/null.md)
@@ -102,9 +103,6 @@
 - [ ] webpack和rollup做比较
 - [ ] 登陆时的用户校验
 - [ ] gulp webpack有什么区别
-
-**assign amao**
-- [ ] css bfc
 
 **assign goodhome**
 - [ ] 跨域
