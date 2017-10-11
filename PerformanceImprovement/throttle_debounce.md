@@ -23,38 +23,43 @@ window.onresize = function () { debounce(test1) }
 
 ## underscore - debounce
 ```javascript
-// Returns a function, that, as long as it continues to be invoked, will not be triggered.
-// The function will be called after it stops being called for N milliseconds.
-// If `immediate` is passed, trigger the function on the leading edge, instead of the trailing.
+// Returns a function, that, as long as it continues to be invoked, will not
+// be triggered. The function will be called after it stops being called for
+// N milliseconds. If `immediate` is passed, trigger the function on the
+// leading edge, instead of the trailing.
 _.debounce = function(func, wait, immediate) {
-  var timeout, result
+  var timeout, result;
 
   var later = function(context, args) {
-    timeout = null
-    if (args) result = func.apply(context, args)
-  }
+    timeout = null;
+    if (args) result = func.apply(context, args);
+  };
 
-  // restArgs: Similar to ES6's rest param
   var debounced = restArgs(function(args) {
-    if (timeout) clearTimeout(timeout)
+    // 如果已有定时器 则清除
+    if (timeout) clearTimeout(timeout);
     if (immediate) {
-      var callNow = !timeout
-      timeout = setTimeout(later, wait)
-      if (callNow) result = func.apply(this, args)
+      var callNow = !timeout;
+      // 此处的回调函数later不会被执行进func的apply方法，因为没有args
+      // immediate为真的情况下 仅在wait秒内，反复调用的第一次触发一个func
+      // 之后在wait毫秒以内再次进入此处时，timeout已存在，later函数就用于重新记录新的定时器
+      timeout = setTimeout(later, wait);
+      // timeout为null 对func的第一次调用
+      if (callNow) result = func.apply(this, args);
     } else {
-      timeout = _.delay(later, wait, this, args)
+      timeout = _.delay(later, wait, this, args);
     }
 
-    return result
-  })
+    return result;
+  });
 
   debounced.cancel = function() {
-    clearTimeout(timeout)
-    timeout = null
-  }
+    clearTimeout(timeout);
+    timeout = null;
+  };
 
-  return debounced
-}
+  return debounced;
+};
 ```
 
 ## difference between throttling and debouncing
