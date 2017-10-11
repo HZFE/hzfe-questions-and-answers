@@ -17,20 +17,21 @@
 <a href="https://github.com/uztg"><img src="https://avatars1.githubusercontent.com/u/17242380?v=4&s=400" width="100" height="100" /></a>
 
 ## hzfe母牛Blog大全
-[百科全树的](https://code.geeku.net/#/)
-[傻盖盖](https://blog.xyxiao.cn/#/)
-[鱼妹男朋友](https://blog.wanan.me/)
+
+[百科全树](https://code.geeku.net/)
+[盖盖](https://blog.xyxiao.cn/)
+[小鱼](https://blog.wanan.me/)
 [爆栈](https://is.daryl.moe/)
 [叶苗](https://nightcat.win/)
-[清真链接挂掉的](http://zhaoyuxiang.cn)
-[兔哥链接挂掉的](http://noder.club/)
+[兔哥](http://noder.club/)
+[丹丹](http://www.funnycoder.cn)
 
 ## hzfe小奶库
 
 **css**
-- [x] [问了重绘回流](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/css/reflow_repain.md)
+- [x] [重绘回流](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/css/reflow_repain.md)
 - [x] [垂直居中的一百零八种方式xx](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/css/verticalAlign.md)
-- [x] [css bfc](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/css/cssBFC.md)
+- [x] [bfc](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/css/cssBFC.md)
 
 **types**
 - [x] [为什么null是Object](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/types/null.md)
@@ -47,7 +48,7 @@
 - [x] [相关知识推荐书籍](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/computerNetworking/answers.md#推荐书籍)
 
 **PerformanceImprovement**
-- [ ] 函数节流
+- [ ] 函数节流和去抖（未完）
 
 **wowVue**
 - [x] [computed怎么实现的](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/wowVue/computed.md)
@@ -78,6 +79,16 @@
 - [ ] ng会么
 - [ ] 然后问我技术选型，这么多框架
 - [ ] 怎么按顺序执行异步
+- [ ] 原生Ajax流程
+- [ ] bom dom
+- [ ] 为什么要用事件委托呢
+- [ ] 事件委托哪些事件不冒泡
+- [ ] jq除了操作dom还能干嘛
+- [ ] jq对于不冒泡的事件是怎么处理的
+- [ ] 怎么检验链表是闭合的
+- [ ] express静态资源中间件
+- [ ] 你还会数据库啊~
+- [ ] 函数有一个[[scope]]属性你知道吗
 
 **assign daryl**
 - [ ] http请求的流程
@@ -108,15 +119,3 @@
 - [ ] 跨域
 - [ ] get post区别
 - [ ] doctype是干嘛的
-
-**assign oyh**
-- [ ] 原生Ajax流程
-- [ ] bom dom
-- [ ] 为什么要用事件委托呢
-- [ ] 事件委托哪些事件不冒泡
-- [ ] jq除了操作dom还能干嘛
-- [ ] jq对于不冒泡的事件是怎么处理的
-- [ ] 怎么检验链表是闭合的
-- [ ] express静态资源中间件
-- [ ] 你还会数据库啊~
-- [ ] 函数有一个[[scope]]属性你知道吗
