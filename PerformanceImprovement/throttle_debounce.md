@@ -21,12 +21,11 @@ function test1 () { console.log('yo, hzfe') }
 window.onresize = function () { debounce(test1) }
 ```
 
-## underscore - debounce
+## underscore - debounce 源码分析
 ```javascript
-// Returns a function, that, as long as it continues to be invoked, will not
-// be triggered. The function will be called after it stops being called for
-// N milliseconds. If `immediate` is passed, trigger the function on the
-// leading edge, instead of the trailing.
+// Returns a function, that, as long as it continues to be invoked, will not be triggered.
+// The function will be called after it stops being called for N milliseconds.
+// If `immediate` is passed, trigger the function on the leading edge, instead of the trailing.
 _.debounce = function(func, wait, immediate) {
   var timeout, result;
 
@@ -73,4 +72,5 @@ As in "execute this function only if 100 milliseconds have passed without it bei
 
 ## 学习资料
 [The Difference Between Throttling and Debouncing](https://css-tricks.com/the-difference-between-throttling-and-debouncing/)
+
 [JavaScript 函数节流和函数去抖应用场景辨析](https://github.com/hanzichi/underscore-analysis/issues/20)
