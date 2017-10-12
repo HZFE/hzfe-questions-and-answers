@@ -49,7 +49,7 @@ div {
 
 ### 绝对定位（父级position: relative）
 
-__method1（need't height and width）__
+__method1（div => width:200px, height: 100px）__
 
 ``` css
 /*  or inline-block  */
