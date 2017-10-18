@@ -48,7 +48,7 @@
 - [x] [相关知识推荐书籍](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/computerNetworking/answers.md#推荐书籍)
 
 **PerformanceImprovement**
-- [ ] 函数节流和去抖（未完）
+- [x] [函数节流和去抖](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/PerformanceImprovement/throttle_debounce.md)
 
 **wowVue**
 - [x] [computed怎么实现的](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/wowVue/computed.md)
@@ -89,6 +89,10 @@
 - [ ] express静态资源中间件
 - [ ] 你还会数据库啊~
 - [ ] 函数有一个[[scope]]属性你知道吗
+- [ ] jq 的缺点和优点
+- [ ] jq 和后来的框架各解决了什么问题
+- [ ] 浏览器线程，js 的异步是怎么实现的
+- [ ] node 的 eventEmitter
 
 **assign daryl**
 - [ ] http请求的流程
@@ -100,6 +104,7 @@
 
 **assign yiiu**
 - [ ] 然后react和vue的差别
+- [ ] vuex 和redux 异同
 - [ ] 组件通信问题
 - [ ] react一些数据变化导致会让组件所有的全部渲染，用什么来解决
 - [ ] ssr原理
@@ -119,3 +124,6 @@
 - [ ] 跨域
 - [ ] get post区别
 - [ ] doctype是干嘛的
+
+**老生常谈**
+- [ ] 技术方面，你遇到那些困难点，以及怎么解决的？未来怎么避免？
