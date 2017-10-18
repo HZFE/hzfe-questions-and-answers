@@ -157,4 +157,10 @@ As in "execute this function only if 100 milliseconds have passed without it bei
 ## 学习资料
 [The Difference Between Throttling and Debouncing](https://css-tricks.com/the-difference-between-throttling-and-debouncing/)
 
+[Debouncing and Throttling Explained Through Examples](https://css-tricks.com/debouncing-throttling-explained-examples/)
+
 [JavaScript 函数节流和函数去抖应用场景辨析](https://github.com/hanzichi/underscore-analysis/issues/20)
+
+[underscore 函数去抖的实现](https://github.com/hanzichi/underscore-analysis/issues/21)
+
+[underscore 函数节流的实现](https://github.com/hanzichi/underscore-analysis/issues/22)
