@@ -93,6 +93,11 @@
 - [ ] jq 和后来的框架各解决了什么问题
 - [ ] 浏览器线程，js 的异步是怎么实现的
 - [ ] node 的 eventEmitter
+- [ ] 介绍下v8的新特性。
+- [ ] 怎么看待framework 
+- [ ] 二叉树的中序遍历
+- [ ] 如何在不红杏的情况下 优化外国官网
+- [ ] critical path
 
 **assign daryl**
 - [ ] http请求的流程
