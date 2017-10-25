@@ -47,7 +47,7 @@
 
 **function**
 - [ ] 闭包底层原理
-- [ ] 函数有哪几种执行方式
+- [ ] [函数有哪几种执行方式](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/function/functionInvocation)
 - [ ] 函数有一个[[scope]]属性你知道吗
 
 **executionContext**
