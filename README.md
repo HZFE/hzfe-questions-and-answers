@@ -67,7 +67,7 @@
 - [ ] 事件委托哪些事件不冒泡
 
 **Ajax**
-- [ ] 原生Ajax流程
+- [x] [原生Ajax流程](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/ajax/XMLHttpRequest.md)
 - [ ] 跨域
 - [ ] get post区别
 
