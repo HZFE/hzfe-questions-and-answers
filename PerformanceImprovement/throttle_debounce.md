@@ -61,6 +61,90 @@ _.debounce = function(func, wait, immediate) {
 };
 ```
 
+## Why Throttle
+简单的说，函数节流能使得连续的函数执行，变为固定时间段间断地执行。还是以 scroll 事件为例，如果不加以节流控制：轻轻滚动下窗口，控制台打印了 N 多个 hello world 字符串。如果 scroll 回调不是简单的打印字符串，而是涉及一些 DOM 操作，这样频繁的调用，低版本浏览器可能就会直接假死，我们希望回调可以间隔时间段触发。
+
+## How Throttle
+```javascript
+// 比如当 scroll 事件刚触发时，打印一个 hello world，然后设置个 1000ms 的定时器
+// 此后每次触发 scroll 事件触发回调，如果已经存在定时器，则回调不执行方法
+// 直到定时器触发，handler 被清除，然后重新设置定时器。
+
+Throttle = function (method, context) {
+  return function () {
+    if (method.tid) return
+    method.tid = setTimeout(function () {
+      method.call(context)
+      method.tid = null
+    }, 1000)
+  }
+}
+function test2 () { console.log('hello world') }
+window.onscroll = Throttle(test2)
+```
+
+## underscore - throttle 源码分析
+```javascript
+// Returns a function, that, when invoked, will only be triggered at most once during a given window of time.
+// Normally, the throttled function will run as much as it can,
+// without ever going more than once per `wait` duration;
+// but if you'd like to disable the execution on the leading edge, pass `{leading: false}`.
+// To disable execution on the trailing edge, ditto.
+_.throttle = function(func, wait, options) {
+  var timeout, context, args, result;
+  var previous = 0;
+  if (!options) options = {};
+
+  var later = function() {
+    previous = options.leading === false ? 0 : _.now();
+    timeout = null;
+    result = func.apply(context, args);
+    if (!timeout) context = args = null;
+  };
+
+  var throttled = function() {
+    var now = _.now();
+
+    // 首次触发时 若leading=false 则previous为当前时间戳
+    // 目的是让remaining为wait毫秒，不会立即触发func
+    if (!previous && options.leading === false) previous = now;
+
+    var remaining = wait - (now - previous);
+    context = this;
+    args = arguments;
+
+    // 如果remaining <= 0 或者 remaining > wait（表示客户端系统时间被调整过）时
+    // 1.如果存在定时器，把定时器清除 + 重置id
+    // 2.立即执行func，并将这次触发throttled方法的时间戳保存
+    // 3.如果不存在定时器，把上下文 + 参数列表重置
+    if (remaining <= 0 || remaining > wait) {
+      if (timeout) {
+        clearTimeout(timeout);
+        timeout = null;
+      }
+      previous = now;
+      result = func.apply(context, args);
+      if (!timeout) context = args = null;
+    }
+
+    // 不存在定时器 且未指定 options.trailing = false
+    // 1.则在remaining毫秒后执行later
+    else if (!timeout && options.trailing !== false) {
+      timeout = setTimeout(later, remaining);
+    }
+    return result;
+  };
+
+  throttled.cancel = function() {
+    clearTimeout(timeout);
+    previous = 0;
+    timeout = context = args = null;
+  };
+
+  return throttled;
+};
+```
+
 ## difference between throttling and debouncing
 ```javascript
 Throttling enforces a maximum number of times a function can be called over time.
@@ -73,4 +157,10 @@ As in "execute this function only if 100 milliseconds have passed without it bei
 ## 学习资料
 [The Difference Between Throttling and Debouncing](https://css-tricks.com/the-difference-between-throttling-and-debouncing/)
 
+[Debouncing and Throttling Explained Through Examples](https://css-tricks.com/debouncing-throttling-explained-examples/)
+
 [JavaScript 函数节流和函数去抖应用场景辨析](https://github.com/hanzichi/underscore-analysis/issues/20)
+
+[underscore 函数去抖的实现](https://github.com/hanzichi/underscore-analysis/issues/21)
+
+[underscore 函数节流的实现](https://github.com/hanzichi/underscore-analysis/issues/22)
