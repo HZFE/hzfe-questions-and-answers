@@ -89,6 +89,9 @@
 **RegExp**
 - [ ] 邮箱正则
 
+**es6**
+- [ ] [promise-未完](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/es6/promise.md)
+
 **wowJQuery**
 - [ ] jq除了操作dom还能干嘛
 - [ ] jq对于不冒泡的事件是怎么处理的
@@ -128,7 +131,6 @@
 - [ ] doctype是干嘛的
 - [ ] ssr原理
 - [ ] 观察者模式
-- [ ] promise
 - [ ] generator
 - [ ] 什么是迭代器？
 - [ ] 你对symbol有什么了解
