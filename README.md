@@ -1,6 +1,32 @@
-本repo基于HZFE 奶库进行修改和增删，原 repo 请戳[这里](https://github.com/Akiq2016/hzfe-questions-and-answers)
+## hzfe母牛GitHub大全
+<a href="https://github.com/LLawlight"><img src="https://avatars0.githubusercontent.com/u/17525377?v=4&s=400" width="100" height="100" /></a>
+<a href="https://github.com/Yiiu"><img src="https://avatars3.githubusercontent.com/u/7876498?v=4&s=400" width="100" height="100" /></a>
+<a href="https://github.com/merrynode"><img src="https://avatars1.githubusercontent.com/u/14918579?v=4&s=400" width="100" height="100" /></a>
+<a href="https://github.com/volvo18a"><img src="https://avatars2.githubusercontent.com/u/19522954?v=4&s=400" width="100" height="100" /></a>
+<a href="https://github.com/hellodigua"><img src="https://avatars1.githubusercontent.com/u/9943164?v=4&s=400" width="100" height="100" /></a>
+<a href="https://github.com/Daryl-L"><img src="https://avatars0.githubusercontent.com/u/5457564?v=4&s=400" width="100" height="100" /></a>
+<a href="https://github.com/icemirror"><img src="https://avatars2.githubusercontent.com/u/14882452?v=4&s=400" width="100" height="100" /></a>
+<a href="https://github.com/xyxiao001"><img src="https://avatars3.githubusercontent.com/u/15681693?v=4&s=400" width="100" height="100" /></a>
+<a href="https://github.com/xiaokk06"><img src="https://avatars2.githubusercontent.com/u/12165373?v=4&s=400" width="100" height="100" /></a>
+<a href="https://github.com/yinmazuo"><img src="https://avatars1.githubusercontent.com/u/9531951?v=4&s=400" width="100" height="100" /></a>
+<a href="https://github.com/Reusjs"><img src="https://avatars3.githubusercontent.com/u/19499958?v=4&s=400" width="100" height="100" /></a>
+<a href="https://github.com/Akiq2016"><img src="https://avatars2.githubusercontent.com/u/17002181?v=4&s=400" width="100" height="100" /></a>
+<a href="https://github.com/gongpeione"><img src="https://avatars3.githubusercontent.com/u/3984824?v=4&s=400" width="100" height="100" /></a>
+<a href="https://github.com/NightCatSama"><img src="https://avatars0.githubusercontent.com/u/13888962?v=4&s=400" width="100" height="100" /></a>
+<a href="https://github.com/Taomiaoer"><img src="https://avatars3.githubusercontent.com/u/17794232?v=4&s=400" width="100" height="100" /></a>
+<a href="https://github.com/uztg"><img src="https://avatars1.githubusercontent.com/u/17242380?v=4&s=400" width="100" height="100" /></a>
 
-## HZFE 奶库系列文章
+## hzfe母牛Blog大全
+
+[百科全树](https://code.geeku.net/)
+[盖盖](https://blog.xyxiao.cn/)
+[小鱼](https://blog.wanan.me/)
+[爆栈](https://is.daryl.moe/)
+[叶苗](https://nightcat.win/)
+[兔哥](http://noder.club/)
+[丹丹](http://www.funnycoder.cn)
+
+## hzfe小奶库
 
 **css**
 - [x] [垂直居中的一百零八种方式xx](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/css/verticalAlign.md)
@@ -85,6 +111,7 @@
 - [ ] 好像问了个10w的数据量用什么排序算法好
 - [ ] 盖：随便写10个排序吧 列出时间复杂度 和 在那个场景应该使用哪个
 - [ ] 二叉树的中序遍历
+- [ ] [无向图的深度优先搜索和广度优先搜索](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/algorithm/graphs.md)
 
 **tools**
 - [ ] 然后webpack的优势
@@ -114,33 +141,3 @@
 - [ ] node 的 eventEmitter
 - [ ] 如何在不红杏的情况下 优化外国官网
 - [ ] critical path
-
-**assign daryl**
-- [ ] http请求的流程
-- [ ] 从地址栏输入网址到显示页面全过程
-- [ ] http缓存机制(过期策略 cache-control etag那些)
-- [ ] 网络服务质量
-- [ ] http状态码
-- [ ] cookie怎么跟服务器通信的
-
-**assign yiiu**
-- [ ] 然后react和vue的差别
-- [ ] 组件通信问题
-- [ ] react一些数据变化导致会让组件所有的全部渲染，用什么来解决
-- [ ] ssr原理
-- [ ] 如何实现vmodel
-- [ ] 双向绑定怎么实现的
-- [ ] 外的双向绑定实现原理
-- [ ] 用原生和vue有什么不一样的地方
-- [ ] 组件中对数据的操作和vuex有什么不一样的
-
-**assign geeku**
-- [ ] 然后webpack的优势
-- [ ] webpack和rollup做比较
-- [ ] 登陆时的用户校验
-- [ ] gulp webpack有什么区别
-
-**assign goodhome**
-- [ ] 跨域
-- [ ] get post区别
-- [ ] doctype是干嘛的
