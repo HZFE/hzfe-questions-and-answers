@@ -91,7 +91,7 @@
 - [ ] 邮箱正则
 
 **es6**
-- [ ] [promise-未完](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/es6/promise.md)
+- [x] [promise-未完](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/es6/promise.md)
 
 **wowJQuery**
 - [ ] jq除了操作dom还能干嘛

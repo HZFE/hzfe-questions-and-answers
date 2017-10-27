@@ -193,7 +193,24 @@ goodMain(function(){
 
 这个类库除了兼容 Promise 规范之外，还扩展了取消promise对象的运行，取得promise的运行进度，以及错误处理的扩展检测等非常丰富的功能，此外它在实现上还在性能问题下了很大的功夫。
 
+## bluebird 与 原生promise(不负责的瞎翻译部分)
+ECMA-262中的Native Promise只提供了resolve, reject, all, race, then, catch，实现了Promises/A+ specifications的基本需求。而bluebird添加了很多其他有用的features，实现了Promise/A+。
+
+V8 Promise是用JavaScript而不是用C实现的。所有的JavaScript都会被编译成native code。开发者写的JavaScript代码如果有需要，都会在编译成native code前被优化。用C实现Promise没什么好处，事实上他会导致你的代码更慢，因为你正在做的是操纵JavaScript对象和通信。
+
+V8对promise的实现并没有bluebird的性能好，V8中promise实例分配arrays来管理promise的handlers。当每个promise都需要分配若干arrays时就占用了大量的内存。而事实上99.99%的使用情况中永远都不会branch一个promise超过一次，因此对这种常用情况的优化能获得巨大的性能提升。
+
+即使V8对promise的实现能做出和bluebird相同的优化，他仍然会受到规范的阻碍：原生的标准是使用new Promise(而在bluebird中这属于anti-pattern)，这种创建方式及其慢：首先执行器函数分配一个闭包，然后它被传递2个单独的闭包作为参数。也就是说一个promise被分配了3个闭包，然而1个闭包已经比优化的promise昂贵许多了。
+
+Bluebird可以使用promisify，可以进行大量的优化，并且是一种更便捷的消费回调API的方法，它可以将promise所依赖的模块转换成一行的写法：promisifyAll(require('redis')))。
+
 ## 学习资料
 [Promise 对象](http://es6.ruanyifeng.com/#docs/promise)
 
 [JavaScript Promise迷你书（中文版）](http://liubin.org/promises-book/)
+
+[Why are native ES6 promises slower and more memory-intensive than bluebird?](https://softwareengineering.stackexchange.com/questions/278778/why-are-native-es6-promises-slower-and-more-memory-intensive-than-bluebird)
+
+[Native Javascript Promises vs Bluebird](https://pub.clevertech.biz/native-javascript-promises-vs-bluebird-9e58611be22)
+
+[Are there still reasons to use promise libraries like Q or BlueBird now that we have ES6 promises?](https://stackoverflow.com/questions/34960886/are-there-still-reasons-to-use-promise-libraries-like-q-or-bluebird-now-that-we)
