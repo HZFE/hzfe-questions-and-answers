@@ -38,6 +38,91 @@ null(JSVAL_NULL)代表的是空指针(大多数平台下值为0x00)，因此，n
 这是一个非常显而易见的bug，甚至很低级，但是我们不要忘了，第一版的JavaScript是一个人在十天内写出来的。
 ```
 
+让我们从 SpiderMonkey 的源码中看看具体实现吧。
+
+```c
+//jstypes.h
+#define JS_BIT(n)       ((JSUint32)1 << (n))
+#define JS_BITMASK(n)   (JS_BIT(n) - 1)
+```
+
+```c
+// jsapi.h
+#define JSVAL_OBJECT            0x0     /* untagged reference to object */
+#define JSVAL_TAGBITS           3
+#define JSVAL_TAGMASK           JS_BITMASK(JSVAL_TAGBITS) // ((JSUint32)1 << (3)) - 1
+#define JSVAL_TAG(v)            ((v) & JSVAL_TAGMASK)
+#define JSVAL_IS_OBJECT(v)      (JSVAL_TAG(v) == JSVAL_OBJECT)
+
+#define OBJECT_TO_JSVAL(obj)    ((jsval)(obj))
+#define JSVAL_NULL              OBJECT_TO_JSVAL(0)
+```
+
+```javascript
+// jsapi.c
+JS_PUBLIC_API(JSType)
+JS_TypeOfValue(JSContext *cx, jsval v)
+{
+    JSType type;
+    JSObject *obj;
+    JSObjectOps *ops;
+    JSClass *clasp;
+
+    CHECK_REQUEST(cx);
+    if (JSVAL_IS_OBJECT(v)) {
+        type = JSTYPE_OBJECT;           /* XXXbe JSTYPE_NULL for JS2 */
+        obj = JSVAL_TO_OBJECT(v);
+        if (obj) {
+            ops = obj->map->ops;
+#if JS_HAS_XML_SUPPORT
+            if (ops == &js_XMLObjectOps.base) {
+                type = JSTYPE_XML;
+            } else
+#endif
+            {
+                /*
+                 * ECMA 262, 11.4.3 says that any native object that implements
+                 * [[Call]] should be of type "function". Note that RegExp and
+                 * Script are both of type "function" for compatibility with
+                 * older SpiderMonkeys.
+                 */
+                clasp = OBJ_GET_CLASS(cx, obj);
+                if ((ops == &js_ObjectOps)
+                    ? (clasp->call
+                       ? (clasp == &js_RegExpClass || clasp == &js_ScriptClass)
+                       : clasp == &js_FunctionClass)
+                    : ops->call != NULL) {
+                    type = JSTYPE_FUNCTION;
+                } else {
+#ifdef NARCISSUS
+                    if (!OBJ_GET_PROPERTY(cx, obj,
+                                          ATOM_TO_JSID(cx->runtime->atomState
+                                                       .callAtom),
+                                          &v)) {
+                        JS_ClearPendingException(cx);
+                    } else if (VALUE_IS_FUNCTION(cx, v)) {
+                        type = JSTYPE_FUNCTION;
+                    }
+#endif
+                }
+            }
+        }
+    } else if (JSVAL_IS_NUMBER(v)) {
+        type = JSTYPE_NUMBER;
+    } else if (JSVAL_IS_STRING(v)) {
+        type = JSTYPE_STRING;
+    } else if (JSVAL_IS_BOOLEAN(v)) {
+        type = JSTYPE_BOOLEAN;
+    } else {
+        type = JSTYPE_VOID;
+    }
+    return type;
+}
+```
+
+从上面的源码我们可以知道，判断值是否为 `Object` 用到的函数是 `JSVAL_IS_OBJECT(v)`，而 `JSVAL_IS_OBJECT(v)` 的宏定义可以在 `jsapi.h` 中找到，`JSVAL_IS_OBJECT(v)` 实际上是等于 `JSVAL_TAG(v) == JSVAL_OBJECT` 的，一步步向上查找，最终我们可以发现
+ `JSVAL_IS_OBJECT(null)` 实际上执行的操作是 **`(null & ((JSUint32)1 << (3)) - 1) == 0x0`**，而null的值为 0，显然左右这两个值是相等的，那么当然 typeof null 就等于 Object 了。
+
 ## 学习资料
 [为什么"typeof null"是'object'](https://zui.su/typeof_null/)
 
