@@ -65,7 +65,7 @@
 - [ ] 构造函数return字符串的话是返回什么为什么
 
 **event**
-- [ ] 事件委托哪些事件不冒泡
+- [x] [事件委托哪些事件不冒泡](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/event/noBubbles.md)
 
 **Ajax**
 - [x] [原生Ajax流程](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/ajax/XMLHttpRequest.md)
@@ -91,7 +91,7 @@
 - [ ] 邮箱正则
 
 **es6**
-- [x] [promise-未完](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/es6/promise.md)
+- [x] [promise](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/es6/promise.md)
 
 **wowJQuery**
 - [ ] jq除了操作dom还能干嘛
@@ -144,3 +144,57 @@
 - [ ] node 的 eventEmitter
 - [ ] 如何在不红杏的情况下 优化外国官网
 - [ ] critical path
+
+## AlloyTeam conf 2017面试方面 总结
+
+### 前端基础
+
+#### HTML
+- [ ] 常用meta头
+- [ ] 语义化
+- [ ] HTML5新增功能
+- [ ] HTML渲染解析知识
+
+#### CSS
+- [ ] 可读规范的CSS代码
+- [ ] 盒模型
+- [ ] CSS3特性：动画、弹性布局
+
+#### JavaScript
+- [ ] 事件模型
+- [ ] 闭包和内存泄露
+- [ ] 原型链
+- [ ] 渲染树、重排重绘、分层渲染等（进阶）
+
+#### 调试
+- [ ] 如何抓包
+- [ ] 如何debug程序问题
+- [ ] 如何做移动端调试
+- [ ] 如何发现页面问题
+
+#### HTTP
+- [ ] 常见HTTP状态码
+- [ ] 不同请求类型的区别
+- [ ] 如何缓存
+- [ ] HTTP2
+
+#### 移动Web开发
+- [ ] 移动Web开发和PC Web开发的区别
+- [ ] 响应式布局
+- [ ] 移动端的手势和事件
+- [ ] 怎么提高移动页面的渲染性能
+
+#### 综合知识考察
+- [ ] 用户从输入url到最终页面展示，这个过程中发生了什么
+- [ ] 老板反馈页面打开白屏，而你手机上是正常的，怎么办
+- [ ] 我页面上有个动画一卡一卡的性能不行，怎么优化
+
+### 前端延伸知识点
+- [ ] 性能优化
+- [ ] NodeJs
+- [ ] 构建
+- [ ] 热门框架
+- [ ] Web安全
+- [ ] 图形动画
+- [ ] Web游戏
+- [ ] RN
