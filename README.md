@@ -89,7 +89,7 @@
 - [ ] 为什么要用事件委托呢
 
 **RegExp**
-- [ ] 邮箱正则
+- [ ] [邮箱正则](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/regexp/email.md)
 
 **es6**
 - [x] [promise](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/es6/promise.md)
