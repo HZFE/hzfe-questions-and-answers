@@ -86,7 +86,7 @@
 
 **performance-improvement**
 - [x] [函数节流和去抖](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/performance-improvement/throttle_debounce.md)
-- [ ] 为什么要用事件委托呢
+- [x] [为什么要用事件委托呢](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/performance-improvement/event-delegation.md)
 
 **RegExp**
 - [x] [邮箱正则](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/regexp/email.md)
