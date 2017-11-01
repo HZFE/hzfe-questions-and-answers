@@ -33,6 +33,7 @@
 **CSS**
 - [x] [垂直居中的一百零八种方式xx](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/css/verticalAlign.md)
 - [x] [重绘回流](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/css/reflow_repain.md)
+- [ ] 怎么查看一个页面的回流和重绘
 - [x] [bfc](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/css/cssBFC.md)
 
 **DOM**
@@ -51,27 +52,41 @@
 - [ ] 闭包底层原理
 - [ ] [函数有哪几种执行方式](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/function/functionInvocation)
 - [ ] 函数有一个[[scope]]属性你知道吗
+- [ ] 实现remove函数，删除object的属性
+- [ ] js实现map函数
+- [ ] 实现一个compose(arr)({index:0}}) var arr=[fn1,fn2,fn3]; function fn1(index,next){a.index++;next()}... 返回value和next,next()表示调用下一个函数 https://segmentfault.com/a/1190000008394749
 
 **execution-context**
 - [ ] this
 - [ ] 作用域链怎么构建的
 - [ ] 箭头函数的this？什么是词法作用域
 - [ ] 严格模式下全局调用函数this指向什么
+- [ ] 谈谈this指针的指向问题？
 
 **object-oriented**
 - [x] [你知道new做了啥](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/object-oriented/new.md)
 - [x] [call apply](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/object-oriented/call_apply.md)
 - [ ] 继承
-- [ ] 原型链
+- [ ] 原型链?手写原型链?proto指向
 - [ ] 构造函数return字符串的话是返回什么为什么
+- [ ] eval是做什么用的，有什么安全问题
+- [ ] new关键字和不new有什么区别？
 
 **event**
 - [x] [事件委托哪些事件不冒泡](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/event/noBubbles.md)
+- [ ] 怎么实现拖拽？
 
 **Ajax**
 - [x] [原生Ajax流程](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/ajax/XMLHttpRequest.md)
 - [ ] 跨域
 - [ ] get post区别
+- [ ] 为什么存在跨域这个问题？为什么要有同源策略？同源策略是什么？如果没有会有什么问题？
+- [ ] 讲讲jsonp跨域、还有其他跨域方法吗？
+- [ ] ajax优点和缺点
+
+**data-storage**
+- [ ] cookie和session的区别
+- [ ] cookie优点和缺点
 
 **computer-networking**
 - [x] [他本来想问我tcp](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/computer-networking/answers.md#传输层有个厉害协议叫tcp惹)
@@ -83,6 +98,9 @@
 - [ ] 网络服务质量
 - [ ] http状态码
 - [ ] cookie怎么跟服务器通信的
+- [ ] https的过程？https将什么加密了？
+- [ ] http协议清楚吗？
+- [ ] 断点续传
 
 **performance-improvement**
 - [x] [函数节流和去抖](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/performance-improvement/throttle_debounce.md)
@@ -93,12 +111,25 @@
 
 **es6**
 - [x] [promise](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/es6/promise.md)
+- [x] es6箭头函数和普通函数的区别
+- [ ] js引擎怎么实现Class关键字
 
 **wow-JQuery**
 - [ ] jq除了操作dom还能干嘛
 - [ ] jq对于不冒泡的事件是怎么处理的
 - [ ] jq 的缺点和优点
 - [ ] jq 和后来的框架各解决了什么问题
+
+**framework**
+- [ ] 然后react和vue的差别
+- [ ] vuex 和redux 异同
+- [ ] vue和angular的区别
+- [ ] angular1和angular2的区别
+
+**wow-Angular**
+- [ ] angular的核心讲讲
+- [ ] AOT预编译和JIT预编译
+- [ ] angular的数据绑定怎么实现
 
 **wow-Vue**
 - [x] [computed怎么实现的](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/wow-vue/computed.md)
@@ -108,8 +139,6 @@
 - [ ] 组件中对数据的操作和vuex有什么不一样的
 
 **wow-React**
-- [ ] 然后react和vue的差别
-- [ ] vuex 和redux 异同
 - [ ] react一些数据变化导致会让组件所有的全部渲染，用什么来解决
 
 **Algorithm**
@@ -117,12 +146,14 @@
 - [ ] 盖：随便写10个排序吧 列出时间复杂度 和 在那个场景应该使用哪个
 - [ ] 二叉树的中序遍历
 - [x] [无向图的深度优先搜索和广度优先搜索](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/algorithm/graphs.md)
+- [ ] 怎么找出连续子数组的最大和（如果和为负数，则重新开始，如果和为正数，则继续加，然后比较大小，选出最大和即可。）
 
 **tools**
 - [ ] 然后webpack的优势
 - [ ] webpack和rollup做比较
 - [ ] 登陆时的用户校验
 - [ ] gulp webpack有什么区别
+- [ ] wepack配置？babel配置？es6转es5工具有哪些
 
 **老生常谈**
 - [ ] 技术方面，你遇到那些困难点，以及怎么解决的？未来怎么避免？
@@ -145,6 +176,16 @@
 - [ ] node 的 eventEmitter
 - [ ] 如何在不红杏的情况下 优化外国官网
 - [ ] critical path
+- [ ] mock数据 怎么生成
+- [ ] 移动端点击300ms的延迟？？
+- [ ] 用过哪些预处理器，scss？那scss有存在什么缺点吗？
+- [ ] js底层怎么实现的知道吗？
+- [ ] 数据库表怎么设计？
+- [ ] hybrid了解吗？与native通信这块了解吗
+- [ ] 运营商劫持？
+- [ ] c语言怎么实现字符串转整型
+- [ ] 服务器具有什么功能
+- [ ] 数据结构会吗
 
 ## Alloyteam Conf 2017面试方面 总结
 
