@@ -1,14 +1,14 @@
 # CSS重绘与回流
 
 ## 浏览器渲染过程
-我们先来讨论一下浏览器在接收到`HTML`、`CSS`和`JavasSript`后，怎样把页面呈现在屏幕上的？
+我们先来讨论一下浏览器在接收到HTML、CSS和JavasSript后，怎样把页面呈现在屏幕上的？
 不同的浏览器的渲染过程存在些许不同，但大体的机制是一样的，下图展示了浏览器下载完所有代码后的大致工作流程：
 ![img](img/repaint_reflow_1.png)
 
-* ##### 首先，浏览器解析`HTML源码`并构建一个`DOM树`：在`DOM树`中，每个`HTML标签`都有相应的节点，并且在介于两个标签中间的文字块也对应一个`text节点`。`DOM树`的根节点是`documentElement`，也就是`<html>标签`；
-* ##### 然后，浏览器对`CSS代码`进行解析，一些当前浏览器不能识别的`CSS hack`写法（如`-webkit`前缀）将被忽略。`CSS样式`中包括浏览器默认样式（`user agent stylesheet`），用户自定义样式表（通过`<link> / import`引入的外部样式&行内样式）。最终样式会写入`HTML标签`的`style属性`中；
-* ##### 接着，构建`render树`。`render树`跟`DOM树`有点像但不完全一样。`render树`能识别样式。假如你用`display: none`隐藏一个`div`，这个标签不会在`render树`中出现。这个规则适用于其他不可视元素，比如`head标签`等；另外，一个`DOM元素`在`render树`中可以有多个节点，比如代表`p标签`的一个文本节点中的每一行文字，又有一个渲染节点。`render树`中的节点叫做`frame-结构体`/`box-盒子`，这些节点都有`CSS盒子属性`：`width`, `height`, `border`, `margin` 等等
-* ##### 最后，`render树`构建完毕，浏览器便开始将渲染节点绘制到屏幕上。
+* ##### 首先，浏览器解析HTML源码并构建一个DOM树：在DOM树中，每个HTML标签都有相应的节点，并且在介于两个标签中间的文字块也对应一个text节点。DOM树的根节点是documentElement，也就是<html>标签；
+* ##### 然后，浏览器对CSS代码进行解析，一些当前浏览器不能识别的CSS hack写法（如-webkit前缀）将被忽略。CSS样式中包括浏览器默认样式（user agent stylesheet），用户自定义样式表（通过<link> / import引入的外部样式&行内样式）。最终样式会写入HTML标签的style属性中；
+* ##### 接着，构建render树。render树跟DOM树有点像但不完全一样。render树能识别样式。假如你用display: none隐藏一个div，这个标签不会在render树中出现。这个规则适用于其他不可视元素，比如head标签等；另外，一个DOM元素在render树中可以有多个节点，比如代表p标签的一个文本节点中的每一行文字，又有一个渲染节点。render树中的节点叫做frame-结构体/box-盒子，这些节点都有CSS盒子属性：width, height, border, margin 等等
+* ##### 最后，render树构建完毕，浏览器便开始将渲染节点绘制到屏幕上。
 
 ## 森林和树
 ```html
@@ -32,7 +32,7 @@
 </body>
 </html>
 ```
-这个`HTML文档`对应的`DOM树`：每个标签对应一个节点，以及每个标签之间的文本也为一个节点。（实际上，空白区域也会被映射为一个`text节点`，为了简单说明，在此忽略）。因此`DOM树`：
+这个HTML文档对应的DOM树：每个标签对应一个节点，以及每个标签之间的文本也为一个节点。（实际上，空白区域也会被映射为一个text节点，为了简单说明，在此忽略）。因此DOM树：
 ```html
 documentElement (html)
   head
@@ -47,7 +47,7 @@ documentElement (html)
     div
       img
 ```
-`render树`包含了`DOM树`的可视部分。因此他丢掉了一些东西，比如头部`head标签`和`隐藏的div`，同时他也为文本块增加了节点（又称作`frames`，`boxs`）。因此`render树`：
+render树包含了DOM树的可视部分。因此他丢掉了一些东西，比如头部head标签和隐藏的div，同时他也为文本块增加了节点（又称作frames，boxs）。因此render树：
 ```javascipt
 root (RenderView)
   body
@@ -57,7 +57,7 @@ root (RenderView)
     div
       img
 ```
-渲染树的`root根节点`是一个包括了所有其他节点的结构体（盒子）。你可以将它理解为浏览器窗口的内部区域，毕竟页面被限制在这个区域内。从技术上，`WebKit`把`root节点`称为`RenderView`（渲染视图），他与`CSS初始包含块`相对应，从坐标`(0,0)`到`(window.innerWidth,window.innerHeight)`。
+渲染树的root根节点是一个包括了所有其他节点的结构体（盒子）。你可以将它理解为浏览器窗口的内部区域，毕竟页面被限制在这个区域内。从技术上，WebKit把root节点称为RenderView（渲染视图），他与CSS初始包含块相对应，从坐标(0,0)到(window.innerWidth,window.innerHeight)。
 
 接下来，我们将研究浏览器是如何通过循环遍历渲染树把页面展示到屏幕上的。
 
@@ -191,9 +191,17 @@ for(big; loop; here) {
 ```
 理解浏览器重绘以及回流的主要目的是为了优化性能。当你在打算改变样式时，首先考虑一下渲染树的机制，并且评估一下你的操作会引发多少刷新渲染树的行为。例如，浏览器认为 position 为 absolute 或 fixed 的元素更改只会影响其本身和子元素，而 static 的元素变化则会影响之后的所有元素，也就是说，一个绝对定位的节点是会脱离文档流，所以当对此节点应用动画时不会对其他节点产生很大影响，当绝对定位的节点置于其他节点上层时，其他节点只会触发重绘，而不会触发回流。
 
+## 怎样使用devtools查看回流和重绘
+
+[分析绘制](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/timeline-tool?hl=zh-cn#profile-painting)
+
+[渲染性能](https://developers.google.com/web/fundamentals/performance/rendering/?hl=zh-cn)
+
+[无线性能优化：Composite](http://taobaofed.org/blog/2016/04/25/performance-composite/)
+
+[GPU Accelerated Compositing in Chrome](http://www.chromium.org/developers/design-documents/gpu-accelerated-compositing-in-chrome)
+
 ## 学习资料
 [Rendering: repaint, reflow/relayout, restyle](https://www.phpied.com/rendering-repaint-reflowrelayout-restyle/) (以上内容97%翻译自此原文)
 
 [[翻译]浏览器渲染Rendering那些事](http://www.cnblogs.com/ihardcoder/p/3927709.html) (以上内容参考了此翻译文章，并修正了不准确的翻译或错误部分)
-
-[浏览器渲染机制与相应优化策略](https://segmentfault.com/a/1190000008758227)

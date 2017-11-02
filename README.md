@@ -32,8 +32,6 @@
 
 **CSS**
 - [x] [垂直居中的一百零八种方式xx](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/css/verticalAlign.md)
-- [x] [重绘回流](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/css/reflow_repain.md)
-- [ ] 怎么查看一个页面的回流和重绘
 - [x] [bfc](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/css/cssBFC.md)
 
 **DOM**
@@ -105,6 +103,7 @@
 **performance-improvement**
 - [x] [函数节流和去抖](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/performance-improvement/throttle_debounce.md)
 - [x] [为什么要用事件委托呢](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/performance-improvement/event-delegation.md)
+- [x] [重绘回流](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/performance-improvement/reflow_repain.md)
 
 **RegExp**
 - [x] [邮箱正则](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/regexp/email.md)
