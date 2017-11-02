@@ -139,7 +139,7 @@
 - [ ] 组件中对数据的操作和vuex有什么不一样的
 
 **wow-React**
-- [ ] react一些数据变化导致会让组件所有的全部渲染，用什么来解决
+- [x] [react一些数据变化导致会让组件所有的全部渲染，用什么来解决](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/react/shouldComponentUpdate.md)
 
 **Algorithm**
 - [ ] 好像问了个10w的数据量用什么排序算法好
