@@ -1,4 +1,6 @@
-## hzfe母牛GitHub大全
+## HZFE
+
+#### members
 
 <a href="https://github.com/LLawlight"><img src="https://avatars0.githubusercontent.com/u/17525377?v=4&s=400" width="50" height="50" /></a>
 <a href="https://github.com/Yiiu"><img src="https://avatars3.githubusercontent.com/u/7876498?v=4&s=400" width="50" height="50" /></a>
@@ -17,7 +19,7 @@
 <a href="https://github.com/Taomiaoer"><img src="https://avatars3.githubusercontent.com/u/17794232?v=4&s=400" width="50" height="50" /></a>
 <a href="https://github.com/uztg"><img src="https://avatars1.githubusercontent.com/u/17242380?v=4&s=400" width="50" height="50" /></a>
 
-## hzfe母牛Blog大全
+#### blogs
 
 [树树](https://code.geeku.net/)
 [盖盖](https://blog.xyxiao.cn/)
@@ -28,25 +30,22 @@
 [丹丹](http://www.funnycoder.cn)
 [清真](http://zhaoyuxiang.cn)
 
-## hzfe小奶库
+## hzfe questions and answers - 2017
 
-**CSS**
+#### CSS
 - [x] [垂直居中的一百零八种方式xx](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/css/verticalAlign.md)
 - [x] [bfc](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/css/cssBFC.md)
 
-**DOM**
-- [ ] dom
+#### DOMBOM
+- [x] [dom和bom](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/dombom/dom-bom.md)
 
-**BOM**
-- [ ] bom
-
-**Types**
+#### Types
 - [x] [为什么null是Object](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/types/null.md)
 
-**Array**
+#### Array
 - [ ] 数组去重
 
-**Function**
+#### Function
 - [ ] 闭包底层原理
 - [ ] [函数有哪几种执行方式](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/function/functionInvocation)
 - [ ] 函数有一个[[scope]]属性你知道吗
@@ -54,14 +53,14 @@
 - [ ] js实现map函数
 - [ ] 实现一个compose(arr)({index:0}}) var arr=[fn1,fn2,fn3]; function fn1(index,next){a.index++;next()}... 返回value和next,next()表示调用下一个函数 https://segmentfault.com/a/1190000008394749
 
-**execution-context**
+#### execution-context
 - [ ] this
 - [ ] 作用域链怎么构建的
 - [ ] 箭头函数的this？什么是词法作用域
 - [ ] 严格模式下全局调用函数this指向什么
 - [ ] 谈谈this指针的指向问题？
 
-**object-oriented**
+#### object-oriented
 - [x] [你知道new做了啥](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/object-oriented/new.md)
 - [x] [call apply](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/object-oriented/call_apply.md)
 - [ ] 继承
@@ -70,11 +69,11 @@
 - [ ] eval是做什么用的，有什么安全问题
 - [ ] new关键字和不new有什么区别？
 
-**event**
+#### event
 - [x] [事件委托哪些事件不冒泡](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/event/noBubbles.md)
 - [ ] 怎么实现拖拽？
 
-**Ajax**
+#### Ajax
 - [x] [原生Ajax流程](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/ajax/XMLHttpRequest.md)
 - [ ] 跨域
 - [ ] get post区别
@@ -82,11 +81,11 @@
 - [ ] 讲讲jsonp跨域、还有其他跨域方法吗？
 - [ ] ajax优点和缺点
 
-**data-storage**
+#### data-storage
 - [ ] cookie和session的区别
 - [ ] cookie优点和缺点
 
-**computer-networking**
+#### computer-networking
 - [x] [他本来想问我tcp](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/computer-networking/answers.md#传输层有个厉害协议叫tcp惹)
 - [x] [三次握奶](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/computer-networking/answers.md#传输层有个厉害协议叫tcp惹)
 - [x] [滑动窗口做流控的](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/computer-networking/answers.md#传输层有个厉害协议叫tcp惹)
@@ -100,67 +99,67 @@
 - [ ] http协议清楚吗？
 - [ ] 断点续传
 
-**performance-improvement**
+#### performance-improvement
 - [x] [函数节流和去抖](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/performance-improvement/throttle_debounce.md)
 - [x] [为什么要用事件委托呢](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/performance-improvement/event-delegation.md)
 - [x] [重绘回流](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/performance-improvement/reflow_repain.md)
 
-**RegExp**
+#### RegExp
 - [x] [邮箱正则](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/regexp/email.md)
 
-**es6**
+#### es6
 - [x] [promise](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/es6/promise.md)
 - [x] es6箭头函数和普通函数的区别
 - [ ] js引擎怎么实现Class关键字
 
-**wow-JQuery**
+#### wow-JQuery
 - [ ] jq除了操作dom还能干嘛
 - [ ] jq对于不冒泡的事件是怎么处理的
 - [ ] jq 的缺点和优点
 - [ ] jq 和后来的框架各解决了什么问题
 
-**framework**
+#### framework
 - [ ] 然后react和vue的差别
 - [ ] vuex 和redux 异同
 - [ ] vue和angular的区别
 - [ ] angular1和angular2的区别
 
-**wow-Angular**
+#### wow-Angular
 - [ ] angular的核心讲讲
 - [ ] AOT预编译和JIT预编译
 - [ ] angular的数据绑定怎么实现
 
-**wow-Vue**
+#### wow-Vue
 - [x] [computed怎么实现的](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/wow-vue/computed.md)
 - [ ] 组件通信问题
 - [ ] 双向绑定怎么实现的
 - [ ] 用原生和vue有什么不一样的地方
 - [ ] 组件中对数据的操作和vuex有什么不一样的
 
-**wow-React**
+#### wow-React
 - [x] [react一些数据变化导致会让组件所有的全部渲染，用什么来解决](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/react/shouldComponentUpdate.md)
 
-**Algorithm**
+#### Algorithm
 - [ ] 好像问了个10w的数据量用什么排序算法好
 - [ ] 盖：随便写10个排序吧 列出时间复杂度 和 在那个场景应该使用哪个
 - [ ] 二叉树的中序遍历
 - [x] [无向图的深度优先搜索和广度优先搜索](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/algorithm/graphs.md)
 - [ ] 怎么找出连续子数组的最大和（如果和为负数，则重新开始，如果和为正数，则继续加，然后比较大小，选出最大和即可。）
 
-**tools**
+#### tools
 - [ ] 然后webpack的优势
 - [ ] webpack和rollup做比较
 - [ ] 登陆时的用户校验
 - [ ] gulp webpack有什么区别
 - [ ] wepack配置？babel配置？es6转es5工具有哪些
 
-**老生常谈**
+#### 老生常谈
 - [ ] 技术方面，你遇到那些困难点，以及怎么解决的？未来怎么避免？
 - [ ] 然后问我技术选型，这么多框架
 - [ ] 怎么看待framework
 - [ ] 介绍下v8的新特性
 
-**未分类**
+#### 未分类
 - [ ] doctype是干嘛的
 - [ ] ssr原理
 - [ ] 观察者模式
