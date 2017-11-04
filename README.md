@@ -108,7 +108,7 @@
 #### es6
 - [x] [promise](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/es6/promise.md)
 - [ ] es6箭头函数和普通函数的区别
-- [ ] js引擎怎么实现Class关键字
+- [x] [js引擎怎么实现Class关键字](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/es6/class.md)
 
 #### wow-JQuery
 - [ ] jq除了操作dom还能干嘛
