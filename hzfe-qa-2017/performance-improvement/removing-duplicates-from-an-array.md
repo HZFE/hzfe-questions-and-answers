@@ -105,3 +105,5 @@ _.uniq = _.unique = function(array, isSorted, iteratee, context) {
 [Remove Duplicates from JavaScript Array](https://stackoverflow.com/questions/9229645/remove-duplicates-from-javascript-array)
 
 [JavaScript专题之数组去重](https://github.com/mqyqingfeng/Blog/issues/27)
+
+[也谈JavaScript数组去重](https://www.toobug.net/article/array_unique_in_javascript.html)
