@@ -13,12 +13,16 @@ uniq = arr => arr.filter((item, index) => !arr.includes(item))
 
 // 在filter方法的回调函数中使用第三个参数(array)，so we can avoid a closure of the array variable
 uniq = arr => arr.filter((item, index, self) => self.indexOf(item) == index)
+```
 
+```javascript
 // 如果对数组元素顺序无要求，可以排序后去重
 // 排序后，过滤数组，过滤条件为如果是第一个元素或者相邻的元素不相同时，才为真
 // 对一个已经排好序的数组去重，这种方法效率肯定高于使用 indexOf，且比indexOf（ES5）兼容性好
 uniq = arr => arr.concat().sort().filter((item, index, self) => !index || item !== self[index - 1])
+```
 
+```javascript
 // 尽管以上的写法很简洁，但是如果需要去重的数组很大，那么就十分低效[O(n^{2})].
 // 最好的办法是这样的：
 // 将每个元素放在一个哈希表，然后立即检查它的存在。[O(n)]
@@ -30,7 +34,9 @@ uniq = arr => {
   let seen = {}
   return arr.filter(item => seen.hasOwnProperty(item) ? false : (seen[item] = true))
 }
+```
 
+```javascript
 // ES6 provides the Set object, which makes things a whole lot easier:
 uniq = arr => Array.from(new Set(arr))
 
@@ -39,7 +45,8 @@ uniq = arr => [...new Set(arr)]
 ```
 
 ```javascript
-// A universal solution combines both approaches: it uses hash lookups for primitives and linear search for objects.
+// A universal solution combines both approaches:
+// it uses hash lookups for primitives and linear search for objects.
 function uniq(arr) {
   let prims = {"boolean":{}, "number":{}, "string":{}}, objs = [];
 
@@ -53,36 +60,45 @@ function uniq(arr) {
 }
 ```
 
-### underscore源码分析：uniq方法 还没分析
-  // Produce a duplicate-free version of the array. If the array has already
-  // been sorted, you have the option of using a faster algorithm.
-  // Aliased as `unique`.
-  _.uniq = _.unique = function(array, isSorted, iteratee, context) {
-    if (!_.isBoolean(isSorted)) {
-      context = iteratee;
-      iteratee = isSorted;
-      isSorted = false;
-    }
-    if (iteratee != null) iteratee = cb(iteratee, context);
-    var result = [];
-    var seen = [];
-    for (var i = 0, length = getLength(array); i < length; i++) {
-      var value = array[i],
-          computed = iteratee ? iteratee(value, i, array) : value;
-      if (isSorted) {
-        if (!i || seen !== computed) result.push(value);
-        seen = computed;
-      } else if (iteratee) {
-        if (!_.contains(seen, computed)) {
-          seen.push(computed);
-          result.push(value);
-        }
-      } else if (!_.contains(result, value)) {
+### underscore源码分析：uniq方法
+```javascript
+// 生成无重复元素的数组。
+// 如果数组已经排序过，你可以传入第二个参数为true，以选择使用更快的算法。
+// 第三个参数方便传入方法，在去重同时对元素进行操作
+_.uniq = _.unique = function(array, isSorted, iteratee, context) {
+
+  // isSorted未传入布尔值，则默认初始化部分参数
+  if (!_.isBoolean(isSorted)) {
+    context = iteratee;
+    iteratee = isSorted;
+    isSorted = false;
+  }
+  if (iteratee != null) iteratee = cb(iteratee, context);
+
+  var result = [];
+  var seen = [];
+
+  for (var i = 0, length = getLength(array); i < length; i++) {
+    var value = array[i],
+        computed = iteratee ? iteratee(value, i, array) : value;
+    if (isSorted) {
+      // 与前一个元素作比较
+      if (!i || seen !== computed) result.push(value);
+      seen = computed;
+    } else if (iteratee) {
+      // 元素被操作改变过，则在seen数组中查找是否有相同元素
+      if (!_.contains(seen, computed)) {
+        seen.push(computed);
         result.push(value);
       }
+    } else if (!_.contains(result, value)) {
+      // 直接在result数组中查找是否有相同元素
+      result.push(value);
     }
-    return result;
-  };
+  }
+  return result;
+};
+```
 
 ### 学习资料
 
