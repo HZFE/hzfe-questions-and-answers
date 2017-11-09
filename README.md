@@ -33,21 +33,18 @@
 ## hzfe questions and answers - 2017
 
 #### CSS
-- [x] [垂直居中的一百零八种方式xx](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/css/verticalAlign.md)
-- [x] [bfc](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/css/cssBFC.md)
+- [x] [垂直居中的一百零八种方式xx](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/css/center-elements-horizontally-and-vertically.md)
+- [x] [bfc](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/css/bfc.md)
 
 #### DOMBOM
 - [x] [dom和bom](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/dombom/dom-bom.md)
 
 #### Types
-- [x] [为什么null是Object](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/types/null.md)
-
-#### Array
-- [ ] 数组去重
+- [x] [为什么null是Object](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/types/why-is-null-an-object.md)
 
 #### Function
 - [ ] 闭包底层原理
-- [ ] [函数有哪几种执行方式](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/function/functionInvocation)
+- [x] [函数有哪几种执行方式](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/function/function-invocation.md)
 - [ ] 函数有一个[[scope]]属性你知道吗
 - [ ] 实现remove函数，删除object的属性
 - [ ] js实现map函数
@@ -62,7 +59,7 @@
 
 #### object-oriented
 - [x] [你知道new做了啥](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/object-oriented/new.md)
-- [x] [call apply](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/object-oriented/call_apply.md)
+- [x] [call apply](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/object-oriented/call-apply.md)
 - [ ] 继承
 - [ ] 原型链?手写原型链?proto指向
 - [ ] 构造函数return字符串的话是返回什么为什么
@@ -70,7 +67,7 @@
 - [ ] new关键字和不new有什么区别？
 
 #### event
-- [x] [事件委托哪些事件不冒泡](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/event/noBubbles.md)
+- [x] [事件委托哪些事件不冒泡](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/event/no-bubbles.md)
 - [ ] 怎么实现拖拽？
 
 #### Ajax
@@ -100,17 +97,18 @@
 - [ ] 断点续传
 
 #### performance-improvement
-- [x] [函数节流和去抖](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/performance-improvement/throttle_debounce.md)
+- [x] [函数节流和去抖](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/performance-improvement/throttle-debounce.md)
 - [x] [为什么要用事件委托呢](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/performance-improvement/event-delegation.md)
-- [x] [重绘回流](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/performance-improvement/reflow_repain.md)
+- [x] [重绘回流](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/performance-improvement/reflow-repain.md)
+- [ ] [数组去重](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/performance-improvement/removing-duplicates-from-an-array.md)
 
 #### RegExp
 - [x] [邮箱正则](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/regexp/email.md)
 
 #### es6
 - [x] [promise](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/es6/promise.md)
-- [x] es6箭头函数和普通函数的区别
-- [ ] [js引擎怎么实现Class关键字](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/es6/class.md)
+- [ ] es6箭头函数和普通函数的区别
+- [x] [js引擎怎么实现Class关键字](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/es6/class.md)
 
 #### wow-JQuery
 - [ ] jq除了操作dom还能干嘛
