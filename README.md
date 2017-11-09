@@ -181,7 +181,7 @@
 - [ ] 数据库表怎么设计？
 - [ ] hybrid了解吗？与native通信这块了解吗
 - [ ] 运营商劫持？
-- [ ] c语言怎么实现字符串转整型
+- [x] [c语言怎么实现字符串转整型](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/uncategories/stringToInt.md)
 - [ ] 服务器具有什么功能
 - [ ] 数据结构会吗
 
