@@ -16,6 +16,40 @@ The apply() method calls a function with a given this value, and arguments provi
 
 The call() method calls a function with a given this value, and arguments provided individually.
 
+## 性能对比
+这里有一份性能[对比](https://jsperf.com/function-versus-function-call-versus-function-apply)的测试，在测试中不难发现，call的性能要比apply的性能优秀许多。规范是这样定义这两个方法的：
+  >When the **apply** method is called on an object func with arguments thisArg and argArray, the following steps are taken:
+    1. If IsCallable(func) is false, throw a TypeError exception.
+    2. If argArray is undefined or null, then
+      a. Perform PrepareForTailCall().
+      b. Return ? Call(func, thisArg).
+    3. Let argList be ? CreateListFromArrayLike(argArray).
+    4. Perform PrepareForTailCall().
+    5. Return ? Call(func, thisArg, argList).
+  >When the **call** method is called on an object func with argument, thisArg and zero or more args, the following steps are taken:
+    1. If IsCallable(func) is false, throw a TypeError exception.
+    2. Let argList be a new empty List.
+    3. If this method was called with more than one argument, then in left to right order, starting with the second argument, append each argument as the last element of argList.
+    4. Perform PrepareForTailCall().
+    5. Return ? Call(func, thisArg, argList).
+
+不难看出，两者的区别主要是 `apply` 调用了 `CreateListFromArrayLike` 操作符，该方法主要功能是将数组转换为 `List`值。具体操作如下：
+  >
+    1. If elementTypes is not present, set elementTypes to « Undefined, Null, Boolean, String, Symbol, Number, Object ».
+    2. If Type(obj) is not Object, throw a TypeError exception.
+    3. Let len be ? ToLength(? Get(obj, "length")).
+    4. Let list be a new empty List.
+    5. Let index be 0.
+    6. Repeat, while index < len
+    7. Let indexName be ! ToString(index).
+    8. Let next be ? Get(obj, indexName).
+    9. If Type(next) is not an element of elementTypes, throw a TypeError exception.
+    10. Append next as the last element of list.
+    11. Set index to index + 1.
+    12. Return list.
+
+上述实现是采用迭代器，将数组中符合传入类型的元素加入到 `List` 中, 而 `List` 类型则是用来描述函数传入的参数列表的。
+
 ## Demo
 在实现javascript的对象继承的时候，除了使用原型链的方式外，还可以使用`call/apply`。举个栗子：
 ```JavaScript
