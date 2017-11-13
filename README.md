@@ -87,7 +87,7 @@
 - [x] [三次握奶](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/computer-networking/answers.md#传输层有个厉害协议叫tcp惹)
 - [x] [滑动窗口做流控的](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/computer-networking/answers.md#传输层有个厉害协议叫tcp惹)
 - [x] [什么是HTTPS](hzfe-qa-2017/https/HTTPS.md)
-- [ ] http请求的流程
+- [ ] http请求的流程(hzfe-qa-2017/https/httpflow.md)
 - [ ] 从地址栏输入网址到显示页面全过程
 - [ ] http缓存机制(过期策略 cache-control etag那些)
 - [ ] 网络服务质量
