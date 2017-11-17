@@ -33,33 +33,30 @@
 ## hzfe questions and answers - 2017
 
 #### CSS
-- [x] [垂直居中的一百零八种方式xx](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/css/center-elements-horizontally-and-vertically.md)
-- [x] [bfc](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/css/bfc.md)
+- [x] [垂直居中的一百零八种方式xx](hzfe-qa-2017/css/center-elements-horizontally-and-vertically.md)
+- [x] [bfc](hzfe-qa-2017/css/bfc.md)
 
 #### DOMBOM
-- [x] [dom和bom](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/dombom/dom-bom.md)
+- [x] [dom和bom](hzfe-qa-2017/dombom/dom-bom.md)
 
 #### Types
-- [x] [为什么null是Object](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/types/why-is-null-an-object.md)
+- [x] [为什么null是Object](hzfe-qa-2017/types/why-is-null-an-object.md)
 
 #### Function
-- [ ] 闭包底层原理
-- [x] [函数有哪几种执行方式](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/function/function-invocation.md)
-- [ ] 函数有一个[[scope]]属性你知道吗
+- [x] [函数有哪几种执行方式](hzfe-qa-2017/function/function-invocation.md)
 - [ ] 实现remove函数，删除object的属性
 - [ ] js实现map函数
 - [ ] 实现一个compose(arr)({index:0}}) var arr=[fn1,fn2,fn3]; function fn1(index,next){a.index++;next()}... 返回value和next,next()表示调用下一个函数 https://segmentfault.com/a/1190000008394749
 
-#### execution-context
-- [ ] this
-- [ ] 作用域链怎么构建的
-- [ ] 箭头函数的this？什么是词法作用域
-- [ ] 严格模式下全局调用函数this指向什么
-- [ ] 谈谈this指针的指向问题？
+#### scopes-environments-and-closures
+- [x] [作用域链怎么构建的](hzfe-qa-2017/scopes-environments-and-closures/execution-context.md#作用域链)
+- [x] [函数有一个[[scope]]属性你知道吗](hzfe-qa-2017/scopes-environments-and-closures/execution-context.md#作用域链)
+- [x] [什么是词法作用域](hzfe-qa-2017/scopes-environments-and-closures/execution-context.md#词法作用域)
+- [ ] 闭包底层原理
 
 #### object-oriented
-- [x] [你知道new做了啥](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/object-oriented/new.md)
-- [x] [call apply](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/object-oriented/call-apply.md)
+- [x] [你知道new做了啥](hzfe-qa-2017/object-oriented/new.md)
+- [x] [call apply](hzfe-qa-2017/object-oriented/call-apply.md)
 - [ ] 继承
 - [ ] 原型链?手写原型链?proto指向
 - [ ] 构造函数return字符串的话是返回什么为什么
@@ -67,11 +64,11 @@
 - [ ] new关键字和不new有什么区别？
 
 #### event
-- [x] [事件委托哪些事件不冒泡](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/event/no-bubbles.md)
+- [x] [事件委托哪些事件不冒泡](hzfe-qa-2017/event/no-bubbles.md)
 - [ ] 怎么实现拖拽？
 
 #### Ajax
-- [x] [原生Ajax流程](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/ajax/XMLHttpRequest.md)
+- [x] [原生Ajax流程](hzfe-qa-2017/ajax/XMLHttpRequest.md)
 - [ ] 跨域
 - [ ] get post区别
 - [ ] 为什么存在跨域这个问题？为什么要有同源策略？同源策略是什么？如果没有会有什么问题？
@@ -83,9 +80,9 @@
 - [ ] cookie优点和缺点
 
 #### computer-networking
-- [x] [他本来想问我tcp](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/computer-networking/answers.md#传输层有个厉害协议叫tcp惹)
-- [x] [三次握奶](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/computer-networking/answers.md#传输层有个厉害协议叫tcp惹)
-- [x] [滑动窗口做流控的](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/computer-networking/answers.md#传输层有个厉害协议叫tcp惹)
+- [x] [他本来想问我tcp](hzfe-qa-2017/computer-networking/answers.md#传输层有个厉害协议叫tcp惹)
+- [x] [三次握奶](hzfe-qa-2017/computer-networking/answers.md#传输层有个厉害协议叫tcp惹)
+- [x] [滑动窗口做流控的](hzfe-qa-2017/computer-networking/answers.md#传输层有个厉害协议叫tcp惹)
 - [x] [什么是HTTPS](hzfe-qa-2017/https/HTTPS.md)
 - [ ] http请求的流程
 - [ ] 从地址栏输入网址到显示页面全过程
@@ -98,18 +95,18 @@
 - [ ] 断点续传
 
 #### performance-improvement
-- [x] [函数节流和去抖](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/performance-improvement/throttle-debounce.md)
-- [x] [为什么要用事件委托呢](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/performance-improvement/event-delegation.md)
-- [x] [重绘回流](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/performance-improvement/reflow-repain.md)
-- [ ] [数组去重](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/performance-improvement/removing-duplicates-from-an-array.md)
+- [x] [函数节流和去抖](hzfe-qa-2017/performance-improvement/throttle-debounce.md)
+- [x] [为什么要用事件委托呢](hzfe-qa-2017/performance-improvement/event-delegation.md)
+- [x] [重绘回流](hzfe-qa-2017/performance-improvement/reflow-repain.md)
+- [ ] [数组去重](hzfe-qa-2017/performance-improvement/removing-duplicates-from-an-array.md)
 
 #### RegExp
-- [x] [邮箱正则](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/regexp/email.md)
+- [x] [邮箱正则](hzfe-qa-2017/regexp/email.md)
 
 #### es6
-- [x] [promise](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/es6/promise.md)
+- [x] [promise](hzfe-qa-2017/es6/promise.md)
 - [ ] es6箭头函数和普通函数的区别
-- [x] [js引擎怎么实现Class关键字](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/es6/class.md)
+- [x] [js引擎怎么实现Class关键字](hzfe-qa-2017/es6/class.md)
 
 #### wow-JQuery
 - [ ] jq除了操作dom还能干嘛
@@ -129,20 +126,20 @@
 - [ ] angular的数据绑定怎么实现
 
 #### wow-Vue
-- [x] [computed怎么实现的](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/wow-vue/computed.md)
+- [x] [computed怎么实现的](hzfe-qa-2017/wow-vue/computed.md)
 - [ ] 组件通信问题
 - [ ] 双向绑定怎么实现的
 - [ ] 用原生和vue有什么不一样的地方
 - [ ] 组件中对数据的操作和vuex有什么不一样的
 
 #### wow-React
-- [x] [react一些数据变化导致会让组件所有的全部渲染，用什么来解决](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/react/shouldComponentUpdate.md)
+- [x] [react一些数据变化导致会让组件所有的全部渲染，用什么来解决](hzfe-qa-2017/react/shouldComponentUpdate.md)
 
 #### Algorithm
 - [ ] 好像问了个10w的数据量用什么排序算法好
 - [ ] 盖：随便写10个排序吧 列出时间复杂度 和 在那个场景应该使用哪个
 - [ ] 二叉树的中序遍历
-- [x] [无向图的深度优先搜索和广度优先搜索](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/algorithm/graphs.md)
+- [x] [无向图的深度优先搜索和广度优先搜索](hzfe-qa-2017/algorithm/graphs.md)
 - [ ] 怎么找出连续子数组的最大和（如果和为负数，则重新开始，如果和为正数，则继续加，然后比较大小，选出最大和即可。）
 
 #### tools
@@ -159,6 +156,10 @@
 - [ ] 介绍下v8的新特性
 
 #### 未分类
+- [ ] this
+- [ ] 箭头函数的this
+- [ ] 严格模式下全局调用函数this指向什么
+- [ ] 谈谈this指针的指向问题
 - [ ] doctype是干嘛的
 - [ ] ssr原理
 - [ ] 观察者模式
@@ -180,7 +181,7 @@
 - [ ] 数据库表怎么设计？
 - [ ] hybrid了解吗？与native通信这块了解吗
 - [ ] 运营商劫持？
-- [x] [c语言怎么实现字符串转整型](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/uncategories/stringToInt.md)
+- [x] [c语言怎么实现字符串转整型](hzfe-qa-2017/uncategories/stringToInt.md)
 - [ ] 服务器具有什么功能
 - [ ] 数据结构会吗
 
