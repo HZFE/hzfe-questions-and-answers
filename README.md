@@ -98,27 +98,20 @@
 - [x] [函数节流和去抖](hzfe-qa-2017/performance-improvement/throttle-debounce.md)
 - [x] [为什么要用事件委托呢](hzfe-qa-2017/performance-improvement/event-delegation.md)
 - [x] [重绘回流](hzfe-qa-2017/performance-improvement/reflow-repain.md)
-- [ ] [数组去重](hzfe-qa-2017/performance-improvement/removing-duplicates-from-an-array.md)
+- [x] [数组去重](hzfe-qa-2017/performance-improvement/removing-duplicates-from-an-array.md)
 
 #### RegExp
 - [x] [邮箱正则](hzfe-qa-2017/regexp/email.md)
 
 #### es6
 - [x] [promise](hzfe-qa-2017/es6/promise.md)
-- [ ] es6箭头函数和普通函数的区别
-- [x] [js引擎怎么实现Class关键字](hzfe-qa-2017/es6/class.md)
+- [ ] [js引擎怎么实现Class关键字](hzfe-qa-2017/es6/class.md)
 
 #### wow-JQuery
 - [ ] jq除了操作dom还能干嘛
 - [ ] jq对于不冒泡的事件是怎么处理的
 - [ ] jq 的缺点和优点
 - [ ] jq 和后来的框架各解决了什么问题
-
-#### framework
-- [ ] 然后react和vue的差别
-- [ ] vuex 和redux 异同
-- [ ] vue和angular的区别
-- [ ] angular1和angular2的区别
 
 #### wow-Angular
 - [ ] angular的核心讲讲
@@ -134,6 +127,12 @@
 
 #### wow-React
 - [x] [react一些数据变化导致会让组件所有的全部渲染，用什么来解决](hzfe-qa-2017/react/shouldComponentUpdate.md)
+
+#### framework
+- [ ] 然后react和vue的差别
+- [ ] vuex 和redux 异同
+- [ ] vue和angular的区别
+- [ ] angular1和angular2的区别
 
 #### Algorithm
 - [ ] 好像问了个10w的数据量用什么排序算法好
@@ -155,11 +154,15 @@
 - [ ] 怎么看待framework
 - [ ] 介绍下v8的新特性
 
+#### 其他
+- [x] [c语言怎么实现字符串转整型](hzfe-qa-2017/uncategories/stringToInt.md)
+
 #### 未分类
 - [ ] this
 - [ ] 箭头函数的this
 - [ ] 严格模式下全局调用函数this指向什么
 - [ ] 谈谈this指针的指向问题
+- [ ] es6箭头函数和普通函数的区别
 - [ ] doctype是干嘛的
 - [ ] ssr原理
 - [ ] 观察者模式
@@ -181,7 +184,6 @@
 - [ ] 数据库表怎么设计？
 - [ ] hybrid了解吗？与native通信这块了解吗
 - [ ] 运营商劫持？
-- [x] [c语言怎么实现字符串转整型](hzfe-qa-2017/uncategories/stringToInt.md)
 - [ ] 服务器具有什么功能
 - [ ] 数据结构会吗
 
