@@ -44,6 +44,7 @@ function map ( elems, callback, arg ) {
   // 拍平嵌套数组
   return [].concat.apply( [], ret );
 }
+```
 
 ## underscore 实现
 ```javascript
