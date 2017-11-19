@@ -22,7 +22,7 @@ function map ( elems, callback, arg ) {
     MAX_ARRAY_INDEX = Math.pow(2, 53) - 1;
 
   // 如果是(类)数组：遍历数组，将每个项目转换为新值
-  if ( typeof length == 'number' && length >= 0 && length <= MAX_ARRAY_INDEX ) {
+  if ( typeof length == 'number' && length >= 0 && length % 1 == 0 && length <= MAX_ARRAY_INDEX ) {
     for ( ; i < length; i++ ) {
       value = callback( elems[ i ], i, arg );
 
