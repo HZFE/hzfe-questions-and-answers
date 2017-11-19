@@ -1,8 +1,8 @@
 ## 简单实现
 ```javascript
 function map (arr, func) {
-  let result = []
-  for(let i = 0, l = arr.length; i<l; i++) {
+  var result = []
+  for(var i = 0, l = arr.length; i<l; i++) {
     result[i] = func(arr[i], i, arr)
   }
   return result
@@ -15,13 +15,14 @@ function map (arr, func) {
 // 不影响原意和map的理解 可以直接在控制台跑
 // arg is for internal usage only
 function map ( elems, callback, arg ) {
-  var length, value,
+  var value,
+    length = elems.length,
     i = 0,
-    ret = [];
+    ret = [],
+    MAX_ARRAY_INDEX = Math.pow(2, 53) - 1;
 
   // 如果是(类)数组：遍历数组，将每个项目转换为新值
-  if ( elems instanceof Array ) {
-    length = elems.length;
+  if ( typeof length == 'number' && length >= 0 && length <= MAX_ARRAY_INDEX ) {
     for ( ; i < length; i++ ) {
       value = callback( elems[ i ], i, arg );
 
