@@ -44,8 +44,8 @@
 
 #### Function
 - [x] [函数有哪几种执行方式](hzfe-qa-2017/function/function-invocation.md)
+- [x] [实现map函数](hzfe-qa-2017/function/map.md)
 - [ ] 实现remove函数，删除object的属性
-- [ ] js实现map函数
 - [ ] 实现一个compose(arr)({index:0}}) var arr=[fn1,fn2,fn3]; function fn1(index,next){a.index++;next()}... 返回value和next,next()表示调用下一个函数 https://segmentfault.com/a/1190000008394749
 
 #### scopes-environments-and-closures
