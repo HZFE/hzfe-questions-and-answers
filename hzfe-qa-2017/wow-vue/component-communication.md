@@ -108,6 +108,8 @@ Vue.component('addition', {
 ```
 
 ## 非父子组件的通信
+
+### Event Bus
 非父子组件也就是同级组件（兄弟组件），或者为嵌套较深多层级的父子组件。简单情况下 Vue 官方文档介绍了使用 Event Bus 的方式来处理非父子级组件间的通信。
 
 ```vue
@@ -146,3 +148,11 @@ Event Bus 其实就是通过一个中间的 Vue 空实例，在这个 Vue 空实
 复杂的非父子级组件通信问题，可以采用状态管理模式。推荐使用[Vuex](!https://vuex.vuejs.org/) ，Vuex 是 Vue 官方基于状态管理模式实现的库。
 
 ### $broadcast 和 $dispatch
+`$broadcast`和`$dispatch`原本是 Vue 1.x 中的API，在 Vue 2.x 中已经被移除。 
+`$broadcast`可以去广播事件通知当前组件的所有后代，然后触发相应的事件。`$dispatch`则是组件往父级向上冒泡去触发相应的事件。
+
+`$broadcast`和`$dispatch`在编写 Vue 的一些第三方组件库的时候非常有用，虽然已经在 Vue 2.x 中被移除，但Element UI等一些比较大的开源组件库里，都去重新实现了这两个API。
+
+[Element UI 中的$broadcast和$dispatch实现的源码](https://github.com/ElemeFE/element/blob/dev/src/mixins/emitter.js)
+
+Element UI中的这两个API和 Vue 1.x 的有些不同，Element UI是通过指定组件名来定向的去触发某一个组件中相应的事件，而不是向 Vue 1.x 中那样事件广播。有兴趣的朋友可以读下源码。
