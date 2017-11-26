@@ -12,7 +12,7 @@ Vue 拥有强大的组件系统，组件都需要配合来使用，每个组件�
 ### 神奇的Prop :)
 
 Prop 就像函数的参数，调用时外部（父组件）传入
-```vue
+```js
 // 父组件 计算器组件
 Vue.component('calculator', {
     name: 'calculator',
@@ -40,7 +40,7 @@ Vue.component('addition', {
     template: `
         <span>{{ firstNumber + secondNumber }}</span>
     `,
-    props: [firstNumber, secondNumber]
+    props: ['firstNumber', 'secondNumber]
 });
 ```
 
@@ -61,7 +61,7 @@ Prop 还支持对传入的数据进行验证，此文不在赘述，需要详细
 
 接下来我们修改下示例代码，把按钮封装到加法组件里，加法组件（子组件）向父组件提供自定义事件`on-addition`，父组件绑定事件函数，加法组件（子组件）的按钮被点击后就去触发`on-addition`自定义事件，父组件传入的事件处理函数就会被调用，父组件就能从事件处理函数的参数中拿到相应数据。
 
-```vue
+```js
 // 父组件 计算器组件
 Vue.component('calculator', {
     name: 'calculator',
@@ -97,7 +97,7 @@ Vue.component('addition', {
     template: `
         <button type="button" @click="handleAddition">等于</button>
     `,
-    props: [firstNumber, secondNumber],
+    props: ['firstNumber', 'secondNumber'],
     methods: {
         handleAddition() {
             const result = firstNumber + secondNumber;
@@ -112,7 +112,7 @@ Vue.component('addition', {
 ### Event Bus
 非父子组件也就是同级组件（兄弟组件），或者为嵌套较深多层级的父子组件。简单情况下 Vue 官方文档介绍了使用 Event Bus 的方式来处理非父子级组件间的通信。
 
-```vue
+```js
 const bus = new Vue();
 
 Vue.component('a', {
@@ -128,7 +128,7 @@ Vue.component('a', {
 
 Vue.component('b', {
     template: `
-        <p>b组件接受到的消息：</p>
+        <p>b组件接受到的消息：{{ msg }}</p>
     `,
     data() {
         return {
