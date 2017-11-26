@@ -20,7 +20,10 @@ Vue.component('calculator', {
         <div>
             <input v-model="firstNumber" type="number">加
             <input v-model="secondNumber" type="number">等于
-            <addition :first-number="firstNumber" :second-number="secondNumber"></addition>   
+            <addition 
+                :first-number="firstNumber" 
+                :second-number="secondNumber">
+            </addition>   
         </div>   
     `,
     data() {
@@ -55,3 +58,91 @@ Prop 还支持对传入的数据进行验证，此文不在赘述，需要详细
 ### 神奇的自定义事件 :)
 
 父组件通过 Prop 来和子组件进行通信，子组件通过自定义事件的机制来和父组件通信。
+
+接下来我们修改下示例代码，把按钮封装到加法组件里，加法组件（子组件）向父组件提供自定义事件`on-addition`，父组件绑定事件函数，加法组件（子组件）的按钮被点击后就去触发`on-addition`自定义事件，父组件传入的事件处理函数就会被调用，父组件就能从事件处理函数的参数中拿到相应数据。
+
+```vue
+// 父组件 计算器组件
+Vue.component('calculator', {
+    name: 'calculator',
+    template: `
+        <div>
+            <input v-model="firstNumber" type="number">加
+            <input v-model="secondNumber" type="number">
+            <addition 
+                :first-number="firstNumber" 
+                :second-number="secondNumber"
+                @on-addition="onAddition">
+            </addition>
+            {{ result }}   
+        </div>   
+    `,
+    data() {
+        return {
+            firstNumber: 0,
+            secondNumber: 0,
+            result: 0
+        }
+    },
+    methods: {
+        onAddition(result) {
+            this.result = result;
+        }
+    }
+});
+
+// 子组件 加法组件
+Vue.component('addition', {
+    name: 'addition',
+    template: `
+        <button type="button" @click="handleAddition">等于</button>
+    `,
+    props: [firstNumber, secondNumber],
+    methods: {
+        handleAddition() {
+            const result = firstNumber + secondNumber;
+            this.$emit('on-addition', result);
+        }
+    }
+});
+```
+
+## 非父子组件的通信
+非父子组件也就是同级组件（兄弟组件），或者为嵌套较深多层级的父子组件。简单情况下 Vue 官方文档介绍了使用 Event Bus 的方式来处理非父子级组件间的通信。
+
+```vue
+const bus = new Vue();
+
+Vue.component('a', {
+    template: `
+        <button type="button" @click=""></button>
+    `,
+    methndos: {
+        handleClick() {
+            bus.$emit('a-click', '我a组件被点击啦!');
+        }
+    }
+});
+
+Vue.component('b', {
+    template: `
+        <p>b组件接受到的消息：</p>
+    `,
+    data() {
+        return {
+            msg: '';
+        }
+    },
+    created() {
+        bus.$on((msg) => {
+            this.msg = msg;
+        });
+    }
+});
+```
+Event Bus 其实就是通过一个中间的 Vue 空实例，在这个 Vue 空实例上面订阅事件和触发事件，达到非父子组件通信的目的。
+在实际开发项目中，Event Bus 如果用的很多，代码会变得难以维护。
+
+复杂的非父子级组件通信问题，可以采用状态管理模式。推荐使用[Vuex](!https://vuex.vuejs.org/) ，Vuex 是 Vue 官方基于状态管理模式实现的库。
+
+### $broadcast 和 $dispatch
