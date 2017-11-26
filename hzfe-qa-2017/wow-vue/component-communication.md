@@ -40,7 +40,7 @@ Vue.component('addition', {
     template: `
         <span>{{ firstNumber + secondNumber }}</span>
     `,
-    props: ['firstNumber', 'secondNumber]
+    props: ['firstNumber', 'secondNumber']
 });
 ```
 
