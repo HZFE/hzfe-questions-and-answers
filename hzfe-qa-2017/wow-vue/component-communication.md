@@ -117,7 +117,7 @@ const bus = new Vue();
 
 Vue.component('a', {
     template: `
-        <button type="button" @click=""></button>
+        <button type="button" @click="handleClick"></button>
     `,
     methndos: {
         handleClick() {
