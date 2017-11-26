@@ -136,7 +136,7 @@ Vue.component('b', {
         }
     },
     created() {
-        bus.$on((msg) => {
+        bus.$on('a-click', (msg) => {
             this.msg = msg;
         });
     }
