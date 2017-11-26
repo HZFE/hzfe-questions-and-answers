@@ -145,7 +145,7 @@ Vue.component('b', {
 Event Bus 其实就是通过一个中间的 Vue 空实例，在这个 Vue 空实例上面订阅事件和触发事件，达到非父子组件通信的目的。
 在实际开发项目中，Event Bus 如果用的很多，代码会变得难以维护。
 
-复杂的非父子级组件通信问题，可以采用状态管理模式。推荐使用[Vuex](!https://vuex.vuejs.org/) ，Vuex 是 Vue 官方基于状态管理模式实现的库。
+复杂的非父子级组件通信问题，可以采用状态管理模式。推荐使用[Vuex](https://vuex.vuejs.org/) ，Vuex 是 Vue 官方基于状态管理模式实现的库。
 
 ### $broadcast 和 $dispatch
 `$broadcast`和`$dispatch`原本是 Vue 1.x 中的API，在 Vue 2.x 中已经被移除。 
