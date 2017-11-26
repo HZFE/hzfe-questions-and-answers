@@ -71,3 +71,26 @@ _.map = _.collect = function(obj, iteratee, context) {
   return results;
 };
 ```
+## ECMA 262 规范
+
+```
+1. Let O be ? ToObject(this value).
+2. Let len be ? ToLength(? Get(O, "length")).
+3. If IsCallable(callbackfn) is false, throw a TypeError exception.
+4. If thisArg was supplied, let T be thisArg; else let T be undeᲪined.
+5. Let A be ? ArraySpeciesCreate(O, len).
+6. Let k be 0.
+7. Repeat, while k < len
+  a. Let Pk be ! ToString(k).
+  b. Let kPresent be ? HasProperty(O, Pk).
+  c. If kPresent is true, then
+    i. Let kValue be ? Get(O, Pk).
+    ii. Let mappedValue be ? Call(callbackfn, T, « kValue, k, O »).
+    iii. Perform ? CreateDataPropertyOrThrow(A, Pk, mappedValue).
+  d. Increase k by 1.
+8. Return A.
+
+NOTE 2
+
+The map function is intentionally generic; it does not require that its this value be an Array object. Therefore it can be transferred to other kinds of objects for use as a method.
+```
