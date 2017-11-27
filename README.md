@@ -120,7 +120,7 @@
 
 #### wow-Vue
 - [x] [computed怎么实现的](hzfe-qa-2017/wow-vue/computed.md)
-- [x] [组件通信问题](https://github.com/Akiq2016/hzfe-questions-and-answers/blob/master/hzfe-qa-2017/wow-vue/component-communication.md)
+- [x] [组件通信问题](hzfe-qa-2017/wow-vue/component-communication.md)
 - [ ] 双向绑定怎么实现的
 - [ ] 用原生和vue有什么不一样的地方
 - [ ] 组件中对数据的操作和vuex有什么不一样的
