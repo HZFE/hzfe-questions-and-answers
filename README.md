@@ -127,6 +127,7 @@
 
 #### wow-React
 - [x] [react一些数据变化导致会让组件所有的全部渲染，用什么来解决](hzfe-qa-2017/react/shouldComponentUpdate.md)
+- [x] [react浅比较](hzfe-qa-2017/react/shallow-compare.md)
 
 #### framework
 - [ ] 然后react和vue的差别
