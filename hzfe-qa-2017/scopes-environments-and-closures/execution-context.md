@@ -105,6 +105,24 @@ fooExecutionContext = {
 
 无论函数在哪里被调用，也无论它如何被调用，他的词法作用域都是由书写代码时函数声明的位置来决定的。因此当词法分析器处理代码时会保持作用域不变(大部分情况下是这样的)。
 
+### 规范
+
+> 8.1 Lexical Environments
+> 
+> A Lexical Environment is a speci伀氂ication type used to de伀氂ine the association of IdentiᲪiers to speci伀氂ic variables and functions based upon the lexical nesting structure of ECMAScript code. A Lexical Environment consists of an Environment Record and a possibly null reference to an outer Lexical Environment. Usually a Lexical Environment is associated with some speci伀氂ic syntactic structure of ECMAScript code such as a FunctionDeclaration, a BlockStatement, or a Catch clause of a TryStatement and a new Lexical Environment is created each time such code is evaluated.
+> 
+> An Environment Record records the identi伀氂ier bindings that are created within the scope of its associated Lexical Environment. It is referred to as the Lexical Environment's EnvironmentRecord
+> 
+> The outer environment reference is used to model the logical nesting of Lexical Environment values. The outer reference of a (inner) Lexical Environment is a reference to the Lexical Environment that logically surrounds the inner Lexical Environment. An outer Lexical Environment may, of course, have its own outer Lexical Environment. A Lexical Environment may serve as the outer environment for multiple inner Lexical Environments. For example, if a FunctionDeclaration contains two nested FunctionDeclarations then the Lexical Environments of each of the nested functions will have as their outer Lexical Environment the Lexical Environment of the current evaluation of the surrounding function.
+> 
+> A global environment is a Lexical Environment which does not have an outer environment. The global environment's outer environment reference is null. A global environment's EnvironmentRecord may be prepopulated with identi伀氂ier bindings and includes an associated global object whose properties provide some of the global environment's identi伀氂ier bindings. As ECMAScript code is executed, additional properties may be added to the global object and the initial properties may be modi伀氂ied.
+> 
+> A module environment is a Lexical Environment that contains the bindings for the top level declarations of a Module. It also contains the bindings that are explicitly imported by the Module. The outer environment of a module environment is a global environment.
+> 
+> A function environment is a Lexical Environment that corresponds to the invocation of an ECMAScript function object. A function environment may establish a new this binding. A function environment also captures the state necessary to support super method invocations.
+> 
+> Lexical Environments and Environment Record values are purely speci伀氂ication mechanisms and need not correspond to any speci伀氂ic artefact of an ECMAScript implementation. It is impossible for an ECMAScript program to directly access or manipulate such values.
+
 ## 作用域链
 作用域是一套规则，用于确定在何处以及如何查找变量（标识符）。
 
