@@ -52,7 +52,7 @@
 - [x] [作用域链怎么构建的](hzfe-qa-2017/scopes-environments-and-closures/execution-context.md#作用域链)
 - [x] [函数有一个[[scope]]属性你知道吗](hzfe-qa-2017/scopes-environments-and-closures/execution-context.md#作用域链)
 - [x] [什么是词法作用域](hzfe-qa-2017/scopes-environments-and-closures/execution-context.md#词法作用域)
-- [ ] 闭包底层原理
+- [ ] 什么是闭包，闭包底层原理
 
 #### object-oriented
 - [x] [你知道new做了啥](hzfe-qa-2017/object-oriented/new.md)
@@ -93,6 +93,8 @@
 - [ ] https的过程？https将什么加密了？
 - [ ] http协议清楚吗？
 - [ ] 断点续传
+- [ ] http的概念
+- [ ] http里最重要的三点你觉得是哪三点
 
 #### performance-improvement
 - [x] [函数节流和去抖](hzfe-qa-2017/performance-improvement/throttle-debounce.md)
@@ -105,6 +107,7 @@
 
 #### es6
 - [x] [promise](hzfe-qa-2017/es6/promise.md)
+- [ ] promise的实现原理
 - [ ] [js引擎怎么实现Class关键字](hzfe-qa-2017/es6/class.md)
 
 #### wow-JQuery
@@ -128,6 +131,7 @@
 #### wow-React
 - [x] [react一些数据变化导致会让组件所有的全部渲染，用什么来解决](hzfe-qa-2017/react/shouldComponentUpdate.md)
 - [x] [react浅比较](hzfe-qa-2017/react/shallow-compare.md)
+- [ ] 框架源码：写react的diff
 
 #### framework
 - [ ] 然后react和vue的差别
@@ -138,6 +142,7 @@
 #### Algorithm
 - [ ] 好像问了个10w的数据量用什么排序算法好
 - [ ] 盖：随便写10个排序吧 列出时间复杂度 和 在那个场景应该使用哪个
+- [ ] 非递归遍历二叉树
 - [ ] 二叉树的中序遍历
 - [x] [无向图的深度优先搜索和广度优先搜索](hzfe-qa-2017/algorithm/graphs.md)
 - [ ] 怎么找出连续子数组的最大和（如果和为负数，则重新开始，如果和为正数，则继续加，然后比较大小，选出最大和即可。）
@@ -159,6 +164,7 @@
 - [x] [c语言怎么实现字符串转整型](hzfe-qa-2017/uncategories/stringToInt.md)
 
 #### 未分类
+- [ ] xss攻击
 - [ ] this
 - [ ] 箭头函数的this
 - [ ] 严格模式下全局调用函数this指向什么
