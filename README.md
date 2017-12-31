@@ -197,6 +197,19 @@
 - [ ] 服务器具有什么功能
 - [ ] 数据结构会吗
 
+- [ ] csrf是什么 如何用node处理csrf
+- [ ] xss是什么 如果淘宝有一个xss漏洞 你会用它来做什么
+- [ ] 手写实现promise 手写函数节流 chrome的审查元素怎么实现的
+- [ ] 如何将string转换成html
+- [ ] 手写bind 手写一个co 手写一个sizzle 手写socket报文
+- [ ] element源码是如何跨组件通信的
+- [ ] nodejs如何进行进程通信
+- [ ] http缓存机制
+- [ ] js事件队列和node队列说下原理 区别是什么
+- [ ] SSL／TLS
+- [ ] 说出你知道的所有缓存
+- [ ] 用net实现http
+
 ## 2017 - Alloyteam Conf
 
 ### 前端基础
