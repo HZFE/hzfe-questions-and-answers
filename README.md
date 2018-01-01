@@ -42,12 +42,17 @@
 
 ## 2017 - hzfe questions and answers
 
+#### HTML
+- [ ] doctype是干嘛的
+
 #### CSS
 - [x] [垂直居中的一百零八种方式xx](hzfe-qa-2017/css/center-elements-horizontally-and-vertically.md)
 - [x] [bfc](hzfe-qa-2017/css/bfc.md)
+- [ ] 用过哪些预处理器，scss？那scss有存在什么缺点吗？
 
 #### DOM-BOM
 - [x] [dom和bom](hzfe-qa-2017/dom-bom/dom-bom.md)
+- [ ] 如何将string转换成html
 
 #### Types
 - [x] [为什么null是Object](hzfe-qa-2017/types/why-is-null-an-object.md)
@@ -99,6 +104,9 @@
 - [ ] https的过程
 - [ ] 网络服务质量
 - [ ] 断点续传
+- [ ] 用net实现http
+- [ ] 手写socket报文
+- [ ] SSL／TLS
 
 #### Performance-improvement
 - [x] [函数节流和去抖](hzfe-qa-2017/performance-improvement/throttle-debounce.md)
@@ -112,7 +120,8 @@
 #### Es6
 - [ ] [js引擎怎么实现Class关键字](hzfe-qa-2017/es6/class.md)
 - [x] [promise](hzfe-qa-2017/es6/promise.md)
-- [ ] promise的实现原理
+- [ ] promise的实现原理，手写实现promise
+- [ ] 手写一个co
 - [ ] es6箭头函数和普通函数的区别
 - [ ] generator
 - [ ] 什么是迭代器？
@@ -125,10 +134,13 @@
 - [ ] jq除了操作dom还能干嘛
 - [ ] jq对于不冒泡的事件是怎么处理的
 - [ ] jq的缺点和优点
+- [ ] 手写bind 手写一个sizzle
 
 #### wow-Node
 - [ ] express静态资源中间件
 - [ ] node 的 eventEmitter
+- [ ] nodejs如何进行进程通信
+- [ ] js事件队列和node队列说下原理 区别是什么
 
 #### wow-Angular
 - [ ] angular核心
@@ -140,6 +152,7 @@
 - [x] [组件通信问题](hzfe-qa-2017/wow-vue/component-communication.md)
 - [ ] 实现vue双向绑定
 - [ ] 组件中/vuex中对数据操作的区别
+- [ ] element源码是如何跨组件通信的
 
 #### wow-React
 - [x] [react部分数据变化导致组件全部重新渲染，用什么解决](hzfe-qa-2017/react/shouldComponentUpdate.md)
@@ -148,9 +161,13 @@
 
 #### Browser
 - [ ] 浏览器线程，js的异步是怎么实现的
+- [ ] chrome的审查元素怎么实现的
 
 #### Mobile
 - [ ] 移动端点击300ms的延迟？？
+
+#### Data-structure
+- [ ] 怎么检验链表是闭合的
 
 #### Algorithm
 - [x] [无向图的深度优先搜索和广度优先搜索](hzfe-qa-2017/algorithm/graphs.md)
@@ -182,33 +199,20 @@
 
 #### 未分类
 - [ ] xss攻击
-- [ ] doctype是干嘛的
 - [ ] ssr原理
 - [ ] 为什么有些数据是可迭代数据？除了实现了iterator接口 还有什么别的原因嘛
 - [ ] 怎么按顺序执行异步
-- [ ] 怎么检验链表是闭合的
 - [ ] 如何在不红杏的情况下 优化外国官网
 - [ ] critical path
 - [ ] mock数据 怎么生成
-- [ ] 用过哪些预处理器，scss？那scss有存在什么缺点吗？
 - [ ] 数据库表怎么设计？
 - [ ] hybrid了解吗？与native通信这块了解吗
 - [ ] 运营商劫持？
 - [ ] 服务器具有什么功能
 - [ ] 数据结构会吗
-
 - [ ] csrf是什么 如何用node处理csrf
 - [ ] xss是什么 如果淘宝有一个xss漏洞 你会用它来做什么
-- [ ] 手写实现promise 手写函数节流 chrome的审查元素怎么实现的
-- [ ] 如何将string转换成html
-- [ ] 手写bind 手写一个co 手写一个sizzle 手写socket报文
-- [ ] element源码是如何跨组件通信的
-- [ ] nodejs如何进行进程通信
-- [ ] http缓存机制
-- [ ] js事件队列和node队列说下原理 区别是什么
-- [ ] SSL／TLS
 - [ ] 说出你知道的所有缓存
-- [ ] 用net实现http
 
 ## 2017 - Alloyteam Conf
 
