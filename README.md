@@ -173,8 +173,8 @@
 - [x] [无向图的深度优先搜索和广度优先搜索](hzfe-qa-2017/algorithm/graphs.md)
 - [ ] 10w的数据量用什么排序算法
 - [ ] 写10个排序 列出时间复杂度 和 使用场景
-- [ ] 非递归遍历二叉树
-- [ ] 二叉树的中序遍历
+- [x] [非递归遍历二叉树](hzfe-qa-2017/algorithm/non-recursive-traversal-of-binary-tree.md)
+- [x] [二叉树的中序遍历](hzfe-qa-2017/algorithm/in-order-traversal.md)
 - [ ] 怎么找出连续子数组的最大和（如果和为负数，则重新开始，如果和为正数，则继续加，然后比较大小，选出最大和即可。）
 
 #### Tools
