@@ -176,6 +176,7 @@
 - [x] [非递归遍历二叉树](hzfe-qa-2017/algorithm/non-recursive-traversal-of-binary-tree.md)
 - [x] [二叉树的中序遍历](hzfe-qa-2017/algorithm/in-order-traversal.md)
 - [ ] 怎么找出连续子数组的最大和（如果和为负数，则重新开始，如果和为正数，则继续加，然后比较大小，选出最大和即可。）
+- [ ] 手写快排还有二叉树遍历 快排实现原理
 
 #### Tools
 - [ ] webpack的优势
@@ -223,7 +224,9 @@
 - [ ] aouth是干嘛的
 - [ ] 单点登录的原理
 - [ ] cookie的path
-
+- [ ] 做视差滚动 什么库
+- [ ] hls和rtmp的区别
+- [ ] hash map怎么实现
 
 ## 2017 - Alloyteam Conf
 
