@@ -51,36 +51,33 @@
 
 #### JAVASCRIPT
 - [x] [为什么null是Object](hzfe-qa-2017/C-javascript/types/why-is-null-an-object.md)
-
 - [x] [函数有哪几种执行方式](hzfe-qa-2017/C-javascript/function/function-invocation.md)
-- [x] [实现map函数](hzfe-qa-2017/C-javascript/function/map.md)
-- [ ] 实现remove函数，删除object的属性
-- [ ] 函数式编程中compose的实现  (https://segmentfault.com/a/1190000008394749) (实现一个compose(arr)({index:0}}) var arr=[fn1,fn2,fn3]; function fn1(index,next){a.index++;next()}... 返回value和next,next()表示调用下一个函数)
-
-- [x] [作用域链怎么构建的](hzfe-qa-2017/C-javascript/scopes-environments-and-closures/execution-context.md#作用域链)
-- [x] [函数有一个[[scope]]属性你知道吗](hzfe-qa-2017/C-javascript/scopes-environments-and-closures/execution-context.md#作用域链)
-- [x] [什么是词法作用域](hzfe-qa-2017/C-javascript/scopes-environments-and-closures/execution-context.md#词法作用域)
-- [ ] 什么是闭包，闭包底层原理
+- [x] [call apply](hzfe-qa-2017/C-javascript/object-oriented/call-apply.md)
+- [x] [作用域链](hzfe-qa-2017/C-javascript/scopes-environments-and-closures/execution-context.md#作用域链)
+- [x] [函数的[[scope]]属性](hzfe-qa-2017/C-javascript/scopes-environments-and-closures/execution-context.md#作用域链)
+- [x] [词法作用域](hzfe-qa-2017/C-javascript/scopes-environments-and-closures/execution-context.md#词法作用域)
+- [ ] 闭包
 - [ ] 谈谈this指针的指向问题
 - [ ] 严格模式下全局调用函数this指向什么
-
+- [ ] es6箭头函数和普通函数的区别
 - [x] [你知道new做了啥](hzfe-qa-2017/C-javascript/object-oriented/new.md)
 - [ ] new关键字和不new有什么区别？
 - [ ] 构造函数return字符串的话是返回什么为什么
-- [x] [call apply](hzfe-qa-2017/C-javascript/object-oriented/call-apply.md)
 - [ ] 继承
 - [ ] 原型链?手写原型链?proto指向
 - [ ] eval是做什么用的，有什么安全问题
-- [ ] 如何将string转换成html
 - [ ] [js引擎怎么实现Class关键字](hzfe-qa-2017/C-javascript/es6/class.md)
-- [x] [promise](hzfe-qa-2017/C-javascript/es6/promise.md)
-- [ ] promise的实现原理，手写实现promise
-- [ ] 手写一个co
-- [ ] es6箭头函数和普通函数的区别
 - [ ] generator
 - [ ] 什么是迭代器？
 - [ ] 你对symbol有什么了解
 - [ ] 观察者模式
+- [x] [实现map函数](hzfe-qa-2017/C-javascript/function/map.md)
+- [ ] 实现remove函数，删除object的属性
+- [ ] 函数式编程中compose的实现  (https://segmentfault.com/a/1190000008394749) (实现一个compose(arr)({index:0}}) var arr=[fn1,fn2,fn3]; function fn1(index,next){a.index++;next()}... 返回value和next,next()表示调用下一个函数)
+- [ ] 如何将string转换成html
+- [x] [promise](hzfe-qa-2017/C-javascript/es6/promise.md)
+- [ ] promise的实现原理，手写实现promise
+- [ ] 手写一个co
 
 #### DOM-BOM
 - [x] [dom和bom](hzfe-qa-2017/D-dom-and-bom/dom-bom.md)
