@@ -6,7 +6,7 @@
 2. Function code: Whenever the flow of execution enters a function body.
 3. Eval code: Text to be executed inside the internal eval function.
 
-- ![pic1](img/1.png)
+![pic1](img/1.png)
 
 每个函数被调用时，都会创建一个新的执行上下文。对于JavaScript引擎，每次对执行上下文的调用都有两个阶段：
 
@@ -102,17 +102,24 @@ fooExecutionContext = {
 
   function foo () { return 'hello' };
 
-}());​
+}());
 ```
 
 然而通过上文的学习了解，我们可以回答下面这些问题：
+
 1. 为什么我们可以在声明之前访问foo？
+```
 创建阶段 创建变量对象时，变量提升
+```
 2. foo被声明了两次，为什么typeof foo是函数而不是undefined或者string？
+```
 创建阶段 创建变量对象时，查找到 `foo` 函数名称已经存在，覆盖重写指针值
+```
 3. 为什么bar是undefined？
+```
 创建阶段 创建变量对象时，变量值初始化为 `undefined` ；
 执行阶段，逐行执行代码，执行第二句 `console` 时， `bar` 还没有被分配变量值。
+```
 
 ## 词法作用域
 作用域共有两种主要的工作模型：词法作用域、动态作用域。
@@ -141,7 +148,7 @@ var myFloat = 1.3;
 // Step 2
 myFunction('abc');
 ```
-- ![pic2](img/2.png)
+![pic2](img/2.png)
 
 上图说明了执行代码的时候发生了什么：
 1. `myFunction` 和 `myFloat`被存储在 `全局环境` (#0) 中。需要注意的是， `myFunction` 引用的函数对象，会通过内部属性 `[[scope]]` 指向 `myFunction` 所在作用域： `全局作用域`。
