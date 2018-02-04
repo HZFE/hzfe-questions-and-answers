@@ -50,12 +50,10 @@
 - [x] [块格式化上下文(BFC)](hzfe-qa-2017/B-css/what-is-bfc.md)
 
 #### JAVASCRIPT
-- [x] [为什么null是Object](hzfe-qa-2017/C-javascript/types/why-is-null-an-object.md)
+- [x] [为什么null是Object](hzfe-qa-2017/C-javascript/types/why-null-is-an-object.md)
 - [x] [函数有哪几种执行方式](hzfe-qa-2017/C-javascript/function/function-invocation.md)
-- [x] [call apply](hzfe-qa-2017/C-javascript/object-oriented/call-apply.md)
-- [x] [作用域链](hzfe-qa-2017/C-javascript/scopes-environments-and-closures/execution-context.md#作用域链)
-- [x] [函数的[[scope]]属性](hzfe-qa-2017/C-javascript/scopes-environments-and-closures/execution-context.md#作用域链)
-- [x] [词法作用域](hzfe-qa-2017/C-javascript/scopes-environments-and-closures/execution-context.md#词法作用域)
+- [x] [函数的call apply方法](hzfe-qa-2017/C-javascript/function/call-apply.md)
+- [x] [作用域链、[[scope]]、词法作用域](hzfe-qa-2017/C-javascript/scopes-environments-and-closures/execution-context.md)
 - [ ] 闭包
 - [ ] 谈谈this指针的指向问题
 - [ ] 严格模式下全局调用函数this指向什么
