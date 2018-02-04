@@ -60,5 +60,3 @@ x == y                      // false
 
 ## 学习资料
 [JavaScript Function Invocation](https://www.w3schools.com/js/js_function_invocation.asp)
-
-[函数的四种调用方式](http://laichuanfeng.com/reading/four-ways-to-invoke-function/)
