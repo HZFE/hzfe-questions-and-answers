@@ -44,10 +44,14 @@
 
 #### HTML
 - [x] [DOCTYPE](hzfe-qa-2017/A-html/what-is-doctype.md)
+- [ ] 如何在html中开启/关闭 DNS 预读取
+- [ ] script 标签 defer 或 async 属性的作用及区别
 
 #### CSS
 - [x] [垂直居中](hzfe-qa-2017/B-css/center-elements-horizontally-and-vertically.md)
 - [x] [块格式化上下文(BFC)](hzfe-qa-2017/B-css/what-is-bfc.md)
+- [ ] 一个div，设置其父级div宽度为100px，再设其padding-top为20%。问div高度
+- [ ] css3 实现硬币旋转效果，即圆形绕自身轴线360持续旋转
 
 #### JAVASCRIPT
 - [x] [为什么null是Object](hzfe-qa-2017/C-javascript/types/why-null-is-an-object.md)
@@ -76,6 +80,8 @@
 - [x] [promise](hzfe-qa-2017/C-javascript/es6/promise.md)
 - [ ] promise的实现原理，手写实现promise
 - [ ] 手写一个co
+- [ ] 准确判断 js 中一个变量的类型的方法和原理
+- [ ] 实现 js 对象深度克隆函数
 
 #### DOM-BOM
 - [x] [dom和bom](hzfe-qa-2017/D-dom-and-bom/dom-bom.md)
@@ -93,6 +99,7 @@
 
 #### RegExp
 - [x] [邮箱正则](hzfe-qa-2017/E-regexp/email.md)
+- [ ] 将 ejs 风格的分隔符<%= %>变为 mustache 风格的{{ }}
 
 #### Framework
 - [ ] vue和原生 || vue和react || vue和angular 的区别
@@ -130,6 +137,7 @@
 - [ ] 用net实现http
 - [ ] 手写socket报文
 - [ ] SSL／TLS
+- [ ] 举例 HTTP 响应 Header 中， Cache-control 的常规值
 
 #### Algorithm
 - [x] [无向图的深度优先搜索和广度优先搜索](hzfe-qa-2017/I-algorithm/graphs.md)
@@ -139,6 +147,8 @@
 - [x] [二叉树的中序遍历](hzfe-qa-2017/I-algorithm/in-order-traversal.md)
 - [ ] 怎么找出连续子数组的最大和（如果和为负数，则重新开始，如果和为正数，则继续加，然后比较大小，选出最大和即可。）
 - [ ] 手写快排还有二叉树遍历 快排实现原理
+- [ ] 存在一无序整形数组，找出其中连续出现的数字区间（var list = [7,2,11,2,0,1,2,4,5,10,13,14,15]; 输出：["0->2","4->5","7","10->11","13->15"]）
+- [ ] 存在一无序且不重复的数组 data ，取出 n 个数，使其相加和为 sum 。给出算法的时间/空间复杂度（function getResult (data, n, sum) {}）
 
 #### 老生常谈
 - [ ] 遇到什么困难、怎么解决、未来怎么避免
@@ -177,6 +187,8 @@
 - [ ] 做视差滚动 什么库
 - [ ] hls和rtmp的区别
 - [ ] hash map怎么实现
+
+
 
 #### wow-Node
 - [ ] express静态资源中间件
