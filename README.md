@@ -54,7 +54,7 @@
 - [x] [函数有哪几种执行方式](hzfe-qa-2017/C-javascript/function/function-invocation.md)
 - [x] [函数的call apply方法](hzfe-qa-2017/C-javascript/function/call-apply.md)
 - [x] [作用域链、[[scope]]、词法作用域](hzfe-qa-2017/C-javascript/scopes-environments-and-closures/execution-context.md)
-- [ ] 闭包
+- [x] [闭包及其原理](hzfe-qa-2017/C-javascript/scopes-environments-and-closures/closures.md)
 - [ ] 谈谈this指针的指向问题
 - [ ] 严格模式下全局调用函数this指向什么
 - [ ] es6箭头函数和普通函数的区别
