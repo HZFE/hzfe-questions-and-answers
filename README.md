@@ -59,9 +59,7 @@
 - [x] [函数的call apply方法](hzfe-qa-2017/C-javascript/function/call-apply.md)
 - [x] [作用域链、[[scope]]、词法作用域](hzfe-qa-2017/C-javascript/scopes-environments-and-closures/execution-context.md)
 - [x] [闭包及其原理](hzfe-qa-2017/C-javascript/scopes-environments-and-closures/closures.md)
-- [ ] 谈谈this指针的指向问题
-- [ ] 严格模式下全局调用函数this指向什么
-- [ ] es6箭头函数和普通函数的区别
+- [x] [this不同情景下的指向](hzfe-qa-2017/C-javascript/expressions-and-operators/this.md)
 - [x] [你知道new做了啥](hzfe-qa-2017/C-javascript/object-oriented/new.md)
 - [ ] new关键字和不new有什么区别？
 - [ ] 构造函数return字符串的话是返回什么为什么
