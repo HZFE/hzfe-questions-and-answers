@@ -6,7 +6,7 @@
 
 ### 函数上下文
 
-在函数体内部，`this` 的值由函数的调用方式决定。请参考 [函数有哪几种执行方式](hzfe-qa-2017/C-javascript/function/function-invocation.md) 这篇内容看详细解释。
+在函数体内部，`this` 的值由函数的调用方式决定。请参考 [函数有哪几种执行方式](../function/function-invocation.md) 这篇内容看详细解释。
 
   - 简单调用
     - 非严格模式：`this === 全局对象`
