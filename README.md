@@ -50,8 +50,6 @@
 #### CSS
 - [x] [垂直居中](hzfe-qa-2017/B-css/center-elements-horizontally-and-vertically.md)
 - [x] [块格式化上下文(BFC)](hzfe-qa-2017/B-css/what-is-bfc.md)
-- [ ] 一个div，设置其父级div宽度为100px，再设其padding-top为20%。问div高度
-- [ ] css3 实现硬币旋转效果，即圆形绕自身轴线360持续旋转
 
 #### JAVASCRIPT
 - [x] [为什么null是Object](hzfe-qa-2017/C-javascript/types/why-null-is-an-object.md)
@@ -69,7 +67,6 @@
 - [ ] 什么是迭代器？
 - [ ] 你对symbol有什么了解
 - [ ] 观察者模式
-- [ ] 如何将string转换成html
 - [x] [promise](hzfe-qa-2017/C-javascript/es6/promise.md)
 - [ ] promise的实现原理，手写实现promise
 - [ ] 准确判断 js 中一个变量的类型的方法和原理
@@ -142,11 +139,14 @@
 - [ ] 存在一无序且不重复的数组 data ，取出 n 个数，使其相加和为 sum 。给出算法的时间/空间复杂度（function getResult (data, n, sum) {}）
 
 #### Coding
-- [x] [实现map函数](hzfe-qa-2017/C-javascript/function/map.md)
-- [ ] 实现remove函数，删除object的属性
-- [ ] 函数式编程中compose的实现  (https://segmentfault.com/a/1190000008394749) (实现一个compose(arr)({index:0}}) var arr=[fn1,fn2,fn3]; function fn1(index,next){a.index++;next()}... 返回value和next,next()表示调用下一个函数)
-- [ ] 手写一个co
-- [ ] 实现 js 对象深度克隆函数
+- [ ] css: 一个div，设置其父级div宽度为100px，再设其padding-top为20%。问div高度
+- [ ] css: 实现硬币旋转效果，即圆形绕自身轴线360持续旋转
+- [x] [js: 实现map函数](hzfe-qa-2017/C-javascript/function/map.md)
+- [ ] js: 实现remove函数，删除object的属性
+- [ ] js: 函数式编程中compose的实现  (https://segmentfault.com/a/1190000008394749) (实现一个compose(arr)({index:0}}) var arr=[fn1,fn2,fn3]; function fn1(index,next){a.index++;next()}... 返回value和next,next()表示调用下一个函数)
+- [ ] js: 手写一个co
+- [ ] js: 实现 js 对象深度克隆函数
+- [ ] js: 如何将string转换成html
 
 #### 老生常谈
 - [ ] 遇到什么困难、怎么解决、未来怎么避免
