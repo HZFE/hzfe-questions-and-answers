@@ -44,8 +44,8 @@
 
 #### HTML
 - [x] [DOCTYPE](hzfe-qa-2017/A-html/what-is-doctype.md)
-- [ ] 如何在html中开启/关闭 DNS 预读取
-- [ ] script 标签 defer 或 async 属性的作用及区别
+- [x] [如何在html中开启/关闭 DNS 预读取](hzfe-qa-2017/A-html/dns-prefetch.md)
+- [x] [script 标签 defer 或 async 属性的作用及区别](hzfe-qa-2017/A-html/defer-async.md)
 
 #### CSS
 - [x] [垂直居中](hzfe-qa-2017/B-css/center-elements-horizontally-and-vertically.md)
