@@ -60,9 +60,7 @@
 - [x] [作用域链、[[scope]]、词法作用域](hzfe-qa-2017/C-javascript/scopes-environments-and-closures/execution-context.md)
 - [x] [闭包及其原理](hzfe-qa-2017/C-javascript/scopes-environments-and-closures/closures.md)
 - [x] [this不同情景下的指向](hzfe-qa-2017/C-javascript/expressions-and-operators/this.md)
-- [x] [你知道new做了啥](hzfe-qa-2017/C-javascript/object-oriented/new.md)
-- [ ] new关键字和不new有什么区别？
-- [ ] 构造函数return字符串的话是返回什么为什么
+- [x] [new操作符做了什么](hzfe-qa-2017/C-javascript/expressions-and-operators/new.md)
 - [ ] 继承
 - [ ] 原型链?手写原型链?proto指向
 - [ ] eval是做什么用的，有什么安全问题
