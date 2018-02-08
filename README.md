@@ -76,13 +76,10 @@
 - [ ] 怎么实现拖拽？
 - [x] [原生Ajax流程](hzfe-qa-2017/D-dom-and-bom/ajax/XMLHttpRequest.md)
 - [ ] ajax优点和缺点
-- [ ] 跨域
 - [ ] get post区别
-- [ ] 为什么存在跨域这个问题？为什么要有同源策略？同源策略是什么？如果没有会有什么问题？
-- [ ] 讲讲jsonp跨域、还有其他跨域方法吗？
-- [ ] cookie和session的区别
+- [ ] 为什么存在跨域这个问题？为什么要有同源策略？同源策略是什么？如果没有会有什么问题？跨域有哪些方法？
+- [ ] cookie和session的区别以及优缺点
 - [ ] cookie怎么跟服务器通信的
-- [ ] cookie优点和缺点
 
 #### RegExp
 - [x] [邮箱正则](hzfe-qa-2017/E-regexp/email.md)
@@ -103,10 +100,10 @@
 - [x] [react部分数据变化导致组件全部重新渲染，用什么解决](hzfe-qa-2017/F-framework-and-library/react/shouldComponentUpdate.md)
 - [x] [react浅比较](hzfe-qa-2017/F-framework-and-library/react/shallow-compare.md)
 - [ ] 实现react的diff
-- [ ] jq除了操作dom还能干嘛
-- [ ] jq对于不冒泡的事件是怎么处理的
-- [ ] jq的缺点和优点
-- [ ] 手写bind 手写一个sizzle
+- [ ] jQuery 除了操作dom还能干嘛
+- [ ] jQuery 对于不冒泡的事件是怎么处理的
+- [ ] jQuery 的缺点和优点
+- [ ] 手写 bind 手写一个 sizzle
 
 #### Performance-improvement
 - [x] [函数节流和去抖](hzfe-qa-2017/G-performance-improvement/throttle-debounce.md)
@@ -116,13 +113,13 @@
 
 #### Computer-networking
 - [x] [TCP、三次握手、滑动窗口做流控](hzfe-qa-2017/H-computer-networking/basic-point.md)
-- [x] [什么是HTTPS](hzfe-qa-2017/H-computer-networking/HTTPS.md)
+- [x] [什么是 HTTPS](hzfe-qa-2017/H-computer-networking/HTTPS.md)
 - [ ] http概念、协议、缓存机制、状态码
-- [ ] https的过程
+- [ ] HTTPS 的过程
 - [ ] 网络服务质量
 - [ ] 断点续传
-- [ ] 用net实现http
-- [ ] 手写socket报文
+- [ ] 用 net 实现 HTTP
+- [ ] 手写 socket 报文
 - [ ] SSL／TLS
 - [ ] 举例 HTTP 响应 Header 中， Cache-control 的常规值
 
