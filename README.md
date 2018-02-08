@@ -61,8 +61,7 @@
 - [x] [闭包及其原理](hzfe-qa-2017/C-javascript/scopes-environments-and-closures/closures.md)
 - [x] [this不同情景下的指向](hzfe-qa-2017/C-javascript/expressions-and-operators/this.md)
 - [x] [new操作符做了什么](hzfe-qa-2017/C-javascript/expressions-and-operators/new.md)
-- [ ] 继承
-- [ ] 原型链?手写原型链?proto指向
+- [x] [原型链与继承](hzfe-qa-2017/C-javascript/object-oriented/inheritance-and-prototype-chain.md)
 - [ ] eval是做什么用的，有什么安全问题
 - [ ] [js引擎怎么实现Class关键字](hzfe-qa-2017/C-javascript/es6/class.md)
 - [ ] generator
