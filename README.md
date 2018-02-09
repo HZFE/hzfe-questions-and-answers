@@ -142,8 +142,8 @@
 - [ ] js: 函数式编程中compose的实现  (https://segmentfault.com/a/1190000008394749) (实现一个compose(arr)({index:0}}) var arr=[fn1,fn2,fn3]; function fn1(index,next){a.index++;next()}... 返回value和next,next()表示调用下一个函数)
 - [ ] js: 手写一个co
 - [ ] js: 实现 js 对象深度克隆函数
-- [ ] js: 如何将string转换成html
-- [ ] js: 最简单的生成 [0, 1, 2, ...range] 数组的方法
+- [x] js: 如何将string转换成html `((s,d)=>(d.innerHTML=s,d.childNodes))('<input>', document.createElement('div'))`
+- [x] js: 最简单的生成 [0, 1, 2, ...range] 数组的方法 `[...Array(range).keys()]`
 
 #### 老生常谈
 - [ ] 遇到什么困难、怎么解决、未来怎么避免
