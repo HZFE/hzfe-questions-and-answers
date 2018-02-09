@@ -52,23 +52,22 @@
 - [x] [块格式化上下文(BFC)](hzfe-qa-2017/B-css/what-is-bfc.md)
 
 #### JAVASCRIPT
-- [x] [为什么null是Object](hzfe-qa-2017/C-javascript/types/why-null-is-an-object.md)
+- [x] [为什么 null 是 Object ](hzfe-qa-2017/C-javascript/types/why-null-is-an-object.md)
 - [x] [函数有哪几种执行方式](hzfe-qa-2017/C-javascript/function/function-invocation.md)
-- [x] [函数的call apply方法](hzfe-qa-2017/C-javascript/function/call-apply.md)
+- [x] [函数的 call apply 方法](hzfe-qa-2017/C-javascript/function/call-apply.md)
 - [x] [作用域链、[[scope]]、词法作用域](hzfe-qa-2017/C-javascript/scopes-environments-and-closures/execution-context.md)
 - [x] [闭包及其原理](hzfe-qa-2017/C-javascript/scopes-environments-and-closures/closures.md)
 - [x] [this不同情景下的指向](hzfe-qa-2017/C-javascript/expressions-and-operators/this.md)
 - [x] [new操作符做了什么](hzfe-qa-2017/C-javascript/expressions-and-operators/new.md)
 - [x] [原型链与继承](hzfe-qa-2017/C-javascript/object-oriented/inheritance-and-prototype-chain.md)
-- [ ] eval是做什么用的，有什么安全问题
-- [ ] [js引擎怎么实现Class关键字](hzfe-qa-2017/C-javascript/es6/class.md)
-- [ ] generator
-- [ ] 什么是迭代器？
-- [ ] 你对symbol有什么了解
+- [ ] 准确判断变量类型的方法和原理
+- [ ] [ES6: js引擎怎么实现 class 关键字](hzfe-qa-2017/C-javascript/es6/class.md)
+- [ ] [ES6: 理解原理并手写实现 promise](hzfe-qa-2017/C-javascript/es6/promise.md)
+- [ ] [ES6: 理解 generator 并手写一个简单 co ]
+- [ ] [ES6: 什么是 symbol ]
+- [ ] [ES6: 什么是迭代器]
+- [ ] eval的安全问题
 - [ ] 观察者模式
-- [x] [promise](hzfe-qa-2017/C-javascript/es6/promise.md)
-- [ ] promise的实现原理，手写实现promise
-- [ ] 准确判断 js 中一个变量的类型的方法和原理
 
 #### DOM-BOM
 - [x] [dom和bom](hzfe-qa-2017/D-dom-and-bom/dom-bom.md)
@@ -140,7 +139,6 @@
 - [x] [js: 实现map函数](hzfe-qa-2017/C-javascript/function/map.md)
 - [ ] js: 实现remove函数，删除object的属性
 - [ ] js: 函数式编程中compose的实现  (https://segmentfault.com/a/1190000008394749) (实现一个compose(arr)({index:0}}) var arr=[fn1,fn2,fn3]; function fn1(index,next){a.index++;next()}... 返回value和next,next()表示调用下一个函数)
-- [ ] js: 手写一个co
 - [ ] js: 实现 js 对象深度克隆函数
 - [x] js: 如何将string转换成html `((s,d)=>(d.innerHTML=s,d.childNodes))('<input>', document.createElement('div'))`
 - [x] js: 最简单的生成 [0, 1, 2, ...range] 数组的方法 `[...Array(range).keys()]`
