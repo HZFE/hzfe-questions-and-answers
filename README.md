@@ -60,7 +60,7 @@
 - [x] [this不同情景下的指向](hzfe-qa-2017/C-javascript/expressions-and-operators/this.md)
 - [x] [new操作符做了什么](hzfe-qa-2017/C-javascript/expressions-and-operators/new.md)
 - [x] [原型链与继承](hzfe-qa-2017/C-javascript/object-oriented/inheritance-and-prototype-chain.md)
-- [ ] 准确判断变量类型的方法和原理
+- [x] [准确判断变量类型的方法和原理](hzfe-qa-2017/C-javascript/expressions-and-operators/best-way-to-check-data-type-in-javascript.md)
 - [ ] eval 的安全问题
 - [ ] require 和 import 的原理
 - [ ] [ES6: js引擎怎么实现 class 关键字](hzfe-qa-2017/C-javascript/es6/class.md)
@@ -85,28 +85,27 @@
 - [ ] 将 ejs 风格的分隔符<%= %>变为 mustache 风格的{{ }}
 
 #### Framework and Library
+- [ ] jQuery 除操作 dom 还能做什么
+- [ ] jQuery 对于不冒泡的事件怎么处理
+- [ ] jQuery 的优缺点
 - [x] [vue 实现 computed](hzfe-qa-2017/F-framework-and-library/vue/computed.md)
+- [ ] vue 实现 双向绑定
 - [x] [vue 组件通信问题](hzfe-qa-2017/F-framework-and-library/vue/component-communication.md)
+- [ ] element 源码是如何跨组件通信的
+- [ ] 组件中/ vuex 中对数据操作的区别
 - [x] [解决 react 部分数据变化导致组件全部重新渲染问题](hzfe-qa-2017/F-framework-and-library/react/shouldComponentUpdate.md)
 - [x] [react 浅比较](hzfe-qa-2017/F-framework-and-library/react/shallow-compare.md)
-- [ ] vue和原生 || vue和react || vue和angular 的区别
-- [ ] angular1和angular2的区别
-- [ ] vuex和redux异同
-- [ ] angular核心
-- [ ] 实现angular数据绑定
-- [ ] AOT预编译和JIT预编译
-- [ ] 实现vue双向绑定
-- [ ] 组件中/vuex中对数据操作的区别
-- [ ] element源码是如何跨组件通信的
-- [ ] 实现react的diff
-- [ ] jQuery 除了操作dom还能干嘛
-- [ ] jQuery 对于不冒泡的事件是怎么处理的
-- [ ] jQuery 的缺点和优点
-- [ ] 手写 bind 手写一个 sizzle
+- [ ] 实现 react 的 diff
+- [ ] angular 核心
+- [ ] 实现 angular 数据绑定
+- [ ] AOT 预编译和 JIT 预编译
+- [ ] angular1 和 angular2 的区别
+- [ ] vue 和 原生 / react / angular 的区别
+- [ ] vuex 和 redux 异同
 
 #### Performance-improvement
 - [x] [函数节流和去抖](hzfe-qa-2017/G-performance-improvement/throttle-debounce.md)
-- [x] [为什么要用事件委托呢](hzfe-qa-2017/G-performance-improvement/event-delegation.md)
+- [x] [为什么要用事件委托](hzfe-qa-2017/G-performance-improvement/event-delegation.md)
 - [x] [重绘回流](hzfe-qa-2017/G-performance-improvement/reflow-repain.md)
 
 #### Computer-networking
