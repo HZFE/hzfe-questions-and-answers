@@ -61,7 +61,7 @@
 - [x] [new操作符做了什么](hzfe-qa-2017/C-javascript/expressions-and-operators/new.md)
 - [x] [原型链与继承](hzfe-qa-2017/C-javascript/object-oriented/inheritance-and-prototype-chain.md)
 - [x] [准确判断变量类型的方法和原理](hzfe-qa-2017/C-javascript/expressions-and-operators/best-way-to-check-data-type-in-javascript.md)
-- [ ] eval 的安全问题
+- [x] [eval 及其安全问题](hzfe-qa-2017/C-javascript/function/eval.md)
 - [ ] require 和 import 的原理
 - [ ] [ES6: js引擎怎么实现 class 关键字](hzfe-qa-2017/C-javascript/es6/class.md)
 - [ ] [ES6: 理解原理并手写实现 promise](hzfe-qa-2017/C-javascript/es6/promise.md)
