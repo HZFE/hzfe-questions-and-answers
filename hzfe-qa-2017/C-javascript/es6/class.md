@@ -1,3 +1,6 @@
+```bash
+# 此页面贡献者：树
+```
 # js引擎怎么实现Class关键字
 
 class 在 ES5 时被 ECMAScript 列入了保留字（Reserved Words）中，意味着从 ES5 时你就不可以使用 class 作为标识符。在 ES6 时 class 终于被正式引入 ECMAScript 标准之中。class 的出现意味着我们可以不用写长串的代码来模拟其他语言中的类了。虽然 ES6 中的 class 依然是基于原型的实现（prototype-based inheritance），但是已经大大减少了我们的编码量，代码也更加简洁直观。那么 JS 引擎具体是如何实现 class 的呢？

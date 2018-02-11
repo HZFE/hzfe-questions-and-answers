@@ -1,3 +1,6 @@
+```bash
+# 此页面贡献者：树
+```
 # script 标签 defer 或 async 属性的作用及区别
 
 目前，`script` 标签有以下几种加载模式，分别是普通模式，`defer` 模式，`async` 模式，`module` 模式和 `module+async` 模式。首先引用一下规范中对这几个模式的定义：

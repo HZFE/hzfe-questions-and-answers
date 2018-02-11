@@ -1,3 +1,6 @@
+```bash
+# 此页面贡献者：年轻的小铲
+```
 ## what is doctype
 我们的html中，一般初始化如以下代码。那`<!DOCTYPE html>`是干嘛的呢？
 ```html

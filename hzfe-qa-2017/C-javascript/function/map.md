@@ -1,3 +1,6 @@
+```bash
+# 此页面贡献者：年轻的小铲、树
+```
 ## 简单实现
 ```javascript
 function map (arr, func) {
