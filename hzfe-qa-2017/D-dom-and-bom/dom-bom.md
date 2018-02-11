@@ -1,3 +1,6 @@
+```bash
+# 此页面贡献者：年轻的小铲
+```
 ## What is the DOM and BOM in JavaScript?
 `The Browser Object Model` is a larger representation of everything provided by the browser including the current document, location, history, frames, and any other functionality the browser may expose to JavaScript. `The Browser Object Model` is not standardized and can change based on different browsers.
 

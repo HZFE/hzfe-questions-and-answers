@@ -52,28 +52,27 @@
 - [x] [块格式化上下文(BFC)](hzfe-qa-2017/B-css/what-is-bfc.md)
 
 #### JAVASCRIPT
-- [x] [为什么null是Object](hzfe-qa-2017/C-javascript/types/why-null-is-an-object.md)
+- [x] [为什么 null 是 Object ](hzfe-qa-2017/C-javascript/types/why-null-is-an-object.md)
 - [x] [函数有哪几种执行方式](hzfe-qa-2017/C-javascript/function/function-invocation.md)
-- [x] [函数的call apply方法](hzfe-qa-2017/C-javascript/function/call-apply.md)
+- [x] [函数的 call apply 方法](hzfe-qa-2017/C-javascript/function/call-apply.md)
 - [x] [作用域链、[[scope]]、词法作用域](hzfe-qa-2017/C-javascript/scopes-environments-and-closures/execution-context.md)
 - [x] [闭包及其原理](hzfe-qa-2017/C-javascript/scopes-environments-and-closures/closures.md)
-- [x] [this不同情景下的指向](hzfe-qa-2017/C-javascript/expressions-and-operators/this.md)
-- [x] [new操作符做了什么](hzfe-qa-2017/C-javascript/expressions-and-operators/new.md)
+- [x] [this 不同情景下的指向](hzfe-qa-2017/C-javascript/expressions-and-operators/this.md)
+- [x] [new 操作符做了什么](hzfe-qa-2017/C-javascript/expressions-and-operators/new.md)
 - [x] [原型链与继承](hzfe-qa-2017/C-javascript/object-oriented/inheritance-and-prototype-chain.md)
-- [ ] eval是做什么用的，有什么安全问题
-- [ ] [js引擎怎么实现Class关键字](hzfe-qa-2017/C-javascript/es6/class.md)
-- [ ] generator
-- [ ] 什么是迭代器？
-- [ ] 你对symbol有什么了解
+- [x] [准确判断变量类型的方法和原理](hzfe-qa-2017/C-javascript/expressions-and-operators/best-way-to-check-data-type-in-javascript.md)
+- [x] [eval 及其安全问题](hzfe-qa-2017/C-javascript/function/eval.md)
+- [ ] require 和 import 的原理
+- [ ] [ES6: js引擎怎么实现 class 关键字](hzfe-qa-2017/C-javascript/es6/class.md)
+- [ ] [ES6: 理解原理并手写实现 promise](hzfe-qa-2017/C-javascript/es6/promise.md)
+- [ ] ES6: 理解 generator 并手写一个简单 co 
+- [ ] ES6: 什么是 symbol 
+- [ ] ES6: 什么是迭代器
 - [ ] 观察者模式
-- [x] [promise](hzfe-qa-2017/C-javascript/es6/promise.md)
-- [ ] promise的实现原理，手写实现promise
-- [ ] 准确判断 js 中一个变量的类型的方法和原理
 
 #### DOM-BOM
 - [x] [dom和bom](hzfe-qa-2017/D-dom-and-bom/dom-bom.md)
 - [x] [事件委托哪些事件不冒泡](hzfe-qa-2017/D-dom-and-bom/event/no-bubbles.md)
-- [ ] 怎么实现拖拽？
 - [x] [原生Ajax流程](hzfe-qa-2017/D-dom-and-bom/ajax/XMLHttpRequest.md)
 - [ ] ajax优点和缺点
 - [ ] get post区别
@@ -85,31 +84,29 @@
 - [x] [邮箱正则](hzfe-qa-2017/E-regexp/email.md)
 - [ ] 将 ejs 风格的分隔符<%= %>变为 mustache 风格的{{ }}
 
-#### Framework
-- [ ] vue和原生 || vue和react || vue和angular 的区别
-- [ ] angular1和angular2的区别
-- [ ] vuex和redux异同
-- [ ] angular核心
-- [ ] 实现angular数据绑定
-- [ ] AOT预编译和JIT预编译
-- [x] [实现computed](hzfe-qa-2017/F-framework-and-library/vue/computed.md)
-- [x] [组件通信问题](hzfe-qa-2017/F-framework-and-library/vue/component-communication.md)
-- [ ] 实现vue双向绑定
-- [ ] 组件中/vuex中对数据操作的区别
-- [ ] element源码是如何跨组件通信的
-- [x] [react部分数据变化导致组件全部重新渲染，用什么解决](hzfe-qa-2017/F-framework-and-library/react/shouldComponentUpdate.md)
-- [x] [react浅比较](hzfe-qa-2017/F-framework-and-library/react/shallow-compare.md)
-- [ ] 实现react的diff
-- [ ] jQuery 除了操作dom还能干嘛
-- [ ] jQuery 对于不冒泡的事件是怎么处理的
-- [ ] jQuery 的缺点和优点
-- [ ] 手写 bind 手写一个 sizzle
+#### Framework and Library
+- [ ] jQuery 除操作 dom 还能做什么
+- [ ] jQuery 对于不冒泡的事件怎么处理
+- [ ] jQuery 的优缺点
+- [x] [vue 实现 computed](hzfe-qa-2017/F-framework-and-library/vue/computed.md)
+- [ ] vue 实现 双向绑定
+- [x] [vue 组件通信问题](hzfe-qa-2017/F-framework-and-library/vue/component-communication.md)
+- [ ] element 源码是如何跨组件通信的
+- [ ] 组件中/ vuex 中对数据操作的区别
+- [x] [解决 react 部分数据变化导致组件全部重新渲染问题](hzfe-qa-2017/F-framework-and-library/react/shouldComponentUpdate.md)
+- [x] [react 浅比较](hzfe-qa-2017/F-framework-and-library/react/shallow-compare.md)
+- [ ] 实现 react 的 diff
+- [ ] angular 核心
+- [ ] 实现 angular 数据绑定
+- [ ] AOT 预编译和 JIT 预编译
+- [ ] angular1 和 angular2 的区别
+- [ ] vue 和 原生 / react / angular 的区别
+- [ ] vuex 和 redux 异同
 
 #### Performance-improvement
 - [x] [函数节流和去抖](hzfe-qa-2017/G-performance-improvement/throttle-debounce.md)
-- [x] [为什么要用事件委托呢](hzfe-qa-2017/G-performance-improvement/event-delegation.md)
+- [x] [为什么要用事件委托](hzfe-qa-2017/G-performance-improvement/event-delegation.md)
 - [x] [重绘回流](hzfe-qa-2017/G-performance-improvement/reflow-repain.md)
-- [x] [数组去重](hzfe-qa-2017/G-performance-improvement/removing-duplicates-from-an-array.md)
 
 #### Computer-networking
 - [x] [TCP、三次握手、滑动窗口做流控](hzfe-qa-2017/H-computer-networking/basic-point.md)
@@ -125,10 +122,10 @@
 
 #### Algorithm
 - [x] [无向图的深度优先搜索和广度优先搜索](hzfe-qa-2017/I-algorithm/graphs.md)
-- [ ] 10w的数据量用什么排序算法
-- [ ] 写10个排序 列出时间复杂度 和 使用场景
 - [x] [非递归遍历二叉树](hzfe-qa-2017/I-algorithm/non-recursive-traversal-of-binary-tree.md)
 - [x] [二叉树的中序遍历](hzfe-qa-2017/I-algorithm/in-order-traversal.md)
+- [ ] 10w的数据量用什么排序算法
+- [ ] 写10个排序 列出时间复杂度 和 使用场景
 - [ ] 怎么找出连续子数组的最大和（如果和为负数，则重新开始，如果和为正数，则继续加，然后比较大小，选出最大和即可。）
 - [ ] 手写快排还有二叉树遍历 快排实现原理
 - [ ] 存在一无序整形数组，找出其中连续出现的数字区间（var list = [7,2,11,2,0,1,2,4,5,10,13,14,15]; 输出：["0->2","4->5","7","10->11","13->15"]）
@@ -137,24 +134,25 @@
 #### Coding
 - [ ] css: 一个div，设置其父级div宽度为100px，再设其padding-top为20%。问div高度
 - [ ] css: 实现硬币旋转效果，即圆形绕自身轴线360持续旋转
-- [x] [js: 实现map函数](hzfe-qa-2017/C-javascript/function/map.md)
+- [ ] css: 知道几种0.5px的实现
+- [x] [js: 实现 map 函数](hzfe-qa-2017/C-javascript/function/map.md)
+- [x] [js: 数组去重](hzfe-qa-2017/G-performance-improvement/removing-duplicates-from-an-array.md)
 - [ ] js: 实现remove函数，删除object的属性
 - [ ] js: 函数式编程中compose的实现  (https://segmentfault.com/a/1190000008394749) (实现一个compose(arr)({index:0}}) var arr=[fn1,fn2,fn3]; function fn1(index,next){a.index++;next()}... 返回value和next,next()表示调用下一个函数)
-- [ ] js: 手写一个co
 - [ ] js: 实现 js 对象深度克隆函数
 - [x] js: 如何将string转换成html `((s,d)=>(d.innerHTML=s,d.childNodes))('<input>', document.createElement('div'))`
 - [x] js: 最简单的生成 [0, 1, 2, ...range] 数组的方法 `[...Array(range).keys()]`
+- [ ] js: 实现拖拽
+- [ ] js: 手写实现 bind
 
 #### 老生常谈
 - [ ] 遇到什么困难、怎么解决、未来怎么避免
 - [ ] 技术选型、怎么看待框架、jq和框架各解决什么问题
 - [ ] 介绍下v8的新特性
 - [ ] js底层的实现
-- [ ] 用过哪些预处理器，scss？那scss有存在什么缺点吗？
 
 #### 未分类
 - [x] [c语言怎么实现字符串转整型](hzfe-qa-2017/uncategories/stringToInt.md)
-- [ ] xss攻击
 - [ ] ssr原理
 - [ ] 为什么有些数据是可迭代数据？除了实现了iterator接口 还有什么别的原因嘛
 - [ ] 怎么按顺序执行异步
@@ -169,21 +167,15 @@
 - [ ] csrf是什么 如何用node处理csrf
 - [ ] xss是什么 如果淘宝有一个xss漏洞 你会用它来做什么
 - [ ] 说出你知道的所有缓存
-- [ ] require如何实现的
-- [ ] import如何实现的
-- [ ] 手写实现一个class
-- [ ] 手写bind
 - [ ] AMD有什么特点
 - [ ] 线上项目如何快速低定位是哪一行的错误
-- [ ] 知道几种0.5px的实现
 - [ ] aouth是干嘛的
 - [ ] 单点登录的原理
 - [ ] cookie的path
 - [ ] 做视差滚动 什么库
 - [ ] hls和rtmp的区别
 - [ ] hash map怎么实现
-
-
+- [ ] 用过哪些预处理器，scss？那scss有存在什么缺点吗？
 
 #### wow-Node
 - [ ] express静态资源中间件
@@ -196,7 +188,7 @@
 - [ ] chrome的审查元素怎么实现的
 
 #### Mobile
-- [ ] 移动端点击300ms的延迟？？
+- [ ] 解决移动端点击300ms的延迟
 
 #### Data-structure
 - [ ] 怎么检验链表是闭合的

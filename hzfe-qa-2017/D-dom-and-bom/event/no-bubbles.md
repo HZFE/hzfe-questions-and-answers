@@ -1,3 +1,6 @@
+```bash
+# 此页面贡献者：年轻的小铲
+```
 ## 不冒泡事件
 load unload abort error blur focus mouseenter mouseleave
 

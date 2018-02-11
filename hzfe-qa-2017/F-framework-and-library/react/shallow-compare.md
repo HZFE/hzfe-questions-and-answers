@@ -1,3 +1,6 @@
+```bash
+# 此页面贡献者：小k
+```
 # react性能优化——浅比较
 
 在优化react应用时，绝大部分的优化空间在于避免不必要的render——即Virtual DOM的生成，这不仅可以节省执行render的时间，还可以节省对DOM节点做Diff的时间。

@@ -1,3 +1,6 @@
+```bash
+# 此页面贡献者：年轻的小铲
+```
 ## Ajax
 （异步JavaScript和XML）Asynchronous JavaScript + XML, 其本身不是一种新技术，而是一个在 2005年被Jesse James Garrett提出的新术语，用来描述一种使用现有技术集合的‘新’方法, 包括: HTML or XHTML, Cascading Style Sheets, JavaScript, The Document Object Model, XML, XSLT, 以及最重要的 XMLHttpRequest object.当使用结合了这些技术的AJAX模型以后， 网页程序能够逐步快速地将更新呈现在用户界面上，不需要重载（刷新）整个页面。这使得程序能够更快地回应用户的操作。
 
