@@ -188,7 +188,7 @@
 - [ ] chrome的审查元素怎么实现的
 
 #### Mobile
-- [ ] 解决移动端点击300ms的延迟
+- [x] [解决移动端点击300ms的延迟](hzfe-qa-2017/K-Mobile/300ms-delay.md)
 
 #### Data-structure
 - [ ] 怎么检验链表是闭合的
