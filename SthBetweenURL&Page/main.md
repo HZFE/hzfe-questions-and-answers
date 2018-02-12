@@ -6,7 +6,7 @@
 
 1. 检查浏览器的 DNS 缓存，如果有那就直接用。
 2. 如果没有浏览器缓存，那么查询本地的 `hosts` 文件中的映射关系（Windows 一般在 `c:\windows\system32\drivers\etc\hosts`, Linux/MacOS 一般在 `/etc/hosts`）。
-3. 查找本地 DNS 解析器缓存。
+3. 查找本地 DNS 解析器缓存。
 4. 发起 DNS 查询，返回 IP 地址。
 
 关于第四点，我们可以通过一个完整的 `dig +trace` 来说明（先忽略权威/递归服务器的概念）。
@@ -64,9 +64,8 @@ org.			86400	IN	RRSIG	DS 8 1 86400 2018022...
 ;; Received 814 bytes from 199.7.91.13#53(d.root-servers.net) in 490 ms
 ```
 
-我们通过 `d.root-servers.net` 找到了 `org.` 的一组 NS。后面的 `DS` 和 `RRSIG` 属于 `DNSSEC` 相关内容，主要作用是解决 DNS 的欺骗和缓存污染，暂且不提。
+我们通过 `d.root-servers.net` 找到了 `org.` 的一组 NS。后面的 `DS` 和 `RRSIG` 属于 `DNSSEC` 相关内容，主要作用是解决 DNS 的欺骗和缓存污染，暂且不提。
 继续选出一台服务器来查找 `hzfe.org.` 的 NS 记录。
-
 
 ```
 hzfe.org.		86400	IN	NS	vick.ns.cloudflare.com.
