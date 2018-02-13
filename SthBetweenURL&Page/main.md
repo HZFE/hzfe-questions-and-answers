@@ -98,7 +98,7 @@ Address: 45.32.248.193
 
 ### DNS 报文格式
 
-DNS 的请求和响应报文都是相同的格式：
+DNS 同时占用 TCP 和 UDP 的 53 端口，请求和响应报文都是相同的格式：
 
 ```
 +--+--+--+--+--+--+--+
@@ -133,20 +133,33 @@ DNS 的请求和响应报文都是相同的格式：
   +--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+
 ```
 
-- [ID]: 标识 DNS 会话
-- [FLAGS]
+- ID: 标识 DNS 会话
+- FLAGS
     - QR: 0 查询报文，1 响应报文
     - opcode: 0 标准查询，1 反向查询，2 服务器状态查询，3/15 保留
-    - AA
+    - AA 权威应答标志，1 权威，0 非权威
     - TC: 表示报文太长被截断
-    - RD:
-    - RA:
-    - Z:
-    - RCODE
-- [QDCOUNT]
-- [ANCOUNT]
-- [NSCOUNT]
-- [ARCOUNT]
+    - RD: 递归期望
+    - RA: 是否可以递归
+    - Z: 保留字段
+    - RCODE: 响应码
+        - 0 No Error 无错误
+        - 1 Format Error 格式错误
+        - 2 Server Failure 服务器错误
+        - 3 Name Error Name 错误
+        - 4 Not Implemented 未实现
+        - 5 Refused 拒绝
+        - 6 YX 不该存在的 Name
+        - 7 YX RR Set 不该存在的资源记录
+        - 8 NX RR Set 应该存在却不存在的资源记录
+        - 9 Not Auth 未认证
+        - 10 Not Zone Name 不存在于 Zone 之中
+- QDCOUNT: Question 段中的问题记录数
+- ANCOUNT: Answer 段中的资源记录数
+- NSCOUNT: 报文授权段中的授权记录数
+- ARCOUNT: 报文附加段中的附加记录数
+
+
 
 ```
   Question format
@@ -162,6 +175,16 @@ DNS 的请求和响应报文都是相同的格式：
   |                    QCLASS                     |
   +--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+
 ```
+
+- QNAME: 查询域名，[编码方式](http://www.tcpipguide.com/free/t_DNSNameNotationandMessageCompressionTechnique.htm)，例如 `3` `w` `w` `w` `4` `h` `z` `f` `e` `3` `o` `r` `g` `0`
+- QTYPE: 协议类型
+    - 251 IXFR 
+    - 252 AXFR
+    - 253 MAILB
+    - 254 MAILA
+    - 255 * 
+- QClass: 查询类，一般都是 IN (Internet).
+
 
 ```
   Answer/Authority/Additional format
@@ -182,8 +205,23 @@ DNS 的请求和响应报文都是相同的格式：
   +--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+
 ```
 
+- NAME: 域名
+- TYPE: 记录类型
+    - 1 A IP 地址
+    - 2 NS Name server
+    - 5 CNAME 别名
+    - 6 SOA 
+    - 12 PTR
+    - 15 MX Email
+    - 16 TXT 文本
+- CLASS: 查询类，一般都是 IN (Internet).
+- TTL: Time To Live 表示缓存时间
+- RDLENGTH: RDATA 的长度
+- RDATA: 记录内容
+
 ### 参考
 
+- [DNS Message Header and Question Section Format](http://www.tcpipguide.com/free/t_DNSMessageHeaderandQuestionSectionFormat.htm)
 - [DNS 请求报文详解](https://yi-love.github.io/blog/node.js/javascript/dns/2016/11/11/dns-request.html)
 - [DNS 查询全解](https://www.90.cx/dns-query-1/)
 
