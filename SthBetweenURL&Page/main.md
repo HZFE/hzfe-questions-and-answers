@@ -139,7 +139,7 @@ DNS 同时占用 TCP 和 UDP 的 53 端口，请求和响应报文都是相同�
     - opcode: 0 标准查询，1 反向查询，2 服务器状态查询，3/15 保留
     - AA 权威应答标志，1 权威，0 非权威
     - TC: 表示报文太长被截断
-    - RD: 递归期望
+    - RD: 递归期望
     - RA: 是否可以递归
     - Z: 保留字段
     - RCODE: 响应码
@@ -153,9 +153,9 @@ DNS 同时占用 TCP 和 UDP 的 53 端口，请求和响应报文都是相同�
         - 7 YX RR Set 不该存在的资源记录
         - 8 NX RR Set 应该存在却不存在的资源记录
         - 9 Not Auth 未认证
-        - 10 Not Zone Name 不存在于 Zone 之中
+        - 10 Not Zone Name 不存在于 Zone 之中
 - QDCOUNT: Question 段中的问题记录数
-- ANCOUNT: Answer 段中的资源记录数
+- ANCOUNT: Answer 段中的资源记录数
 - NSCOUNT: 报文授权段中的授权记录数
 - ARCOUNT: 报文附加段中的附加记录数
 
@@ -205,15 +205,15 @@ DNS 同时占用 TCP 和 UDP 的 53 端口，请求和响应报文都是相同�
   +--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+
 ```
 
-- NAME: 域名
+- NAME: 域名
 - TYPE: 记录类型
     - 1 A IP 地址
     - 2 NS Name server
     - 5 CNAME 别名
     - 6 SOA 
     - 12 PTR
-    - 15 MX Email
-    - 16 TXT 文本
+    - 15 MX Email
+    - 16 TXT 文本
 - CLASS: 查询类，一般都是 IN (Internet).
 - TTL: Time To Live 表示缓存时间
 - RDLENGTH: RDATA 的长度
