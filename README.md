@@ -109,16 +109,14 @@
 - [x] [重绘回流](hzfe-qa-2017/G-performance-improvement/reflow-repain.md)
 
 #### Computer-networking
-- [x] [TCP、三次握手、滑动窗口做流控](hzfe-qa-2017/H-computer-networking/basic-point.md)
-- [x] [什么是 HTTPS](hzfe-qa-2017/H-computer-networking/HTTPS.md)
-- [ ] http概念、协议、缓存机制、状态码
-- [ ] HTTPS 的过程
-- [ ] 网络服务质量
+- [x] [HTTP](hzfe-qa-2017/H-computer-networking/HTTP.md)
+- [x] [了解 TCP 协议中的三次握手、滑动窗口](hzfe-qa-2017/H-computer-networking/basic-point.md)
 - [ ] 断点续传
-- [ ] 用 net 实现 HTTP
-- [ ] 手写 socket 报文
-- [ ] SSL／TLS
-- [ ] 举例 HTTP 响应 Header 中， Cache-control 的常规值
+- [ ] 缓存机制
+- [ ] 网络服务质量
+- [ ] [HTTPS](hzfe-qa-2017/H-computer-networking/HTTPS.md)
+- [ ] HTTPS 的过程
+- [ ] SSL / TLS
 
 #### Algorithm
 - [x] [无向图的深度优先搜索和广度优先搜索](hzfe-qa-2017/I-algorithm/graphs.md)
@@ -144,6 +142,8 @@
 - [x] js: 最简单的生成 [0, 1, 2, ...range] 数组的方法 `[...Array(range).keys()]`
 - [ ] js: 实现拖拽
 - [ ] js: 手写实现 bind
+- [ ] 用 net 实现 HTTP
+- [ ] 手写 socket 报文
 
 #### 老生常谈
 - [ ] 遇到什么困难、怎么解决、未来怎么避免
