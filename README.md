@@ -110,7 +110,7 @@
 
 #### Computer-networking
 - [x] [HTTP](hzfe-qa-2017/H-computer-networking/HTTP.md)
-- [x] [了解 TCP 协议中的三次握手、滑动窗口](hzfe-qa-2017/H-computer-networking/basic-point.md)
+- [x] [了解 TCP 协议中的三次握手、滑动窗口](hzfe-qa-2017/H-computer-networking/TCP.md)
 - [ ] 断点续传
 - [ ] 缓存机制
 - [ ] 网络服务质量
