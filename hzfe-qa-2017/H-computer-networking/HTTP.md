@@ -98,9 +98,5 @@
 
 为了减轻这些缺陷，以减少连接开销，`HTTP/1.1` 引入了长连接( `persistent connections` )：底层 `TCP` 连接可以通过 `Connection header` 来实现部分控制。而 `HTTP/2` 则更进一步，通过在单个连接上复用消息的方式，来保持该连接为暖连接，提高效率。
 
-## 相关面试题
-- [ ] 举例 HTTP 响应 Header 中， Cache-control 的常规值
-- [ ] 缓存机制
-
-
 ## 学习资料
+[MDN - HTTP Overview](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview)
