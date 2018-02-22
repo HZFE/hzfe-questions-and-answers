@@ -16,27 +16,62 @@
 ----------         ---------         ---------         ----------
 ```
 
-```
-+ + + + + + + + + + + + + + + + + + + + 
-      |       |   Web APIs    | 
- HTML |  CSS  | - - - - - - - |
-      |       |   JavaScript  |  HERE IS WEB
-- - - - - - - - - - - - - - - - 
-            HTTP              |
-+ + + + + + + + + + + + + + + + + + + + 
- DNS |            |    TLS    |
-- - -     TCP     - - - - - - - 
- UDP |                        |
-- - - - - - - - - - - - - - - - 
-            IP                |
-+ + + + + + + + + + + + + + + +
-```
+当 `Client` 想要与 `Server` 通信时，无论是最终服务器还是中间代理，它都会执行以下步骤：
+1. **打开一个 `TCP` 连接**
 
-### Extensible
-`HTTP` 的可扩展性体现在 `HTTP/1.0` 中提出的 `HTTP headers` 中。 它让协议扩展变得非常容易。只要服务端和客户端就新 headers 达成语义一致，新功能就可以被轻松加入进来。
+    `TCP` 连接用来发送一条或多条 `request` 和获取 `response`。 `Client` 可能会打开一个新连接，或重用现有连接，或打开多个到 `Server` 的 `TCP` 连接。
+2. **发送一个 `HTTP` 报文 （HTTP报文的类型：请求）**
+
+    `HTTP` 报文（在 `HTTP/2` 之前）语义是可读的。在 `HTTP/2` 中，这些消息被嵌入到了一个新的二进制结构，帧。帧能实现一些优化，比如报文头部的压缩和复用（这使得报文不能被直接读取）。即使只有一部分原始 `HTTP` 报文以 `HTTP/2` 发送出来，每条报文的语义依旧不变，客户端会重组原始 `HTTP/1.1` 请求。所以两者的原理还是保持不变的。
+    ```javascript
+    /**
+     * {Method} / {Version of protocol}
+     * {Method}: GET POST PUT DELETE OPTIONS ....
+     * {Version of protocol}: HTTP/1.1
+     *
+     * Headers: Host Accept-Language ....
+     */
+    GET / HTTP/1.1
+    Host: developer.mozilla.org
+    Accept-Language: fr
+    ```
+3. **读取服务端返回的报文信息 （HTTP报文的类型：回应）**
+    ```JavaScript
+    /**
+     * {Version of protocol} {Status code} {Status message}
+     * {Version of protocol}: HTTP/1.1
+     * {Status code}: 200 304 400 403 404 406 500 ....
+     *
+     * Headers: Date Server Last-Modified ETag Accept-Ranges Content-Length Content-Type ....
+     */
+    HTTP/1.1 200 OK
+    Date: Sat, 09 Oct 2010 14:28:02 GMT
+    Server: Apache
+    Last-Modified: Tue, 01 Dec 2009 20:18:22 GMT
+    ETag: "51142bc1-7449-479b075b2891b"
+    Accept-Ranges: bytes
+    Content-Length: 29769
+    Content-Type: text/html
+
+    <!DOCTYPE html... (here comes the 29769 bytes of the requested web page)
+    ```
+4. **关闭连接或者为后续 `request` 重用连接**
 
 ### Stateless
 `HTTP` 是一种 `无状态协议` ，在同一个连接中，两个执行成功的请求之间是没有联系的。也就是说，服务器不会在两个请求之间保留任何数据(状态)。比如在一个电商网站里，用户把某个商品加入到购物车，切换一个页面后再次添加了商品，这两次添加商品的请求之间没有关联，浏览器无法知道用户最终选择了哪些商品。`HTTP` 本质是无状态的，但是 `HTTP Cookies` 可以创建有状态的会话。使用 `HTTP` 的头部扩展，令 `HTTP Cookies` 被添加到工作流中，就会允许在每个HTTP请求上创建会话以共享相同的上下文或相同的状态。
+
+### Extensible
+`HTTP` 的可扩展性体现在 `HTTP/1.0` 中提出的 `HTTP headers` 中。 它让协议扩展变得非常容易。只要服务端和客户端就新 headers 达成语义一致，新功能就可以被轻松加入进来。可以用HTTP控制的常用功能有：
+- **缓存**
+  - 如何缓存文档，能通过HTTP来控制。`Server` 可以指示 `proxies` 和 `Client` 缓存什么内容，缓存多久。而客户端也能够命令中间的缓存代理来忽略存储的文档。
+- **开放同源限制**
+  - 为防止网络窥探和其他隐私入侵，Web 浏览器强制严格分离网站。只有来自同一来源的页面才能访问网页的所有信息。虽然这样的约束对服务器来说是一种负担，但 `HTTP headers` 可以放宽服务器端的严格分离，从而使文档成为来自不同域的信息的拼凑体（这样做可能有安全相关的原因）。
+- **认证**
+  - 某些页面可能受到保护，因此只有特定的用户才能访问它。基本认证可以由 `HTTP` 提供，或者使用 `WWW-Authenticate` 和类似的 `Headers` ，或者通过使用 `HTTP cookie` 设置特定的会话。
+- **代理和隧道**
+  - 服务器或客户端通常位于内联网上，并向其他人隐藏其真实IP地址。`HTTP request` 通过 `proxies` 来跨越这个网络障碍。并非所有的 `proxies` 都是 `HTTP proxies` 。比如 SOCKS 协议，运作在更底层。像 FTP 这样的协议，能够被这些 `proxies` 处理。
+- **会话**
+  - 使用 `HTTP Cookies` 可以将请求与服务器的状态关联起来。尽管基本的 `HTTP` 是一种无状态协议，但这会创建会话。这不仅适用于购物车这种的电商需求，也适用于任何网站上的用户定制展示内容的需求。
 
 ## Client: user-agent
 为了呈现网页，浏览器首先发送一个 `request` 来获取页面的 `HTML` 文档。然后解析该文件，获取与执行脚本、CSS样式表相对应的其他请求，以及页面中包含的子资源(通常为图像和视频)。然后，浏览器将这些资源整合到一起，展现出一个完整的文档，也就是网页。浏览器执行的脚本可以在之后的阶段获取更多资源，并相应地更新网页。
@@ -63,6 +98,9 @@
 
 为了减轻这些缺陷，以减少连接开销，`HTTP/1.1` 引入了长连接( `persistent connections` )：底层 `TCP` 连接可以通过 `Connection header` 来实现部分控制。而 `HTTP/2` 则更进一步，通过在单个连接上复用消息的方式，来保持该连接为暖连接，提高效率。
 
-
+## 相关面试题
 - [ ] 举例 HTTP 响应 Header 中， Cache-control 的常规值
 - [ ] 缓存机制
+
+
+## 学习资料
