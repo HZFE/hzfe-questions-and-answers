@@ -217,3 +217,5 @@ Bluebird可以使用promisify，可以进行大量的优化，并且是一种更
 [Native Javascript Promises vs Bluebird](https://pub.clevertech.biz/native-javascript-promises-vs-bluebird-9e58611be22)
 
 [Are there still reasons to use promise libraries like Q or BlueBird now that we have ES6 promises?](https://stackoverflow.com/questions/34960886/are-there-still-reasons-to-use-promise-libraries-like-q-or-bluebird-now-that-we)
+
+[promises-are-not-neutral-enough](https://staltz.com/promises-are-not-neutral-enough.html?from=timeline)
