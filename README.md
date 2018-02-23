@@ -133,8 +133,8 @@
 - [ ] css: 一个div，设置其父级div宽度为100px，再设其padding-top为20%。问div高度
 - [ ] css: 实现硬币旋转效果，即圆形绕自身轴线360持续旋转
 - [ ] css: 知道几种0.5px的实现
-- [x] [js: 实现 map 函数](hzfe-qa-2017/C-javascript/function/map.md)
-- [x] [js: 数组去重](hzfe-qa-2017/G-performance-improvement/removing-duplicates-from-an-array.md)
+- [x] [js: 实现 map 函数](hzfe-qa-2017/L-coding/map.md)
+- [x] [js: 数组去重](hzfe-qa-2017/L-coding/removing-duplicates-from-an-array.md)
 - [ ] js: 实现remove函数，删除object的属性
 - [ ] js: 函数式编程中compose的实现  (https://segmentfault.com/a/1190000008394749) (实现一个compose(arr)({index:0}}) var arr=[fn1,fn2,fn3]; function fn1(index,next){a.index++;next()}... 返回value和next,next()表示调用下一个函数)
 - [ ] js: 实现 js 对象深度克隆函数
