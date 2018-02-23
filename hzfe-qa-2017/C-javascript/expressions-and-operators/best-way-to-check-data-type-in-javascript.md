@@ -134,3 +134,5 @@ function IsRegExp (value) {
 [判断 JS 数据类型的四种方法](http://www.cnblogs.com/onepixel/p/5126046.html)
 
 [lodash](https://github.com/lodash/lodash)
+
+[toString 规范解析](https://segmentfault.com/a/1190000009407558)
