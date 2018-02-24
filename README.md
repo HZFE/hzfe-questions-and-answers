@@ -46,10 +46,12 @@
 - [x] [DOCTYPE](hzfe-qa-2017/A-html/what-is-doctype.md)
 - [x] [如何在html中开启/关闭 DNS 预读取](hzfe-qa-2017/A-html/dns-prefetch.md)
 - [x] [script 标签 defer 或 async 属性的作用及区别](hzfe-qa-2017/A-html/defer-async.md)
+- [ ] media queries 常见机型适配
 
 #### CSS
 - [x] [垂直居中](hzfe-qa-2017/B-css/center-elements-horizontally-and-vertically.md)
 - [x] [块格式化上下文(BFC)](hzfe-qa-2017/B-css/what-is-bfc.md)
+- [ ] flexbox 的布局效果
 
 #### JAVASCRIPT
 - [x] [为什么 null 是 Object ](hzfe-qa-2017/C-javascript/types/why-null-is-an-object.md)
