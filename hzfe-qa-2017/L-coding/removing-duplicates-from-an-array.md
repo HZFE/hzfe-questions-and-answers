@@ -12,7 +12,13 @@ let uniq
 uniq = arr => arr.filter((item, index) => arr.indexOf(item) === index)
 
 // ES7中的includes方法则可以区分NaN：http://www.ecma-international.org/ecma-262/7.0/#sec-array.prototype.includes
-uniq = arr => arr.filter((item, index) => !arr.includes(item))
+uniq = arr => {
+  const res = [];
+  arr.forEach(item => {
+    if (!res.includes(item)) res.push(item)
+  })
+  return res;
+}
 
 // 在filter方法的回调函数中使用第三个参数(array)，so we can avoid a closure of the array variable
 uniq = arr => arr.filter((item, index, self) => self.indexOf(item) == index)
