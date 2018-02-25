@@ -5,7 +5,7 @@
 
 `BFC` 包含创建它的元素内的所有内容。
 
-BFC对于`定位`与`清除浮动`很重要。定位和清除浮动的样式规则只适用于处于同一BFC内的元素。浮动不会影响其它BFC中元素的布局，并且清除浮动只能清除同一BFC中在它前面的元素的浮动。`Margin collapsing` 也只发生在属于同一BFC内的块级元素之间。
+`BFC` 对于`定位`与`闭合浮动`很重要。定位和闭合浮动的样式规则只适用于处于同一 `BFC` 内的元素。浮动不会影响其它 `BFC` 中元素的布局，`Margin collapsing` 也只发生在属于同一BFC内的块级元素之间。
 
 A BFC is created by one of the following:
 
@@ -32,3 +32,5 @@ A BFC is created by one of the following:
 [BFC](https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Block_formatting_context)
 
 [理解CSS中BFC](http://www.w3cplus.com/css/understanding-block-formatting-contexts-in-css.html)
+
+[那些年我们一起清除过的浮动](http://www.iyunlu.com/view/css-xhtml/55.html)
