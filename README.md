@@ -67,6 +67,7 @@
 - [ ] [require 和 import 的原理](hzfe-qa-2017/C-javascript/es6/require-and-import.md)
 - [ ] [ES6: js引擎怎么实现 class 关键字](hzfe-qa-2017/C-javascript/es6/class.md)
 - [ ] [ES6: 理解原理并手写实现 promise](hzfe-qa-2017/C-javascript/es6/promise.md)
+- [ ] ES6: 原生的 跟 promise A+ 的区别
 - [ ] ES6: 理解 generator 并手写一个简单 co 
 - [ ] ES6: 什么是 symbol 
 - [ ] ES6: 什么是迭代器
@@ -144,6 +145,7 @@
 - [x] js: 最简单的生成 [0, 1, 2, ...range] 数组的方法 `[...Array(range).keys()]`
 - [ ] js: 实现拖拽
 - [ ] js: 手写实现 bind
+- [ ] js: 深拷贝浅拷贝
 - [ ] 用 net 实现 HTTP
 - [ ] 手写 socket 报文
 
@@ -178,6 +180,10 @@
 - [ ] hls和rtmp的区别
 - [ ] hash map怎么实现
 - [ ] 用过哪些预处理器，scss？那scss有存在什么缺点吗？
+- [ ] file_hash.js 和 file.js?hash 的区别
+- [ ] Linux
+- [ ] CDN
+- [ ] ts的泛型
 
 #### wow-Node
 - [ ] express静态资源中间件
