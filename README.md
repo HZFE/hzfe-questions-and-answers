@@ -94,6 +94,7 @@
 - [x] [vue 实现 computed](hzfe-qa-2017/F-framework-and-library/vue/computed.md)
 - [ ] vue 实现 双向绑定
 - [x] [vue 组件通信问题](hzfe-qa-2017/F-framework-and-library/vue/component-communication.md)
+- [ ] vue-router 两种模式的原理
 - [ ] element 源码是如何跨组件通信的
 - [ ] 组件中/ vuex 中对数据操作的区别
 - [x] [解决 react 部分数据变化导致组件全部重新渲染问题](hzfe-qa-2017/F-framework-and-library/react/shouldComponentUpdate.md)
@@ -105,6 +106,8 @@
 - [ ] angular1 和 angular2 的区别
 - [ ] vue 和 原生 / react / angular 的区别
 - [ ] vuex 和 redux 异同
+- [ ] angular1 的父子通信
+- [ ] angular1 脏检查
 
 #### Performance-improvement
 - [x] [函数节流和去抖](hzfe-qa-2017/G-performance-improvement/throttle-debounce.md)
