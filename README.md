@@ -187,6 +187,8 @@
 - [ ] Linux
 - [ ] CDN
 - [ ] ts的泛型
+- [ ] seo
+- [ ] 协作开发怎么版本控制
 
 #### wow-Node
 - [ ] express静态资源中间件
