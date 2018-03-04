@@ -79,7 +79,6 @@
 - [x] [原生Ajax流程](hzfe-qa-2017/D-dom-and-bom/ajax/XMLHttpRequest.md)
 - [ ] ajax优点和缺点
 - [ ] get post区别
-- [ ] 为什么存在跨域这个问题？为什么要有同源策略？同源策略是什么？如果没有会有什么问题？跨域有哪些方法？
 - [ ] cookie和session的区别以及优缺点
 - [ ] cookie怎么跟服务器通信的
 
@@ -113,12 +112,13 @@
 - [x] [函数节流和去抖](hzfe-qa-2017/G-performance-improvement/throttle-debounce.md)
 - [x] [为什么要用事件委托](hzfe-qa-2017/G-performance-improvement/event-delegation.md)
 - [x] [重绘回流](hzfe-qa-2017/G-performance-improvement/reflow-repain.md)
+- [ ] [CDN](hzfe-qa-2017/G-performance-improvement/cdn.md)
+- [ ] 缓存机制、file_hash.js 和 file.js?hash 的区别
 
 #### Computer-networking
 - [x] [HTTP](hzfe-qa-2017/H-computer-networking/HTTP.md)
 - [x] [了解 TCP 协议中的三次握手、滑动窗口](hzfe-qa-2017/H-computer-networking/TCP.md)
 - [ ] 断点续传
-- [ ] 缓存机制
 - [ ] 网络服务质量
 - [ ] [HTTPS](hzfe-qa-2017/H-computer-networking/HTTPS.md)
 - [ ] HTTPS 的过程
@@ -173,7 +173,6 @@
 - [ ] 数据结构会吗
 - [ ] csrf是什么 如何用node处理csrf
 - [ ] xss是什么 如果淘宝有一个xss漏洞 你会用它来做什么
-- [ ] 说出你知道的所有缓存
 - [ ] AMD有什么特点
 - [ ] 线上项目如何快速低定位是哪一行的错误
 - [ ] aouth是干嘛的
@@ -183,13 +182,10 @@
 - [ ] hls和rtmp的区别
 - [ ] hash map怎么实现
 - [ ] 用过哪些预处理器，scss？那scss有存在什么缺点吗？
-- [ ] file_hash.js 和 file.js?hash 的区别
 - [ ] Linux
-- [ ] CDN
 - [ ] ts的泛型
 - [ ] seo
 - [ ] 协作开发怎么版本控制
-- [ ] 热更新的实现原理
 
 #### wow-Node
 - [ ] express静态资源中间件
@@ -198,6 +194,7 @@
 - [ ] js事件队列和node队列说下原理 区别是什么
 
 #### Browser
+- [ ] [跨域](hzfe-qa-2017/M-browser/cross-origin.md)
 - [ ] 浏览器线程，js的异步是怎么实现的
 - [ ] chrome的审查元素怎么实现的
 
@@ -214,7 +211,7 @@
 - [ ] babel配置
 - [ ] es6转es5工具有哪些
 - [ ] 登陆时的用户校验
-
+- [ ] 热更新的实现原理
 
 ## 2017 - Alloyteam Conf
 
