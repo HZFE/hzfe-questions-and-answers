@@ -78,7 +78,6 @@
 - [x] [事件委托哪些事件不冒泡](hzfe-qa-2017/D-dom-and-bom/event/no-bubbles.md)
 - [x] [原生Ajax流程](hzfe-qa-2017/D-dom-and-bom/ajax/XMLHttpRequest.md)
 - [ ] ajax优点和缺点
-- [ ] get post区别
 - [ ] cookie和session的区别以及优缺点
 - [ ] cookie怎么跟服务器通信的
 
@@ -116,6 +115,7 @@
 - [ ] 缓存机制、file_hash.js 和 file.js?hash 的区别
 
 #### Computer-networking
+- [x] [GET 和 POST 的区别](hzfe-qa-2017/H-computer-networking/post-and-get.md)
 - [x] [HTTP](hzfe-qa-2017/H-computer-networking/HTTP.md)
 - [x] [了解 TCP 协议中的三次握手、滑动窗口](hzfe-qa-2017/H-computer-networking/TCP.md)
 - [ ] 断点续传

@@ -1,3 +1,6 @@
+```bash
+# 此页面贡献者：年轻的铲屎
+```
 ## CommonJS
 
 `CommonJS` 规范，为 `JavaScript` 制定了一个美好的愿景——希望 `JavaScript` 能够在任何地方运行。
