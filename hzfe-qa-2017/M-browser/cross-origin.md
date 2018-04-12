@@ -72,6 +72,6 @@
 
 ### 延伸问题：复杂请求是什么？
 
-    - 使用了下面任一 HTTP 方法：PUT、DELETE、CONNECT、OPTIONS、TRACE、PATCH
-    - 设置了除CORS外的任何首部字段
-    - Content-Type 不属于：application/x-www-form-urlencoded、multipart/form-data、text/plain
+- 使用了下面任一 HTTP 方法：PUT、DELETE、CONNECT、OPTIONS、TRACE、PATCH
+- 设置了除CORS外的任何首部字段
+- Content-Type 不属于：application/x-www-form-urlencoded、multipart/form-data、text/plain
