@@ -51,15 +51,6 @@
 3. 使用 drawImage 绘制到 canvas 的images / video frames
 4. WebGL textures ...
 
-# 学习资料
-[MDN - Same-origin policy](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy)
-[wiki - jsonp](https://en.wikipedia.org/wiki/JSONP)
-[stackoverflow - what is jsonp](https://stackoverflow.com/questions/3839966/can-anyone-explain-what-jsonp-is-in-layman-terms)
-[MDN - CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
-
-[同源策略和跨域请求研究](http://yincheng.site/cross-domain)
-[我知道的跨域与安全](https://juejin.im/post/5a6320d56fb9a01cb64ee191)
-
 # OPTIONS
 
 ## OPTIONS 请求是干什么的：
@@ -73,5 +64,15 @@
 ### 延伸问题：复杂请求是什么？
 
 - 使用了下面任一 HTTP 方法：PUT、DELETE、CONNECT、OPTIONS、TRACE、PATCH
-- 设置了除CORS外的任何首部字段
+- 设置了除 CORS 外的任何首部字段
 - Content-Type 不属于：application/x-www-form-urlencoded、multipart/form-data、text/plain
+
+
+# 学习资料
+[MDN - Same-origin policy](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy)
+[wiki - jsonp](https://en.wikipedia.org/wiki/JSONP)
+[stackoverflow - what is jsonp](https://stackoverflow.com/questions/3839966/can-anyone-explain-what-jsonp-is-in-layman-terms)
+[MDN - CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
+
+[同源策略和跨域请求研究](http://yincheng.site/cross-domain)
+[我知道的跨域与安全](https://juejin.im/post/5a6320d56fb9a01cb64ee191)
