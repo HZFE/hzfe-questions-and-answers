@@ -44,33 +44,94 @@
 
 # CORS
 
-`CORS`: Cross-Origin Resource Sharing。跨源资源共享（CORS）是一种机制，它通过使用额外的 HTTP Header 来让浏览器获得访问来自不同来源（域）服务器上的选定资源的权限。需要用到 `CORS` 的比如有：
+出于安全原因，浏览器限制了从 script 中发起的 cross-origin HTTP 请求。例如 XMLHttpRequest 和 Fetch 等 APIs 遵循同源策略。因此，除非使用 CORS ，否则使用这些 APIs 的应用只能从加载该应用的相同域中，请求 HTTP 资源。
+
+`CORS` [Cross-Origin Resource Sharing 跨源资源共享]是一种机制，它的工作原理是，添加额外的 HTTP Headers 来让服务器描述允许使用浏览器读取某一资源的一组 origin 。该机制要求浏览器对可能给服务器数据造成 side-effects 的 HTTP request 进行预检 (preflight) ：使用 HTTP OPTIONS 请求方法从服务器请求回 supported methods 后，在服务器 "approval" 的前提下，使用实际的 HTTP method 来发送 request。
+
+需要用到 `CORS` 的比如有：
 
 1. 跨域使用 XMLHttpRequest / Fetch APIs
 2. Web 字体（CSS @font-face中的跨域字体）
 3. 使用 drawImage 绘制到 canvas 的images / video frames
 4. WebGL textures ...
 
-# OPTIONS
+## CORS 例子1: 简单请求
 
-## OPTIONS 请求是干什么的：
+不会触发 `CORS preflight` 的被称为 simple requests，simple request 满足以下特点：
+- GET | HEAD | POST
+- 除浏览器自动设置的 Headers ，可以设置以下 Headers（CORS 安全首部字段集合）
+    - Accept
+    - Accept-Language
+    - Content-Language
+    - Last-Event-ID
+    - DPR
+    - Save-Data
+    - Viewport-Width
+    - Width
+    - Content-Type
+        - application/x-www-form-urlencoded
+        - multipart/form-data
+        - text/plain
 
-    CORS规范要求对那些可能对服务器数据产生副作用的 HTTP 请求方法，浏览器必须首先使用 OPTIONS 发起一个预检请求，从而获知服务端是否允许该跨域请求。
+假设我们有一个跨域 GET 请求：
 
-## 在什么情况下才会有 OPTIONS 请求？
+```bash
+# request headers
+GET /resources/public-data/ HTTP/1.1
+# ......
+Origin: http://foo.example
 
-    在请求复杂请求的情况下会发起 OPTIONS 预检请求。
+# response headers
+HTTP/1.1 200 OK
+# ......
+Access-Control-Allow-Origin: *
+```
 
-### 延伸问题：复杂请求是什么？
+## CORS 例子2: 预检请求
 
-- 使用了下面任一 HTTP 方法：PUT、DELETE、CONNECT、OPTIONS、TRACE、PATCH
-- 设置了除 CORS 外的任何首部字段
-- Content-Type 不属于：application/x-www-form-urlencoded、multipart/form-data、text/plain
+因为非简单请求可能会影响用户数据，所以他会经过一层 preflight：先通过 OPTIONS method 向另一个域上的资源发送 HTTP request 以确定是否可以安全发送 actual request 。
 
+满足以下任何一种情况，则需要 preflight：
+- PUT | DELETE | CONNECT | OPTIONS | TRACE | PATCH
+- 前面 simple request 的 headers 列表中没有提到的
+
+假设我们有一个跨域 POST 请求，带有复杂请求头：
+
+```js
+'X-PINGOTHER': 'pingpong'
+'Content-Type': 'application/xml'
+```
+
+```bash
+# preflight request headers
+OPTIONS /resources/post-here/ HTTP/1.1
+# ......
+Origin: http://foo.example
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: X-PINGOTHER, Content-Type
+
+# preflight response headers
+HTTP/1.1 200 OK
+# ......
+Access-Control-Allow-Origin: http://foo.example
+Access-Control-Allow-Methods: POST, GET
+Access-Control-Allow-Headers: X-PINGOTHER, Content-Type
+Access-Control-Max-Age: 86400
+
+# actual request header
+POST /resources/post-here/ HTTP/1.1
+# ......
+X-PINGOTHER: pingpong
+Content-Type: text/xml; charset=UTF-8
+Origin: http://foo.example
+
+# actual response header
+HTTP/1.1 200 OK
+# ......
+Access-Control-Allow-Origin: http://foo.example
+```
 
 # 学习资料
-[MDN - Same-origin policy](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy)
-[wiki - jsonp](https://en.wikipedia.org/wiki/JSONP)
 [stackoverflow - what is jsonp](https://stackoverflow.com/questions/3839966/can-anyone-explain-what-jsonp-is-in-layman-terms)
 [MDN - CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
 

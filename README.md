@@ -54,7 +54,7 @@
 - [ ] flexbox 的布局效果
 
 #### JAVASCRIPT
-- [x] [为什么 null 是 Object ](hzfe-qa-2017/C-javascript/types/why-null-is-an-object.md)
+- [x] [为什么 null 是 Object](hzfe-qa-2017/C-javascript/types/why-null-is-an-object.md)
 - [x] [函数有哪几种执行方式](hzfe-qa-2017/C-javascript/function/function-invocation.md)
 - [x] [函数的 call apply 方法](hzfe-qa-2017/C-javascript/function/call-apply.md)
 - [x] [作用域链、[[scope]]、词法作用域](hzfe-qa-2017/C-javascript/scopes-environments-and-closures/execution-context.md)
@@ -80,10 +80,6 @@
 - [ ] ajax优点和缺点
 - [ ] cookie和session的区别以及优缺点
 - [ ] cookie怎么跟服务器通信的
-
-#### RegExp
-- [x] [邮箱正则](hzfe-qa-2017/E-regexp/email.md)
-- [ ] 将 ejs 风格的分隔符<%= %>变为 mustache 风格的{{ }}
 
 #### Framework and Library
 - [ ] jQuery 除操作 dom 还能做什么
@@ -135,6 +131,10 @@
 - [ ] 存在一无序整形数组，找出其中连续出现的数字区间（var list = [7,2,11,2,0,1,2,4,5,10,13,14,15]; 输出：["0->2","4->5","7","10->11","13->15"]）
 - [ ] 存在一无序且不重复的数组 data ，取出 n 个数，使其相加和为 sum 。给出算法的时间/空间复杂度（function getResult (data, n, sum) {}）
 
+#### RegExp
+- [x] [邮箱正则](hzfe-qa-2017/E-regexp/email.md)
+- [ ] 将 ejs 风格的分隔符<%= %>变为 mustache 风格的{{ }}
+
 #### Coding
 - [ ] css: 一个div，设置其父级div宽度为100px，再设其padding-top为20%。问div高度
 - [ ] css: 实现硬币旋转效果，即圆形绕自身轴线360持续旋转
@@ -151,6 +151,32 @@
 - [ ] js: 深拷贝浅拷贝
 - [ ] 用 net 实现 HTTP
 - [ ] 手写 socket 报文
+
+#### wow-Node
+- [ ] express静态资源中间件
+- [ ] node 的 eventEmitter
+- [ ] nodejs如何进行进程通信
+- [ ] js事件队列和node队列说下原理 区别是什么
+
+#### Browser
+- [x] [跨域](hzfe-qa-2017/M-browser/cross-origin.md)
+- [ ] 浏览器线程，js的异步是怎么实现的
+- [ ] chrome的审查元素怎么实现的
+
+#### Mobile
+- [x] [解决移动端点击300ms的延迟](hzfe-qa-2017/K-Mobile/300ms-delay.md)
+
+#### Data-structure
+- [ ] 怎么检验链表是闭合的
+
+#### Tools
+- [ ] webpack的优势
+- [ ] webpack、gulp、rollup做比较
+- [ ] wepack常用配置
+- [ ] babel配置
+- [ ] es6转es5工具有哪些
+- [ ] 登陆时的用户校验
+- [ ] 热更新的实现原理
 
 #### 老生常谈
 - [ ] 遇到什么困难、怎么解决、未来怎么避免
@@ -186,32 +212,13 @@
 - [ ] ts的泛型
 - [ ] seo
 - [ ] 协作开发怎么版本控制
-
-#### wow-Node
-- [ ] express静态资源中间件
-- [ ] node 的 eventEmitter
-- [ ] nodejs如何进行进程通信
-- [ ] js事件队列和node队列说下原理 区别是什么
-
-#### Browser
-- [ ] [跨域](hzfe-qa-2017/M-browser/cross-origin.md)
-- [ ] 浏览器线程，js的异步是怎么实现的
-- [ ] chrome的审查元素怎么实现的
-
-#### Mobile
-- [x] [解决移动端点击300ms的延迟](hzfe-qa-2017/K-Mobile/300ms-delay.md)
-
-#### Data-structure
-- [ ] 怎么检验链表是闭合的
-
-#### Tools
-- [ ] webpack的优势
-- [ ] webpack、gulp、rollup做比较
-- [ ] wepack常用配置
-- [ ] babel配置
-- [ ] es6转es5工具有哪些
-- [ ] 登陆时的用户校验
-- [ ] 热更新的实现原理
+- [ ] ast
+- [ ] mysql事务
+- [ ] 锁
+- [ ] 实现seajs
+- [ ] 慢启动
+- [ ] 网络阻塞排查
+- [ ] 网站资源用不同域名做处理的好处
 
 ## 2017 - Alloyteam Conf
 
