@@ -219,6 +219,13 @@
 - [ ] 慢启动
 - [ ] 网络阻塞排查
 - [ ] 网站资源用不同域名做处理的好处
+- [ ] 不用defineproperty 怎么实现双向绑定
+- [ ] store 的数据怎么传到组件的props里面
+- [ ] redux触发数据更新的整个流程
+- [ ] react-saga 是什么
+- [ ] shouldcomponentupdate  是什么  举例应用场景
+- [ ] purecomponent
+
 
 ## 2017 - Alloyteam Conf
 
