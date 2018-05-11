@@ -40,7 +40,7 @@
 #### Operating-system
 - [x] [《现代操作系统》读书笔记——线程](note/operating-system/modern-operating-system-thread.md)
 
-## 2017 - hzfe questions and answers
+## 2017~2018 - hzfe questions and answers
 
 #### HTML
 - [x] [DOCTYPE](hzfe-qa-2017/A-html/what-is-doctype.md)
@@ -225,7 +225,11 @@
 - [ ] react-saga 是什么
 - [ ] shouldcomponentupdate  是什么  举例应用场景
 - [ ] purecomponent
-
+- [ ] vuex的数据是存储在哪里的
+- [ ] node的单线程异步是怎么实现的
+- [ ] 虚拟dom
+- [ ] 移动端适配
+- [ ] 设计按照苹果的尺寸给图，如果适配各种安卓尺寸，图片不能拉伸压缩
 
 ## 2017 - Alloyteam Conf
 
