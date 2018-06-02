@@ -40,7 +40,7 @@
 #### Operating-system
 - [x] [《现代操作系统》读书笔记——线程](note/operating-system/modern-operating-system-thread.md)
 
-## 2017 - hzfe questions and answers
+## 2017~2018 - hzfe questions and answers
 
 #### HTML
 - [x] [DOCTYPE](hzfe-qa-2017/A-html/what-is-doctype.md)
@@ -218,6 +218,17 @@
 - [ ] 慢启动
 - [ ] 网络阻塞排查
 - [ ] 网站资源用不同域名做处理的好处
+- [ ] 不用defineproperty 怎么实现双向绑定
+- [ ] store 的数据怎么传到组件的props里面
+- [ ] redux触发数据更新的整个流程
+- [ ] react-saga 是什么
+- [ ] shouldcomponentupdate  是什么  举例应用场景
+- [ ] purecomponent
+- [ ] vuex的数据是存储在哪里的
+- [ ] node的单线程异步是怎么实现的
+- [ ] 虚拟dom
+- [ ] 移动端适配
+- [ ] 设计按照苹果的尺寸给图，如果适配各种安卓尺寸，图片不能拉伸压缩
 
 ## 2017 - Alloyteam Conf
 
