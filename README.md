@@ -51,7 +51,7 @@
 #### CSS
 - [x] [垂直居中](hzfe-qa-2017/B-css/center-elements-horizontally-and-vertically.md)
 - [x] [块格式化上下文(BFC)](hzfe-qa-2017/B-css/what-is-bfc.md)
-- [ ] flexbox 的布局效果
+- [x] [flexbox 的布局效果](hzfe-qa-2017/B-css/flexbox.md)
 
 #### JAVASCRIPT
 - [x] [为什么 null 是 Object](hzfe-qa-2017/C-javascript/types/why-null-is-an-object.md)
@@ -207,7 +207,6 @@
 - [ ] 做视差滚动 什么库
 - [ ] hls和rtmp的区别
 - [ ] hash map怎么实现
-- [ ] 用过哪些预处理器，scss？那scss有存在什么缺点吗？
 - [ ] Linux
 - [ ] ts的泛型
 - [ ] seo
