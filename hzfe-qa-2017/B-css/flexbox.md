@@ -18,26 +18,37 @@ flex 布局背后的主要思想是赋予 container 改变其 items 的 width/he
 
 flexbox 是一个完整的模块，而非一个属性，因此它涉及很多内容，其中包括一系列相关属性。部分属性是作用在 container 上("flex container")，而部分是在 item 上("flex items")。
 
-![image1](./assets/1.png)
+<img src="./assets/1.png" width="500px">
 
 item 通常按照 main axis 主轴 (from main-start to main-end) 或 cross axis 交叉轴 (from cross-start to cross-end) 方向进行布局。
 
 - main axis
+
   flex container 的 main axis 决定了 items 的布局方向。它不一定是水平的，它取决于 flex-direction 属性的值。
+
 - main-start | main-end
+  
   flex item 被放置在 flex container 内，从 main-start 到 main-end 的方向放置。
+
 - main size
+  
   main size 是 flex item 的 width 或 height 的值（以当前 main axis 的方向决定）。
+
 - cross axis
+  
   垂直于 main aixs 的轴称为 cross axis。它的方向取决于 main axis 的方向。
+
 - cross-start | cross-end
+  
   同理 main-start | main-end
+
 - cross size
+  
   同理 main size
 
 ### 作用于 flex container 的属性
 
-![image2](./assets/2.svg)
+<img src="./assets/2.svg" width="500px"/>
 
 #### display
 
@@ -59,7 +70,7 @@ item 通常按照 main axis 主轴 (from main-start to main-end) 或 cross axis 
 }
 ```
 
-![image3](./assets/3.svg)
+<img src="./assets/3.svg" width="500px"/>
 
 #### flex-wrap
 
@@ -71,7 +82,7 @@ item 通常按照 main axis 主轴 (from main-start to main-end) 或 cross axis 
 }
 ```
 
-![image4](./assets/4.svg)
+<img src="./assets/4.svg" width="500px"/>
 
 #### justify-content
 
@@ -83,7 +94,7 @@ item 通常按照 main axis 主轴 (from main-start to main-end) 或 cross axis 
 }
 ```
 
-![image5](./assets/5.svg)
+<img src="./assets/5.svg" width="500px"/>
 
 #### align-items
 
@@ -95,7 +106,7 @@ item 通常按照 main axis 主轴 (from main-start to main-end) 或 cross axis 
 }
 ```
 
-![image6](./assets/6.svg)
+<img src="./assets/6.svg" width="500px"/>
 
 #### align-content
 
@@ -107,7 +118,7 @@ item 通常按照 main axis 主轴 (from main-start to main-end) 或 cross axis 
 }
 ```
 
-![image7](./assets/7.svg)
+<img src="./assets/7.svg" width="500px"/>
 
 #### flex-flow
 
@@ -117,7 +128,7 @@ flex-flow: <'flex-direction'> || <'flex-wrap'>
 
 ### 作用于 flex item 的属性
 
-![image8](./assets/8.svg)
+<img src="./assets/8.svg" width="500px"/>
 
 #### order
 
@@ -129,7 +140,7 @@ flex-flow: <'flex-direction'> || <'flex-wrap'>
 }
 ```
 
-![image9](./assets/9.svg)
+<img src="./assets/9.svg" width="500px"/>
 
 #### flex-grow
 
@@ -142,7 +153,7 @@ flex-flow: <'flex-direction'> || <'flex-wrap'>
 }
 ```
 
-![image10](./assets/10.svg)
+<img src="./assets/10.svg" width="500px"/>
 
 #### align-self
 
