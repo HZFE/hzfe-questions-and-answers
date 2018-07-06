@@ -59,6 +59,7 @@
 - [x] [函数的 call apply 方法](hzfe-qa-2017/C-javascript/function/call-apply.md)
 - [x] [作用域链、[[scope]]、词法作用域](hzfe-qa-2017/C-javascript/scopes-environments-and-closures/execution-context.md)
 - [x] [闭包及其原理](hzfe-qa-2017/C-javascript/scopes-environments-and-closures/closures.md)
+- [ ] 闭包实际应用
 - [x] [this 不同情景下的指向](hzfe-qa-2017/C-javascript/expressions-and-operators/this.md)
 - [x] [new 操作符做了什么](hzfe-qa-2017/C-javascript/expressions-and-operators/new.md)
 - [x] [原型链与继承](hzfe-qa-2017/C-javascript/object-oriented/inheritance-and-prototype-chain.md)
@@ -77,9 +78,11 @@
 - [x] [dom和bom](hzfe-qa-2017/D-dom-and-bom/dom-bom.md)
 - [x] [事件委托哪些事件不冒泡](hzfe-qa-2017/D-dom-and-bom/event/no-bubbles.md)
 - [x] [原生Ajax流程](hzfe-qa-2017/D-dom-and-bom/ajax/XMLHttpRequest.md)
+- [ ] addeventlistener 第三个参数的作用
 - [ ] ajax优点和缺点
 - [ ] cookie和session的区别以及优缺点
 - [ ] cookie怎么跟服务器通信的
+- [ ] 前端路由原理 及如何监听url变化
 
 #### Framework and Library
 - [ ] jQuery 除操作 dom 还能做什么
