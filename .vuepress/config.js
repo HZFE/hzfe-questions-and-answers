@@ -3,7 +3,7 @@ module.exports = {
   title: 'HZFE奶库',
   description: '前端面试题库',
   head: [
-    ['link', { rel: 'icon', href: '/favicon' }]
+    ['link', { rel: 'icon', href: '/favicon.ico' }]
   ],
   serviceWorker: true,
   themeConfig: {

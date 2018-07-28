@@ -1,17 +1,14 @@
----
-sidebar: false
----
+# HZFE奶库
+
+[文档](https://hzfe.github.io/hzfe-questions-and-answers/)
 
 ## HZFE
 
-#### website
+### 官网
 
 [https://hzfe.org/](https://hzfe.org/) ([repository](https://github.com/HZFE/hzfe))
 
-#### document
-[https://hzfe.github.io/hzfe-questions-and-answers/](https://hzfe.github.io/hzfe-questions-and-answers/)
-
-#### members
+### 成员
 
 <a href="https://github.com/LLawlight"><img src="https://avatars0.githubusercontent.com/u/17525377?v=4&s=400" width="46" height="46" /></a>
 <a href="https://github.com/Yiiu"><img src="https://avatars3.githubusercontent.com/u/7876498?v=4&s=400" width="46" height="46" /></a>
@@ -31,7 +28,7 @@ sidebar: false
 <a href="https://github.com/uztg"><img src="https://avatars1.githubusercontent.com/u/17242380?v=4&s=400" width="46" height="46" /></a>
 <a href="https://github.com/DragonCat1"><img src="https://avatars0.githubusercontent.com/u/17510330?s=400&v=4" width="46" height="46" /></a>
 
-#### blogs
+### 博客
 
 [树树](https://code.geeku.net/)
 [盖盖](https://blog.xyxiao.cn/)
@@ -42,12 +39,14 @@ sidebar: false
 [丹丹](http://www.funnycoder.cn)
 [清真](http://zhaoyuxiang.cn)
 
-## note
+## 目录
+
+### note
 
 #### Operating-system
 - [x] [《现代操作系统》读书笔记——线程](note/operating-system/modern-operating-system-thread.md)
 
-## 2017~2018 - hzfe questions and answers
+### 2017~2018 - hzfe questions and answers
 
 #### HTML
 - [x] [DOCTYPE](hzfe-qa-2017/A-html/what-is-doctype.md)
@@ -240,51 +239,51 @@ sidebar: false
 - [ ] 移动端适配
 - [ ] 设计按照苹果的尺寸给图，如果适配各种安卓尺寸，图片不能拉伸压缩
 
-## 2017 - Alloyteam Conf
+### 2017 - Alloyteam Conf
 
-### 前端基础
+#### 前端基础
 
-#### HTML
+##### HTML
 - [ ] 常用meta头
 - [ ] 语义化
 - [ ] HTML5新增功能
 - [ ] HTML渲染解析知识
 
-#### CSS
+##### CSS
 - [ ] 可读规范的CSS代码
 - [ ] 盒模型
 - [ ] CSS3特性：动画、弹性布局
 
-#### JavaScript
+##### JavaScript
 - [ ] 事件模型
 - [ ] 闭包和内存泄露
 - [ ] 原型链
 - [ ] 渲染树、重排重绘、分层渲染等（进阶）
 
-#### 调试
+##### 调试
 - [x] [关于抓包的一点思考](Alloyteam-Conf-2017/debug/packet-capture.md)
 - [ ] 如何debug程序问题
 - [ ] 如何做移动端调试
 - [ ] 如何发现页面问题
 
-#### HTTP
+##### HTTP
 - [x] [常见 HTTP 状态码](Alloyteam-Conf-2017/HTTP/most-common-status-code.md)
 - [ ] 不同请求类型的区别
 - [ ] 如何缓存
 - [ ] HTTP2
 
-#### 移动Web开发
+##### 移动Web开发
 - [ ] 移动Web开发和PC Web开发的区别
 - [ ] 响应式布局
 - [ ] 移动端的手势和事件
 - [ ] 怎么提高移动页面的渲染性能
 
-#### 综合知识考察
+##### 综合知识考察
 - [ ] 用户从输入url到最终页面展示，这个过程中发生了什么
 - [ ] 老板反馈页面打开白屏，而你手机上是正常的，怎么办
 - [ ] 我页面上有个动画一卡一卡的性能不行，怎么优化
 
-### 前端延伸知识点
+#### 前端延伸知识点
 - [ ] 性能优化
 - [ ] NodeJs
 - [ ] 构建
