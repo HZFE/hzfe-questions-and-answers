@@ -1,0 +1,21 @@
+language: node_js
+node_js: stable
+cache: 
+  yarn: true
+  directories:
+    - node_modules
+branches:
+  only:
+    - master
+install:
+    - yarn install
+script:
+    - yarn docs:build
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  on:
+    branch: master
+  local_dir: .vuepress/dist
+  target_branch: gh-pages

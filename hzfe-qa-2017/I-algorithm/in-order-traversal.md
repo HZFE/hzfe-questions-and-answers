@@ -7,7 +7,7 @@
 
 例如，有如下一种树形结构：
 
-![](img/pic1.jpg)
+![](./img/pic1.jpg)
 
 中序遍历的序列是：a+b*c-d-e/f
 
@@ -67,6 +67,6 @@ inOrder(tree)
 
 得到的结果为：
 
-![](img/pic2.png)
+![](./img/pic2.png)
 
 符合期望！

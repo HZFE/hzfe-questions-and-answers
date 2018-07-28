@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "docs:dev": "vuepress dev",
+    "docs:build": "vuepress build"
+  },
+
+  "license": "MIT",
+
+  "devDependencies": {
+    "vuepress": "^0.12.0"
+  }
+}

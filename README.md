@@ -1,3 +1,7 @@
+---
+sidebar: false
+---
+
 ## HZFE
 
 #### website
@@ -188,7 +192,7 @@
 - [ ] js底层的实现
 
 #### 未分类
-- [x] [c语言怎么实现字符串转整型](hzfe-qa-2017/uncategories/stringToInt.md)
+- [x] [c语言怎么实现字符串转整型](hzfe-qa-2017/J-uncategories/stringToInt.md)
 - [ ] ssr原理
 - [ ] 为什么有些数据是可迭代数据？除了实现了iterator接口 还有什么别的原因嘛
 - [ ] 怎么按顺序执行异步

@@ -8,7 +8,7 @@
 不同的浏览器的渲染过程存在些许不同，但大体的机制是一样的，下图展示了浏览器下载完所有代码后的大致工作流程：
 ![img](img/repaint_reflow_1.png)
 
-* ##### 首先，浏览器解析HTML源码并构建一个DOM树：在DOM树中，每个HTML标签都有相应的节点，并且在介于两个标签中间的文字块也对应一个text节点。DOM树的根节点是documentElement，也就是<html>标签；
+* ##### 首先，浏览器解析HTML源码并构建一个DOM树：在DOM树中，每个HTML标签都有相应的节点，并且在介于两个标签中间的文字块也对应一个text节点。DOM树的根节点是documentElement，也就是`<html>`标签；
 * ##### 然后，浏览器对CSS代码进行解析，一些当前浏览器不能识别的CSS hack写法（如-webkit前缀）将被忽略。CSS样式中包括浏览器默认样式（user agent stylesheet），用户自定义样式表（通过<link> / import引入的外部样式&行内样式）。最终样式会写入HTML标签的style属性中；
 * ##### 接着，构建render树。render树跟DOM树有点像但不完全一样。render树能识别样式。假如你用display: none隐藏一个div，这个标签不会在render树中出现。这个规则适用于其他不可视元素，比如head标签等；另外，一个DOM元素在render树中可以有多个节点，比如代表p标签的一个文本节点中的每一行文字，又有一个渲染节点。render树中的节点叫做frame-结构体/box-盒子，这些节点都有CSS盒子属性：width, height, border, margin 等等
 * ##### 最后，render树构建完毕，浏览器便开始将渲染节点绘制到屏幕上。
