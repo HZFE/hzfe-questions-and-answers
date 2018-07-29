@@ -17,5 +17,5 @@ deploy:
   github_token: $GITHUB_TOKEN
   on:
     branch: master
-  local_dir: .vuepress/dist
+  local_dir: docs/.vuepress/dist
   target_branch: gh-pages
