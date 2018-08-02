@@ -1,7 +1,7 @@
 module.exports = {
   base: '/hzfe-questions-and-answers/',
   title: 'HZFE奶库',
-  description: '前端面试题库',
+  description: '前端面试知识题库',
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['link', { rel: 'manifest', href: '/manifest.json' }],
@@ -20,9 +20,16 @@ module.exports = {
     editLinks: true,
     editLinkText: '在 GitHub 上编辑此页',
     nav: [
+      { text: '目录', link: '/toc' },
       { text: 'HZFE', link: 'https://hzfe.org' }
     ],
     sidebar: 'auto',
-    lastUpdated: '上次更新'
+    lastUpdated: '上次更新',
+    serviceWorker: {
+      updatePopup: { 
+        message: '新知识来袭！', 
+        buttonText: '更新'
+      }
+    }
   }
 }

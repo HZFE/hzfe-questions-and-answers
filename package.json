@@ -3,10 +3,8 @@
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   },
-
   "license": "MIT",
-
   "devDependencies": {
-    "vuepress": "^0.12.0"
+    "vuepress": "^0.13.1"
   }
 }

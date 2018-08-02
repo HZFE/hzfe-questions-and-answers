@@ -6,7 +6,7 @@
 ## 浏览器渲染过程
 我们先来讨论一下浏览器在接收到HTML、CSS和JavasSript后，怎样把页面呈现在屏幕上的？
 不同的浏览器的渲染过程存在些许不同，但大体的机制是一样的，下图展示了浏览器下载完所有代码后的大致工作流程：
-![img](img/repaint_reflow_1.png)
+![img](./img/repaint_reflow_1.png)
 
 * ##### 首先，浏览器解析HTML源码并构建一个DOM树：在DOM树中，每个HTML标签都有相应的节点，并且在介于两个标签中间的文字块也对应一个text节点。DOM树的根节点是documentElement，也就是`<html>`标签；
 * ##### 然后，浏览器对CSS代码进行解析，一些当前浏览器不能识别的CSS hack写法（如-webkit前缀）将被忽略。CSS样式中包括浏览器默认样式（user agent stylesheet），用户自定义样式表（通过<link> / import引入的外部样式&行内样式）。最终样式会写入HTML标签的style属性中；

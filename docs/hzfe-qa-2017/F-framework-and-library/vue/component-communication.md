@@ -9,7 +9,7 @@ Vue 拥有强大的组件系统，组件都需要配合来使用，每个组件�
 ## 父子组件通信
 父子组件是非常常见的一种组合方式，Vue 也设计了一套高度解耦并且非常优雅的API来解决了父子组件通信的问题。
 
-![props-events](img/props-events.png)
+![props-events](./img/props-events.png)
 > 以上图片来自Vue 官网
 
 ### 神奇的Prop :)
