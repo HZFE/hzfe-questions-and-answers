@@ -9,7 +9,7 @@
 2. Function code: Whenever the flow of execution enters a function body.
 3. Eval code: Text to be executed inside the internal eval function.
 
-![pic1](img/1.png)
+![pic1](./img/1.png)
 
 每个函数被调用时，都会创建一个新的执行上下文。对于JavaScript引擎，每次对执行上下文的调用都有两个阶段：
 
@@ -151,7 +151,7 @@ var myFloat = 1.3;
 // Step 2
 myFunction('abc');
 ```
-![pic2](img/2.png)
+![pic2](./img/2.png)
 
 上图说明了执行代码的时候发生了什么：
 1. `myFunction` 和 `myFloat`被存储在 `全局环境` (#0) 中。需要注意的是， `myFunction` 引用的函数对象，会通过内部属性 `[[scope]]` 指向 `myFunction` 所在作用域： `全局作用域`。
