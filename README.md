@@ -42,3 +42,11 @@
 [兔哥](http://noder.club/)
 [丹丹](http://www.funnycoder.cn)
 [清真](http://zhaoyuxiang.cn)
+
+## 贡献者
+
+Thank you to all the people who already contributed to 奶!
+
+<a href="https://github.com/stackjie"><img src="https://avatars1.githubusercontent.com/u/16393749?s=60&v=4" width="46" height="46" /></a>
+<a href="https://github.com/thisisandy"><img src="https://avatars0.githubusercontent.com/u/9465232?s=60&v=4" width="46" height="46" /></a>
+<a href="https://github.com/ToPeas"><img src="https://avatars1.githubusercontent.com/u/13310553?s=60&v=4" width="46" height="46" /></a>
