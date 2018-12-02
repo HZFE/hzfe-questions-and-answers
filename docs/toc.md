@@ -36,8 +36,8 @@
 - [x] [ES6: js引擎怎么实现 class 关键字](hzfe-qa-2017/C-javascript/es6/class.md)
 - [x] [ES6: 理解原理并手写实现 promise](hzfe-qa-2017/C-javascript/es6/promise.md)
 - [ ] ES6: 原生的 跟 promise A+ 的区别
-- [ ] ES6: 理解 generator 并手写一个简单 co 
-- [ ] ES6: 什么是 symbol 
+- [ ] ES6: 理解 generator 并手写一个简单 co
+- [ ] ES6: 什么是 symbol
 - [ ] ES6: 什么是迭代器
 - [ ] 观察者模式
 - [ ] 事件模型
@@ -169,7 +169,7 @@
 #### 调试
 - [x] [关于抓包的一点思考](hzfe-qa-2017/N-debug/packet-capture.md)
 - [ ] 如何debug程序问题
-- [ ] 如何做移动端调试
+- [x] [常见移动端调试方法](hzfe-qa-2017/N-debug/mobile-debug.md)
 - [ ] 如何发现页面问题
 
 #### HTTP
