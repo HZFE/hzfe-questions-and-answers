@@ -35,6 +35,8 @@
 - [x] [require 和 import 的原理](hzfe-qa-2017/C-javascript/es6/require-and-import.md)
 - [x] [ES6: js引擎怎么实现 class 关键字](hzfe-qa-2017/C-javascript/es6/class.md)
 - [x] [ES6: 理解原理并手写实现 promise](hzfe-qa-2017/C-javascript/es6/promise.md)
+- [x] [类数组和数组的区别](hzfe-qa-2017/C-javascript/array-like-object/difference-to-array.md)
+
 - [ ] ES6: 原生的 跟 promise A+ 的区别
 - [ ] ES6: 理解 generator 并手写一个简单 co
 - [ ] ES6: 什么是 symbol
@@ -256,7 +258,6 @@
 - [ ] 移动端适配
 - [ ] 设计按照苹果的尺寸给图，如果适配各种安卓尺寸，图片不能拉伸压缩
 - [ ] pwa webComponents webAssembly了解吗
-- [ ] 类数组和数组的区别
 - [ ] cookie和session的区别
 
 ## 学习笔记
