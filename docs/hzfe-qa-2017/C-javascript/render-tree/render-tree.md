@@ -1,3 +1,6 @@
+```bash
+# 此页面贡献者：小k
+```
 
 # 浏览器渲染过程
 
@@ -48,7 +51,7 @@
 回流过程：JS / CSS > Style > Layout > Paint > Composite
 ![rendering pipeline](./images/rendering-pipeline.jpg)
 
-每个页面至少需要一次回流，就是在页面第一次加载的时候。在回流的时候，浏览器会使渲染树中受到影响的部分失效，并重新构造这部分渲染树，完成回流后，浏览器会重新绘制受影响的部分到屏幕中，该过程成为重绘。
+每个页面至少需要一次回流，就是在页面第一次加载的时候。在回流的时候，浏览器会使渲染树中受到影响的部分失效，并重新构造这部分渲染树，完成回流后，浏览器会重新绘制受影响的部分到屏幕中，该过程称为重绘。
 
 ### 重绘（repaint）
 当render tree中的一些元素需要更新属性，而这些属性只是影响元素的外观，风格，而不会影响布局的，比如 background-color 。则就叫称为重绘。重绘对应则不会触发layout过程。
@@ -71,7 +74,7 @@
 
 可以看到上面会将DOM tree转换为 RenderObjects。RenderObjects 保持了树结构，一个 RenderObjects 知道如何绘制一个 node 的内容， 他通过向一个绘图上下文（GraphicsContext）发出必要的绘制调用来绘制 nodes。拥有相同坐标空间的RenderObjects，属于同一个渲染层RenderLayers。RenderLayers 来保证页面元素以正确的顺序合成，这时候就会出现层合成（composite），从而正确处理透明元素和重叠元素的显示。
 
-而某些特殊的渲染层会被认为是合成层（Compositing Layers），合成层拥有单独的 GraphicsLayer，而其他不是合成层的渲染层，则和其第一个拥有 GraphicsLayer 父层公用一个。而每个GraphicsLayer（合成层单独拥有的图层） 都有一个 GraphicsContext，GraphicsContext 会负责输出该层的位图，位图是存储在共享内存中，作为纹理上传到 GPU 中，最后由 GPU 将多个位图进行合成，然后显示到屏幕上。
+而某些特殊的渲染层会被认为是合成层（Compositing Layers），合成层拥有单独的 GraphicsLayer，而其他不是合成层的渲染层，则和其第一个拥有 GraphicsLayer 父层公用一个。而每个GraphicsLayer（合成层单独拥有的图层） 都有一个 GraphicsContext，GraphicsContext 会负责输出该层的位图，位图是存储在共享内存中，作为[纹理](https://zh.wikipedia.org/zh-cn/%E6%9D%90%E8%B4%A8%E8%B4%B4%E5%9B%BE)上传到 GPU 中，最后由 GPU 将多个位图进行合成，然后显示到屏幕上。
 
 既然合成层拥有单独的GraphicsLayer，所以合成层的有点也就不言而喻了：
 1. 合成层的位图，会由GPU处理，比CPU处理要快
@@ -82,7 +85,7 @@
 那么如何让一个元素变成合成层呢，也就是所谓的 **硬件加速**。开启硬件加速的方式也有很多种，如常见的 3D transform变换，opacity动画，will-change等，除此之外filter, iframe等也可以做到，具体参照 [无线性能优化: composite](http://taobaofed.org/blog/2016/04/25/performance-composite/)这篇文章然当前合成层也并非万能的，使用的过程中也会有一些坑，具体可以参考[浏览器渲染过程&composite](https://segmentfault.com/a/1190000014520786)这篇文档。
 
 ## 总结
-其实不难发现，渲染这种浏览器行为最终分析的时候始终还是离不开浏览器的。而且最后 层 的介绍中还涉及了 CPU 及 GPU 的一些知识，个人觉得这些只需要了解就好，因为就目前而言，这些阶段并不是前端工程师的可控范围，虽然可以通过某些特定的属性来生成合成层，但其实底层还是不受控制的。但是作为浏览器渲染相关的面试题来说，说道这里应该是可以令面试官满意了。
+其实不难发现，渲染这种浏览器行为最终分析的时候始终还是离不开浏览器的。而且最后 层 的介绍中还涉及了 CPU 及 GPU 的一些知识，个人觉得这些只需要了解就好，因为就目前而言，这些阶段并不是前端工程师的可控范围，虽然可以通过某些特定的属性来生成合成层，但其实底层还是不受控制的。但是作为浏览器渲染相关的面试题来说，说到这里应该是可以令面试官满意了。
 
 
 ## 参考资料
