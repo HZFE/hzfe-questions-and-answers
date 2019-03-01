@@ -7,10 +7,7 @@
 - [x] [如何在html中开启/关闭 DNS 预读取](hzfe-qa-2017/A-html/dns-prefetch.md)
 - [x] [script 标签 defer 或 async 属性的作用及区别](hzfe-qa-2017/A-html/defer-async.md)
 - [x] [常见机型的媒体查询](https://css-tricks.com/snippets/css/media-queries-for-standard-devices/)
-- [ ] 常用meta头
-- [ ] 语义化
-- [ ] HTML5新增功能
-- [ ] HTML渲染解析知识
+- [x] [常用meta头](hzfe-qa-2017/meta-element.md)
 
 ### CSS
 - [x] [垂直居中](hzfe-qa-2017/B-css/center-elements-horizontally-and-vertically.md)
@@ -18,16 +15,14 @@
 - [x] [flexbox 的布局效果](hzfe-qa-2017/B-css/flexbox.md)
 - [ ] 可读规范的CSS代码
 - [ ] 盒模型
-- [ ] CSS3特性：动画、弹性布局
 
 ### JAVASCRIPT
-- [x] [为什么 null 是 Object](hzfe-qa-2017/C-javascript/types/why-null-is-an-object.md)
+- [x] [为什么 typeof null 是 Object](hzfe-qa-2017/C-javascript/types/why-null-is-an-object.md)
 - [x] [函数有哪几种执行方式](hzfe-qa-2017/C-javascript/function/function-invocation.md)
 - [x] [函数的 call apply 方法](hzfe-qa-2017/C-javascript/function/call-apply.md)
 - [x] [作用域链、[[scope]]、词法作用域](hzfe-qa-2017/C-javascript/scopes-environments-and-closures/execution-context.md)
-- [x] [闭包及其原理](hzfe-qa-2017/C-javascript/scopes-environments-and-closures/closures.md)
-- [ ] 闭包实际应用
-- [x] [this 不同情景下的指向](hzfe-qa-2017/C-javascript/expressions-and-operators/this.md)
+- [x] [闭包](hzfe-qa-2017/C-javascript/scopes-environments-and-closures/closures.md)
+- [x] [this](hzfe-qa-2017/C-javascript/expressions-and-operators/this.md)
 - [x] [new 操作符做了什么](hzfe-qa-2017/C-javascript/expressions-and-operators/new.md)
 - [x] [原型链与继承](hzfe-qa-2017/C-javascript/object-oriented/inheritance-and-prototype-chain.md)
 - [x] [准确判断变量类型的方法和原理](hzfe-qa-2017/C-javascript/expressions-and-operators/best-way-to-check-data-type-in-javascript.md)
@@ -35,18 +30,11 @@
 - [x] [require 和 import 的原理](hzfe-qa-2017/C-javascript/es6/require-and-import.md)
 - [x] [ES6: js引擎怎么实现 class 关键字](hzfe-qa-2017/C-javascript/es6/class.md)
 - [x] [ES6: 理解原理并手写实现 promise](hzfe-qa-2017/C-javascript/es6/promise.md)
-- [x] [类数组和数组的区别](hzfe-qa-2017/C-javascript/array-like-object/difference-to-array.md)
-
 - [ ] ES6: 原生的 跟 promise A+ 的区别
+- [x] [类数组和数组的区别](hzfe-qa-2017/C-javascript/array-like-object/difference-to-array.md)
 - [ ] ES6: 理解 generator 并手写一个简单 co
 - [ ] ES6: 什么是 symbol
 - [ ] ES6: 什么是迭代器
-- [ ] 观察者模式
-- [ ] 事件模型
-- [ ] 闭包和内存泄露
-- [ ] 原型链
-- [ ] 渲染树、重排重绘、分层渲染等（进阶）
-- [ ] ES6: 你觉得ES6好用的语法糖有哪些
 
 ### DOM-BOM
 - [x] [dom和bom](hzfe-qa-2017/D-dom-and-bom/dom-bom.md)
@@ -57,29 +45,48 @@
 - [ ] cookie和session的区别以及优缺点
 - [ ] cookie怎么跟服务器通信的
 - [ ] 前端路由原理 及如何监听url变化
+- [ ] 事件模型
 
-### 框架与库
+### Node
+- [ ] express静态资源中间件
+- [ ] node 的 eventEmitter
+- [ ] nodejs如何进行进程通信
+- [ ] js事件队列和node队列说下原理 区别是什么
+- [ ] node的单线程异步是怎么实现的
+
+### jQuery
 - [ ] jQuery 除操作 dom 还能做什么
 - [ ] jQuery 对于不冒泡的事件怎么处理
 - [ ] jQuery 的优缺点
+
+### Vue
 - [x] [vue 实现 computed](hzfe-qa-2017/F-framework-and-library/vue/computed.md)
 - [ ] vue 实现 双向绑定
 - [x] [vue 组件通信问题](hzfe-qa-2017/F-framework-and-library/vue/component-communication.md)
 - [ ] vue-router 两种模式的原理
 - [ ] element 源码是如何跨组件通信的
 - [ ] 组件中/ vuex 中对数据操作的区别
+- [ ] vuex的数据是存储在哪里的
+
+### React
 - [x] [解决 react 部分数据变化导致组件全部重新渲染问题](hzfe-qa-2017/F-framework-and-library/react/shouldComponentUpdate.md)
 - [x] [react 浅比较](hzfe-qa-2017/F-framework-and-library/react/shallow-compare.md)
 - [ ] 实现 react 的 diff
+- [ ] redux触发数据更新的整个流程
+- [ ] react-saga 是什么
+- [ ] shouldcomponentupdate  是什么  举例应用场景
+- [ ] purecomponent
+
+### Angular
 - [ ] angular 核心
 - [ ] 实现 angular 数据绑定
-- [ ] AOT 预编译和 JIT 预编译
 - [ ] angular1 和 angular2 的区别
-- [ ] vue 和 原生 / react / angular 的区别
-- [ ] vuex 和 redux 异同
 - [ ] angular1 的父子通信
 - [ ] angular1 脏检查
-- [ ] avalon 如何在ie9-中是实现双向数据绑定 （VBScript模拟Object.defineProperty）
+
+- [ ] AOT 预编译和 JIT 预编译
+- [ ] vue 和 原生 / react / angular 的区别
+- [ ] vuex 和 redux 异同
 
 ### 性能优化
 - [x] [函数节流和去抖](hzfe-qa-2017/G-performance-improvement/throttle-debounce.md)
@@ -121,13 +128,13 @@
 - [ ] css: 一个div，设置其父级div宽度为100px，再设其padding-top为20%。问div高度
 - [ ] css: 实现硬币旋转效果，即圆形绕自身轴线360持续旋转
 - [ ] css: 知道几种0.5px的实现
+- [x] js: 如何将string转换成html `((s,d)=>(d.innerHTML=s,d.childNodes))('<input>', document.createElement('div'))`
+- [x] js: 最简单的生成 [0, 1, 2, ...range] 数组的方法 `[...Array(range).keys()]`
 - [x] [js: 实现 map 函数](hzfe-qa-2017/L-coding/map.md)
 - [x] [js: 数组去重](hzfe-qa-2017/L-coding/removing-duplicates-from-an-array.md)
 - [ ] js: 实现remove函数，删除object的属性
 - [ ] js: 函数式编程中compose的实现  (https://segmentfault.com/a/1190000008394749) (实现一个compose(arr)({index:0}}) var arr=[fn1,fn2,fn3]; function fn1(index,next){a.index++;next()}... 返回value和next,next()表示调用下一个函数)
 - [ ] js: 实现 js 对象深度克隆函数
-- [x] js: 如何将string转换成html `((s,d)=>(d.innerHTML=s,d.childNodes))('<input>', document.createElement('div'))`
-- [x] js: 最简单的生成 [0, 1, 2, ...range] 数组的方法 `[...Array(range).keys()]`
 - [ ] js: 实现拖拽
 - [ ] js: 手写实现 bind
 - [ ] js: 深拷贝浅拷贝
@@ -135,12 +142,7 @@
 - [ ] 手写 socket 报文
 - [ ] 防抖/节流分别是什么，应用场景是什么，有什么区别
 - [ ] 如何优化递归？尾递归。手写尾递归。
-
-### Node.js
-- [ ] express静态资源中间件
-- [ ] node 的 eventEmitter
-- [ ] nodejs如何进行进程通信
-- [ ] js事件队列和node队列说下原理 区别是什么
+- [ ] 不用defineproperty 怎么实现双向绑定
 
 ### 浏览器
 - [x] [跨域](hzfe-qa-2017/M-browser/cross-origin.md)
@@ -148,6 +150,7 @@
 - [ ] chrome的审查元素怎么实现的
 - [ ] 浏览器缓存原理
 - [ ] event loop的机制
+- [ ] 渲染树、重排重绘、分层渲染等（进阶）
 
 ### 移动端
 - [x] [解决移动端点击300ms的延迟](hzfe-qa-2017/K-Mobile/300ms-delay.md)
@@ -155,6 +158,8 @@
 - [ ] 响应式布局
 - [ ] 移动端的手势和事件
 - [ ] 怎么提高移动页面的渲染性能
+- [ ] 移动端适配
+- [ ] 设计按照苹果的尺寸给图，如果适配各种安卓尺寸，图片不能拉伸压缩
 
 ### 数据结构
 - [ ] 怎么检验链表是闭合的
@@ -195,6 +200,7 @@
 - [ ] 项目中存在哪些问题，如何解决的
 - [ ] 如何防止项目开发时间delay
 - [ ] 为什么要做单元测试、集成测试
+- [ ] 线上项目如何快速低定位是哪一行的错误
 
 ### 前端延伸知识点
 - [ ] 性能优化
@@ -226,16 +232,13 @@
 - [ ] 服务器具有什么功能
 - [ ] 数据结构会吗
 - [ ] csrf是什么 如何用node处理csrf
-- [ ] xss是什么 如果淘宝有一个xss漏洞 你会用它来做什么
 - [ ] AMD有什么特点
-- [ ] 线上项目如何快速低定位是哪一行的错误
 - [ ] aouth是干嘛的
 - [ ] 单点登录的原理
 - [ ] cookie的path
 - [ ] 做视差滚动 什么库
 - [ ] hls和rtmp的区别
 - [ ] hash map怎么实现
-- [ ] Linux
 - [ ] ts的泛型
 - [ ] seo
 - [ ] 协作开发怎么版本控制
@@ -246,19 +249,9 @@
 - [ ] 慢启动
 - [ ] 网络阻塞排查
 - [ ] 网站资源用不同域名做处理的好处
-- [ ] 不用defineproperty 怎么实现双向绑定
 - [ ] store 的数据怎么传到组件的props里面
-- [ ] redux触发数据更新的整个流程
-- [ ] react-saga 是什么
-- [ ] shouldcomponentupdate  是什么  举例应用场景
-- [ ] purecomponent
-- [ ] vuex的数据是存储在哪里的
-- [ ] node的单线程异步是怎么实现的
 - [ ] 虚拟dom
-- [ ] 移动端适配
-- [ ] 设计按照苹果的尺寸给图，如果适配各种安卓尺寸，图片不能拉伸压缩
 - [ ] pwa webComponents webAssembly了解吗
-- [ ] cookie和session的区别
 
 ## 学习笔记
 
